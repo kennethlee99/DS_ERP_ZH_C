@@ -172,7 +172,9 @@
 <h1 id="supervisor-delayed-production-triage">Supervisor Delayed Production Triage</h1>
 <blockquote><p>English | <a href="../../zh-CN/01-workflows/supervisor-triage.html">中文</a></p></blockquote>
 <p>Use this page when released work is missing, delayed, blocked, or unclear during a shift.</p>
-<p>Open items for delayed-work evidence, queue blocked status, quality-stop evidence, dashboard interpretation, and role visibility are tracked in the <a href="../00-open-decisions.html">Evidence and Decisions Register</a>.</p>
+<p>Open items for delayed-work evidence, queue dispatch rule, queue start action, queue blocked status, quality-stop evidence, dashboard interpretation, and role visibility are tracked in the <a href="../00-open-decisions.html">Evidence and Decisions Register</a>.</p>
+<blockquote><p><strong>Needs decision</strong></p>
+<table><thead><tr><th>Safe now</th><th>Not confirmed</th><th>Owner</th><th>Exact answer needed</th></tr></thead><tbody><tr><td>Compare queue, WO, planning, reporting, and visible dashboard evidence before routing the issue; use dashboards only as supporting trend signals.</td><td>Delayed-work indicator labels, queue dispatch rule, queue start action, queue blocked status labels, dashboard metric definitions, role visibility, and completion/handover signal.</td><td>Production supervisor, with business owner input for dashboard meaning and administrator input for role visibility.</td><td>Which visible condition proves a delay/block, which row-selection rule applies when multiple rows are visible, which row action opens or starts work, which owner should receive each exception, and what evidence is enough for shift handover.</td></tr></tbody></table></blockquote>
 <h2 id="triage-order">Triage Order</h2>
 <ol><li>Start with <a href="../10-production/queue-system.html">Queue System</a>.</li><li>Compare with <a href="../10-production/production-orders.html">Production Orders</a>.</li><li>Confirm the schedule in <a href="../10-production/planning.html">Planning</a>.</li><li>Check quality status in <a href="../30-quality/inspection-records.html">Inspection Records</a> and <a href="../30-quality/ncr-non-conformance.html">NCR</a>.</li><li>Open <a href="../10-production/dashboards.html">Dashboards</a> only for high-level signals; OEE definitions still need business-owner confirmation.</li></ol>
 <h2 id="if-you-see-this-do-this">If You See This, Do This</h2>
@@ -209,8 +211,15 @@
 <tr><td>Equipment or calibration affects the result</td><td><a href="../30-quality/equipment-calibration.html">Equipment Calibration</a></td><td>Escalate to quality before accepting the measurement.</td></tr></tbody></table>
 <h2 id="what-to-record-for-handover">What To Record For Handover</h2>
 <ul><li>WO or queue row.</li><li>Machine/work area.</li><li>Current visible status.</li><li>The screen where the issue was found.</li><li>Screenshot when a button, icon, or status is unclear.</li><li>Person or role escalated to.</li></ul>
+<h2 id="generic-example-supervisor-exception-review">Generic Example: Supervisor Exception Review</h2>
+<p>This example describes the evidence shape only. Replace the placeholder values with visible values from the shift.</p>
+<table><thead><tr><th>Field</th><th>Example evidence to capture</th></tr></thead><tbody><tr><td>Exception</td><td>Missing queue row, blocked queue row, schedule mismatch, access issue, unclear dashboard signal, or quality stop.</td></tr>
+<tr><td>Visible evidence</td><td>Queue filters, WO/job, part/process, machine/work area, current status, and screenshot of the page where the issue appears.</td></tr>
+<tr><td>Cross-check</td><td>Matching or missing evidence from <a href="../10-production/production-orders.html">Production Orders</a>, <a href="../10-production/planning.html">Planning</a>, assigned reporting screen, or <a href="../40-administration/users-and-roles.html">Users and Roles</a>.</td></tr>
+<tr><td>Owner routing</td><td>Planner for release/schedule mismatch, production engineer for setup/program mismatch, administrator for access, or production supervisor when dispatch/handover is unclear.</td></tr>
+<tr><td>Handover note</td><td>Current state, owner contacted, evidence kept, and the next safe action or stop condition for the next shift.</td></tr></tbody></table>
 <h2 id="screenshot-requests">Screenshot Requests</h2>
-<p>This triage flow needs labeled screenshots for blocked queue rows, delayed work indicators, quality-stop evidence, and OEE/KPI trend signals before the manual can give exact click-by-click instructions. Track those items in the <a href="../00-open-decisions.html">Evidence and Decisions Register</a>.</p>
+<p>This triage flow needs labeled screenshots for dispatch evidence, queue start-action evidence, blocked queue rows, delayed work indicators, quality-stop evidence, and OEE/KPI trend signals before the manual can give exact click-by-click instructions. Track those items in the <a href="../00-open-decisions.html">Evidence and Decisions Register</a>.</p>
       </article>
     </main>
   </div>

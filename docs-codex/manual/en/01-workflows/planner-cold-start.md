@@ -6,7 +6,11 @@ Use this walkthrough when you need to follow a job from planning readiness to qu
 
 Open items for schedule, release, status actions, queue evidence, and OEE interpretation are tracked in the [Evidence and Decisions Register](../00-open-decisions.md).
 
-> **Needs decision:** Exact schedule, release, hold, reset, cancel, close, and queue-ready labels are not confirmed. Use this walkthrough to complete readiness checks and evidence capture; do not turn unlabeled icons into click instructions.
+> **Needs decision**
+>
+> | Safe now | Not confirmed | Owner | Exact answer needed |
+> |---|---|---|---|
+> | Confirm master data, find or create only the specified WO when the visible control is confirmed, compare planning and queue evidence, and stop before unclear status actions. | Exact schedule, release, hold, reset, cancel, close, and queue-ready labels. | Planner lead or owner, with administrator input if action visibility depends on role. | Which visible control performs each status/schedule action, what before-status allows it, and what after-status proves the WO is ready for the queue. |
 
 ## Goal
 
@@ -63,6 +67,18 @@ Use this matrix before changing a WO. It is intentionally conservative: only the
 | Visible status |  |  |
 | Planned date / machine or work area |  |  |
 | Queue row visible? |  |  |
+
+## Generic Example: Released Work Order
+
+This example describes the evidence shape only. Replace the placeholder values with visible values from the deployment.
+
+| Field | Example evidence to capture |
+|---|---|
+| WO identity | WO/job number, part, revision if visible, quantity, due date, and signed-in planner role. |
+| Setup readiness | Part, BOM, recipe, machine/work area, NC program, and required inspection readiness checked before release. |
+| Release evidence | Visible status/action area before release, the owner-confirmed release action, and visible status after refresh. |
+| Queue evidence | Matching [Queue System](../10-production/queue-system.md) row with filters, WO/job, part/process, machine/work area, and queue state. |
+| Stop/contact | If the release/status action is unlabeled, the row disappears without queue evidence, or queue-ready status is unclear, contact the planner lead or production supervisor. |
 
 ## Stop And Escalate
 

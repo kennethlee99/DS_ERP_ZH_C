@@ -10,13 +10,31 @@ for valid recipes and routings, and quality engineering for inspection readiness
 
 Use this before releasing a first sample WO or training scenario.
 
-| Check | Open | Safe result | Stop if |
-|---|---|---|---|
-| Access | [Admin Setup Checklist](../01-workflows/admin-setup-checklist.md) | Planner role can open Production Orders, Planning, Queue System, and Dashboards. | Role or permission labels are `needs-decision`. |
-| Item readiness | [Parts](../20-engineering/parts.md), [BOM](../20-engineering/bom.md) | The part revision and BOM structure match the training WO. | Part or structure is missing. |
-| Route readiness | [Recipes](../20-engineering/recipes.md), [Machines](../20-engineering/machines.md), [NC Programs](../20-engineering/nc-programs.md) | Recipe, machine/work area, and NC program are visible for the selected work. | Route or machine capability is unclear. |
-| Golden sample WO | [Planner cold-start walkthrough](../01-workflows/planner-cold-start.md) | The WO can be searched or created using confirmed controls. | Release, schedule, or status action is unlabeled. |
-| Queue verification | [Queue System](../10-production/queue-system.md) | The WO/job appears under the expected filter and maps to a documented queue state. | Dispatch or queue-ready label is unclear. |
+1. **Start condition:** You are signed in as the planner for the first sample WO or training scenario.
+   **Screen to open:** [Admin Setup Checklist](../01-workflows/admin-setup-checklist.md).
+   **Step:** Confirm the planner role can open Production Orders, Planning, Queue System, and Dashboards.
+   **Expected result:** The required planning screens are visible for the role.
+   **Stop/contact condition:** Stop if role or permission labels are `needs-decision`; contact the administrator or planner lead.
+2. **Start condition:** Planner access is visible.
+   **Screen to open:** [Parts](../20-engineering/parts.md) and [BOM](../20-engineering/bom.md).
+   **Step:** Confirm the part revision and BOM structure match the training WO.
+   **Expected result:** The item can be used for the first-day WO evidence record.
+   **Stop/contact condition:** Stop if the part or structure is missing; contact production engineering or the planner lead.
+3. **Start condition:** Item readiness is confirmed.
+   **Screen to open:** [Recipes](../20-engineering/recipes.md), [Machines](../20-engineering/machines.md), and [NC Programs](../20-engineering/nc-programs.md).
+   **Step:** Confirm recipe, machine/work area, and NC program readiness for the selected work.
+   **Expected result:** The route is visible enough to support planning review.
+   **Stop/contact condition:** Stop if route, machine capability, or NC program readiness is unclear; contact production engineering.
+4. **Start condition:** Master data and route readiness are visible.
+   **Screen to open:** [Planner cold-start walkthrough](../01-workflows/planner-cold-start.md).
+   **Step:** Search or create only the specified WO using confirmed controls, then record visible status and action evidence.
+   **Expected result:** The WO can be reviewed without guessing release, schedule, or status controls.
+   **Stop/contact condition:** Stop if release, schedule, or status action is unlabeled; contact the planner lead or owner.
+5. **Start condition:** The WO is expected to be scheduled/released for queue review.
+   **Screen to open:** [Queue System](../10-production/queue-system.md).
+   **Step:** Filter by the same part, process, machine/work area, date, or status used in planning.
+   **Expected result:** The WO/job appears under the expected filter and maps to a documented queue state.
+   **Stop/contact condition:** Stop if dispatch rule, queue-ready label, or queue state is unclear; contact the production supervisor.
 
 ## Planning Flow
 

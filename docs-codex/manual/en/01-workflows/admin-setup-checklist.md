@@ -6,7 +6,11 @@ Use this checklist before a planner, operator, or supervisor workflow. It separa
 
 For open action labels, user-worker setup, permission labels, language setup, dashboard definitions, and reporting-screen evidence, use the [Evidence and Decisions Register](../00-open-decisions.md).
 
-> **Needs decision:** First-day access can be reviewed with visible users, roles, menus, and screenshots. It is not a complete setup procedure until user-worker relationship, permission labels, role names, and language setup are owner-confirmed.
+> **Needs decision**
+>
+> | Safe now | Not confirmed | Owner | Exact answer needed |
+> |---|---|---|---|
+> | Review visible users, roles, sidebars, menus, and screenshots without changing access design. | User-worker relationship, permission labels, role names, and language setup. | Administrator or implementation owner. | Whether operators use sign-in users, linked worker records, or separate worker records; which role names and permission labels map to each required page/action; and how language setup is controlled. |
 
 ## Setup Order
 
@@ -26,13 +30,31 @@ For open action labels, user-worker setup, permission labels, language setup, da
 
 Use this when you only need a user ready for review and do not intend to redesign access.
 
-| Step | Do | Stop if |
-|---|---|---|
-| 1 | Confirm the sign-in account exists and is active in [Users and Roles](../40-administration/users-and-roles.md). | The user is missing or inactive. |
-| 2 | Confirm the user has the intended role for the site scenario. | The role is missing or the sidebar does not match the scenario. |
-| 3 | Confirm whether the operator scenario needs a worker identity separate from the sign-in account. | The app shows a worker or work-area field that is not understood. |
-| 4 | Confirm the expected menu items and visible actions appear after login. | A menu or action is missing. |
-| 5 | Confirm the [part](../20-engineering/parts.md), [BOM](../20-engineering/bom.md), [recipe](../20-engineering/recipes.md), [machine](../20-engineering/machines.md), [NC program](../20-engineering/nc-programs.md), and inspection setup are visible before the planner flow. | Any prerequisite page is missing or empty for the site item. |
+1. **Start condition:** You have the training user or reviewer account to verify.
+   **Screen to open:** [Users and Roles](../40-administration/users-and-roles.md).
+   **Step:** Confirm the sign-in account exists and is active.
+   **Expected result:** The account can be identified and is usable for the review.
+   **Stop/contact condition:** Stop if the user is missing, inactive, or the login identity is unclear; contact the administrator.
+2. **Start condition:** The account exists.
+   **Screen to open:** [Users and Roles](../40-administration/users-and-roles.md).
+   **Step:** Confirm the assigned role matches the intended planner, operator, supervisor, or admin scenario.
+   **Expected result:** The assigned role is visible and recorded with the user.
+   **Stop/contact condition:** Stop if the role is missing, the role name is `needs-decision`, or permission labels are not owner-confirmed.
+3. **Start condition:** The scenario includes operator execution or machine/work-area assignment.
+   **Screen to open:** [Users and Roles](../40-administration/users-and-roles.md), then any visible worker or work-area field if the app shows one.
+   **Step:** Record whether the workflow uses the sign-in user, a linked worker, or a separate worker record.
+   **Expected result:** The identity used for assignment is written down for the first-day scenario.
+   **Stop/contact condition:** Stop if user-worker relationship is not confirmed; contact the administrator or implementation owner.
+4. **Start condition:** The role and identity are recorded.
+   **Screen to open:** Log in as the target user, then open the required sidebar pages for the role.
+   **Step:** Confirm required menus and visible actions appear without changing role setup.
+   **Expected result:** Required pages and actions for the role are visible, or missing items are captured as evidence.
+   **Stop/contact condition:** Stop if a menu/action is hidden, unlabeled, or inconsistent with the expected scenario.
+5. **Start condition:** Access is visible enough for the role to start the workflow.
+   **Screen to open:** [Parts](../20-engineering/parts.md), [BOM](../20-engineering/bom.md), [Recipes](../20-engineering/recipes.md), [Machines](../20-engineering/machines.md), [NC Programs](../20-engineering/nc-programs.md), and the relevant workflow page.
+   **Step:** Confirm the first-day scenario has the required master data and workflow pages visible.
+   **Expected result:** The planner, operator, or supervisor can proceed to the role walkthrough using confirmed visible pages.
+   **Stop/contact condition:** Stop if any prerequisite page is missing or empty for the site item; contact the owner named in Master Data Readiness.
 
 ## Workflow Readiness Matrix
 
@@ -59,6 +81,18 @@ Use [Users and Roles](../40-administration/users-and-roles.md) to confirm visibl
 | Role | The visible access grouping assigned to a user. |
 | Permission label | A visible label on the Roles page that may explain why a menu or action appears. Do not translate it into a technical rule unless the owner confirms it. |
 | Visible action | A button, icon, row action, menu item, or dialog action the signed-in user can see. |
+
+## Generic Example: Admin Role Assignment
+
+This example describes the evidence shape only. Replace the placeholder values with visible values from the site environment.
+
+| Field | Example evidence to capture |
+|---|---|
+| User identity | Sign-in account, display name if visible, account status, and intended scenario role. |
+| Role assignment | Visible role name assigned to the user, plus screenshot of the role page or user detail showing the assignment. |
+| Access check | Sidebar pages and visible actions required by the scenario after logging in as that user. |
+| Permission evidence | Permission labels exactly as displayed, without interpreting them into rules until the administrator confirms the mapping. |
+| Stop/contact | If role names, permission labels, user-worker relationship, or language setup are unclear, keep the item as `needs-decision` and contact the administrator or implementation owner. |
 
 ## Translations
 

@@ -173,7 +173,8 @@
 <blockquote><p><a href="../../en/01-workflows/operator-run-next-job.html">English</a> | 中文</p></blockquote>
 <p>当操作员需要知道下一步运行哪个作业，以及如何确认作业已达到可交接状态时，请使用本流程。</p>
 <p>派工规则、行开始操作、生产报工、检验确认和交接信号的未结事项记录在<a href="../00-open-decisions.html">证据与待决事项登记</a>中。</p>
-<blockquote><p><strong>Needs decision:</strong> 准确派工规则、队列行开始操作、生产报工页面和完成/交接信号尚未确认。请用本页执行安全检查并收集证据，不要推断未经确认的点击路径。</p></blockquote>
+<blockquote><p><strong>待确认</strong></p>
+<table><thead><tr><th>当前可安全执行</th><th>尚未确认</th><th>确认负责人</th><th>需要的准确答案</th></tr></thead><tbody><tr><td>筛选队列、把队列行与指定 WO/作业匹配、记录可见证据，并在任何不明确的开始/报工/完成操作前停止。</td><td>队列派工规则、队列开始操作、生产报工页面和完成/交接信号。</td><td>生产主管；报工路径需要时由计划负责人共同确认。</td><td>多行可见时用哪条规则选择正确行、哪个可见行操作打开或开始作业、哪个报工页面记录产出/停机，以及什么可见信号证明完成或交接。</td></tr></tbody></table></blockquote>
 <h2 id="目标">目标</h2>
 <p>找到下一个作业，确认它已经准备好，按现场已确认的流程开始作业，通过指定报工页面记录进度，完成必要检验，并确认结果已保存。</p>
 <h2 id="操作流程">操作流程</h2>
@@ -205,18 +206,30 @@
 <tr><td>进度 / 产出</td><td></td><td></td><td>报工页面、数量、停机或备注截图</td></tr>
 <tr><td>检验</td><td></td><td></td><td><a href="../35-smartqc/inspection-data-entry.html">SMARTQC 检验</a>结果或<a href="../30-quality/inspection-records.html">检验记录</a>截图</td></tr>
 <tr><td>完成 / 交接</td><td></td><td></td><td>刷新后的队列或 WO 状态</td></tr></tbody></table>
+<h2 id="通用示例">通用示例</h2>
+<p>以下示例只说明应保留什么类型的证据。请用现场流程中真实可见的值替换占位内容；不要编造屏幕上没有的标签。</p>
+<h3 id="准备好的队列行">准备好的队列行</h3>
+<table><thead><tr><th>字段</th><th>应保留的示例证据</th></tr></thead><tbody><tr><td>队列筛选</td><td><a href="../10-production/queue-system.html">队列系统</a>上可见的机台、产线、工作区域、日期和状态筛选。</td></tr>
+<tr><td>行身份</td><td>与主管分派一致的 WO/作业、零件、工序和机台/工作区域。</td></tr>
+<tr><td>安全操作</td><td>只有派工规则已确认时，选行才安全；只有可见队列开始操作已确认时，才能打开或开始作业。</td></tr>
+<tr><td>停止/联系条件</td><td>如果多行都符合但没有派工规则、开始操作没有标签，或只有行顺序能说明优先级，请联系主管处理。</td></tr></tbody></table>
+<h3 id="生产报工和交接证据">生产报工和交接证据</h3>
+<table><thead><tr><th>字段</th><th>应保留的示例证据</th></tr></thead><tbody><tr><td>报工上下文</td><td>指定报工页面上可见的同一 WO/作业、工序、机台/工作区域和登录角色。</td></tr>
+<tr><td>已记录事件</td><td>只在部署指定页面记录的产出数量、停机原因、问题说明或未完成工作说明。</td></tr>
+<tr><td>保存证据</td><td>操作后的确认消息、时间戳、更新后的行或已保存记录。</td></tr>
+<tr><td>交接证据</td><td>刷新后的队列/WO 状态，以及下一班需要知道的未完成数量、停机或检验跟进。</td></tr></tbody></table>
 <h2 id="完成信号">完成信号</h2>
 <table><thead><tr><th>信号</th><th>含义</th></tr></thead><tbody><tr><td>队列行不再出现在准备列表中</td><td>作业可能已移动到其他状态或筛选结果。确认前不要直接假设完成。</td></tr>
 <tr><td>WO 或队列状态显示完成状态</td><td>当前步骤可能已经完成。请与 WO 和工序进行匹配。</td></tr>
 <tr><td>检验结果已保存</td><td>质量录入已记录，但生产完成仍取决于 WO 或队列状态。</td></tr>
-<tr><td>Save 不可用</td><td>可能有必填字段为空，或角色不允许操作。先检查可见必填字段，再升级。</td></tr></tbody></table>
+<tr><td>Save 不可用</td><td>可能有必填字段为空，或角色不允许操作。先检查可见必填字段，再联系主管或管理员处理。</td></tr></tbody></table>
 <h2 id="停止并上报">停止并上报</h2>
 <table><thead><tr><th>如果看到...</th><th>联系对象</th><th>提供信息</th></tr></thead><tbody><tr><td>多个准备作业但没有派工规则</td><td>主管</td><td>工作区域、可见行和当前筛选</td></tr>
 <tr><td>开始作业的操作不明确</td><td>主管</td><td>队列行和工具栏截图</td></tr>
 <tr><td>未明确进度/产出页面</td><td>主管或计划员</td><td>WO、机台/工作区域和当前页面</td></tr>
 <tr><td>需要检验但找不到记录</td><td>质量工程师</td><td>WO、作业/阶段、批次/日期和截图</td></tr></tbody></table>
 <h2 id="截图请求">截图请求</h2>
-<p>本流程仍需要现场环境中使用的队列行操作、开始确认、进度/产出报工和完成确认截图。每张截图应显示登录角色、<a href="../10-production/queue-system.html">Queue System</a> 筛选、WO/作业行、可见操作标签，以及操作后的保存或状态信号。缺少的证据记录在<a href="../00-open-decisions.html">证据与待决事项登记</a>中。</p>
+<p>本流程仍需要分别收集队列派工规则和队列开始操作的证据。派工证据应显示筛选、候选行、WO/作业身份，以及负责人确认的选行规则。开始操作证据应显示登录角色、<a href="../10-production/queue-system.html">Queue System</a> 筛选、已选 WO/作业行、可见打开/开始标签，以及操作后的保存、页面或状态信号。进度/产出报工和完成确认也仍未结。缺少的证据记录在<a href="../00-open-decisions.html">证据与待决事项登记</a>中。</p>
       </article>
     </main>
   </div>

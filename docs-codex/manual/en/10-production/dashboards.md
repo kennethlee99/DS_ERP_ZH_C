@@ -11,7 +11,11 @@ Use the production dashboard entries to open high-level production review views.
 
 Dashboard interpretation remains tracked in the [Evidence and Decisions Register](../00-open-decisions.md) until the business owner confirms screenshots, filters, and metric definitions.
 
-> **Needs decision:** Dashboard metric definitions, filters, and approved interpretations are not confirmed. Treat dashboards as view-only trend pages until the business owner confirms how each metric should drive action.
+> **Needs decision**
+>
+> | Safe now | Not confirmed | Owner | Exact answer needed |
+> |---|---|---|---|
+> | Open dashboards for view-only trend observation and compare any signal with WO, planning, and queue evidence before acting. | Dashboard metric definitions, filters, and approved interpretations. | Business owner or owner. | What each metric means, which filters define the review period, and how each dashboard signal is allowed to influence planning, delay, staffing, quality, or handover decisions. |
 
 ## Dashboard Scope For This Manual Version
 

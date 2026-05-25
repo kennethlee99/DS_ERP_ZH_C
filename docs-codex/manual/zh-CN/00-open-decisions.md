@@ -25,13 +25,14 @@
 |---|---|---|---|---|
 | 工单状态操作 | [计划员流程](01-workflows/planner-cold-start.md)、[工单](10-production/production-orders.md) | 只使用清楚可见的操作。不要猜测 release、hold、cancel、reset、close 或 schedule 图标。 | 状态变更前后的工具栏/操作区截图，包含 WO 行和登录角色。 | 计划负责人或负责人 |
 | 计划排程操作 | [计划员流程](01-workflows/planner-cold-start.md)、[计划](10-production/planning.md) | 确认 WO 在 Planning 中可见；只有排程操作和保存/结果信号清楚时才调整。 | 排程前后截图，包含日期、机台/工作区域、WO、操作和结果。 | 计划负责人 |
-| 队列派工规则和行操作 | [操作员流程](01-workflows/operator-run-next-job.md)、[队列系统](10-production/queue-system.md)、[主管排查](01-workflows/supervisor-triage.md) | 只按已确认派工规则、指定工作区域或主管指示选择作业。不要只按行顺序选择。 | 队列截图，包含筛选、WO/job、零件/工序、状态、行操作标签，以及打开/开始后的结果。 | 生产主管 |
+| 队列派工规则 | [操作员流程](01-workflows/operator-run-next-job.md)、[队列系统](10-production/queue-system.md)、[主管排查](01-workflows/supervisor-triage.md) | 只按已确认派工规则、指定工作区域或主管指示选择作业。不要只按行顺序选择。 | 队列截图，包含筛选、候选行、WO/job、零件/工序、可见状态或优先级标识，以及多行可见时负责人确认的选行规则。 | 生产主管 |
+| 队列开始操作 | [操作员流程](01-workflows/operator-run-next-job.md)、[队列系统](10-production/queue-system.md)、[主管排查](01-workflows/supervisor-triage.md) | 选定正确行后，如果可见行操作和操作后的结果未确认，请在打开或开始作业前停止。 | 行操作前后的队列截图、可见打开/开始操作标签、同一 WO/job 身份、登录角色，以及证明作业已打开或开始的状态、页面或确认信号。 | 生产主管 |
 | 生产报工页面 | [操作员流程](01-workflows/operator-run-next-job.md)、[手动任务](10-production/manual-tasks.md) | 只在本部署指定的报工页面记录产出、停机和备注。 | 准确侧边栏路径或 URL、必填字段、保存操作、保存确认，以及同一个 WO/job 身份。 | 生产主管或计划负责人 |
 | 完成和交接信号 | [操作员流程](01-workflows/operator-run-next-job.md)、[队列系统](10-production/queue-system.md)、[工单](10-production/production-orders.md) | 仅从队列筛选中消失不足以证明完成。刷新后确认同一 WO/job 和工序。 | 完成或交接后的队列/WO 状态、产出证据、需要时的检验结果，以及未完成工作备注。 | 生产主管 |
 | 看板指标含义 | [生产看板](10-production/dashboards.md)、[主管排查](01-workflows/supervisor-triage.md)、[计划员流程](01-workflows/planner-cold-start.md) | OEE、KPI Production 和 Main Layout 在本手册版本中只作为查看趋势的页面。不要把它作为生产决定的唯一依据。 | 真实看板截图、筛选含义、指标定义和批准解释。 | 业务负责人或负责人 |
-| 用户与工人关系 | [管理员设置清单](01-workflows/admin-setup-checklist.md)、[用户和角色](40-administration/users-and-roles.md)、[操作员流程](01-workflows/operator-run-next-job.md) | 分派作业前确认操作员使用登录用户、关联工人还是独立工人记录。 | 用户页面截图、若分开则需要工人/设置页、角色分配、可见工人/工作区域字段和用户身份。 | 管理员或实施负责人 |
+| 用户与作业人员关系 | [管理员设置清单](01-workflows/admin-setup-checklist.md)、[用户和角色](40-administration/users-and-roles.md)、[操作员流程](01-workflows/operator-run-next-job.md) | 分派作业前确认操作员使用登录用户、关联作业人员还是独立作业人员记录。 | 用户页面截图、若分开则需要作业人员/设置页、角色分配、可见作业人员/工作区域字段和用户身份。 | 管理员或实施负责人 |
 | 权限标签和可见操作 | [管理员设置清单](01-workflows/admin-setup-checklist.md)、[用户和角色](40-administration/users-and-roles.md) | 只用可见角色解释用户能看到什么。未经负责人确认，不要把技术权限标签翻译成规则。 | 角色页面截图，包含权限标签，并确认到侧边栏页面/操作的映射。 | 管理员 |
-| 语言和翻译设置 | [管理员设置清单](01-workflows/admin-setup-checklist.md)、[从这里开始](00-start-here.md) | 手册是双语的，但应用语言设置流程仍未确认。 | 语言/翻译设置的确认侧边栏路径、可见字段、保存操作和预期语言行为。 | 实施负责人 |
+| 语言和翻译设置 | [管理员设置清单](01-workflows/admin-setup-checklist.md)、[从这里开始](00-start-here.md) | 优先级低于生产执行决定。手册是双语的，但应用语言设置流程仍未确认；当按屏幕上的实时 UI 标签操作时，它不阻塞操作员或计划员第一天生产执行。 | 语言/翻译设置的确认侧边栏路径、可见字段、保存操作和预期语言行为。 | 实施负责人 |
 | 质量和检验计划使用范围 | [质量工程师手册](03-by-role/quality-engineer.md)、[检验计划](30-quality/inspection-planning.md)、[检验记录](30-quality/inspection-records.md) | 保留 Quality/QC 和 Inspection Planning，但在把它们作为客户流程必需步骤前先确认范围。 | 使用范围决定、必需检验示例、已保存记录，以及相关 NCR/校准处理。 | 质量负责人或负责人 |
 
 ## 证据捕捉标准

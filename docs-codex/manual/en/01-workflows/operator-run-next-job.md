@@ -6,7 +6,11 @@ Use this walkthrough when an operator needs to understand what to run next and h
 
 Open items for dispatch rule, row start action, production reporting, inspection confirmation, and handover signal are tracked in the [Evidence and Decisions Register](../00-open-decisions.md).
 
-> **Needs decision:** Exact dispatch rule, queue row start action, production reporting screen, and completion/handover signal are not confirmed. Use this page to perform safe checks and collect evidence, not to infer an unconfirmed click path.
+> **Needs decision**
+>
+> | Safe now | Not confirmed | Owner | Exact answer needed |
+> |---|---|---|---|
+> | Filter the queue, match the row to the assigned WO/job, record visible evidence, and stop before any unclear start/report/complete action. | Queue dispatch rule, queue start action, production reporting screen, and completion/handover signal. | Production supervisor, with planner lead input for reporting path if needed. | Which rule selects the correct row when multiple rows are visible, which visible row action opens or starts work, which reporting page records output/downtime, and what visible signal proves completion or handover. |
 
 ## Goal
 
@@ -60,6 +64,28 @@ Fill this before treating work as started, reported, or complete.
 | Inspection |  |  | [SMARTQC Inspection](../35-smartqc/inspection-data-entry.md) result or [Inspection Records](../30-quality/inspection-records.md) screenshot |
 | Complete / handover |  |  | Queue or WO status after refresh |
 
+## Generic Examples
+
+These examples describe the evidence shape only. Replace the placeholder values with the visible values from the site workflow; do not invent labels that are not on screen.
+
+### Ready Queue Row
+
+| Field | Example evidence to capture |
+|---|---|
+| Queue filter | Machine, line, work area, date, and status filters visible on [Queue System](../10-production/queue-system.md). |
+| Row identity | Same WO/job, part, process, and machine/work area as the supervisor assignment. |
+| Safe action | Row selection is safe only when the dispatch rule is confirmed; opening or starting waits until the visible queue start action is confirmed. |
+| Stop/contact | If multiple rows qualify without a dispatch rule, the start action is unlabeled, or row order is the only priority signal, contact the supervisor. |
+
+### Production Report And Handover Evidence
+
+| Field | Example evidence to capture |
+|---|---|
+| Reporting context | Same WO/job, operation, machine/work area, and signed-in role visible on the assigned reporting screen. |
+| Reported event | Output quantity, downtime reason, issue note, or unfinished-work note entered only where the deployment says to record it. |
+| Save evidence | Confirmation message, timestamp, updated row, or saved record visible after the action. |
+| Handover evidence | Queue/WO status after refresh plus any unfinished quantity, downtime, or inspection follow-up that the next shift needs. |
+
 ## Completion Signals
 
 | Signal | What it means |
@@ -80,4 +106,4 @@ Fill this before treating work as started, reported, or complete.
 
 ## Screenshot Requests
 
-This walkthrough still needs screenshots for the exact queue row action, start confirmation, progress/output reporting, and completion confirmation used in the site environment. Each screenshot should show the signed-in role, [Queue System](../10-production/queue-system.md) filters, WO/job row, visible action label, and the save or status signal after the action. Track the missing evidence in the [Evidence and Decisions Register](../00-open-decisions.md).
+This walkthrough still needs separate evidence for the queue dispatch rule and the queue start action. Dispatch evidence should show filters, candidate rows, WO/job identity, and the owner-confirmed row-selection rule. Start-action evidence should show the signed-in role, [Queue System](../10-production/queue-system.md) filters, selected WO/job row, visible open/start label, and the save, page, or status signal after the action. Progress/output reporting and completion confirmation also remain open. Track the missing evidence in the [Evidence and Decisions Register](../00-open-decisions.md).

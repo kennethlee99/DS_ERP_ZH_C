@@ -173,7 +173,8 @@
 <blockquote><p>English | <a href="../../zh-CN/01-workflows/planner-cold-start.html">中文</a></p></blockquote>
 <p>Use this walkthrough when you need to follow a job from planning readiness to queue verification. Some buttons and status icons still need screenshot verification, so the manual names only the visible actions already shown in current screenshots.</p>
 <p>Open items for schedule, release, status actions, queue evidence, and OEE interpretation are tracked in the <a href="../00-open-decisions.html">Evidence and Decisions Register</a>.</p>
-<blockquote><p><strong>Needs decision:</strong> Exact schedule, release, hold, reset, cancel, close, and queue-ready labels are not confirmed. Use this walkthrough to complete readiness checks and evidence capture; do not turn unlabeled icons into click instructions.</p></blockquote>
+<blockquote><p><strong>Needs decision</strong></p>
+<table><thead><tr><th>Safe now</th><th>Not confirmed</th><th>Owner</th><th>Exact answer needed</th></tr></thead><tbody><tr><td>Confirm master data, find or create only the specified WO when the visible control is confirmed, compare planning and queue evidence, and stop before unclear status actions.</td><td>Exact schedule, release, hold, reset, cancel, close, and queue-ready labels.</td><td>Planner lead or owner, with administrator input if action visibility depends on role.</td><td>Which visible control performs each status/schedule action, what before-status allows it, and what after-status proves the WO is ready for the queue.</td></tr></tbody></table></blockquote>
 <h2 id="goal">Goal</h2>
 <p>Create or review a WO, schedule it, release it when allowed, confirm it appears in <a href="../10-production/queue-system.html">Queue System</a>, and open the OEE dashboard entry.</p>
 <h2 id="before-you-start">Before You Start</h2>
@@ -205,6 +206,13 @@
 <tr><td>Visible status</td><td></td><td></td></tr>
 <tr><td>Planned date / machine or work area</td><td></td><td></td></tr>
 <tr><td>Queue row visible?</td><td></td><td></td></tr></tbody></table>
+<h2 id="generic-example-released-work-order">Generic Example: Released Work Order</h2>
+<p>This example describes the evidence shape only. Replace the placeholder values with visible values from the deployment.</p>
+<table><thead><tr><th>Field</th><th>Example evidence to capture</th></tr></thead><tbody><tr><td>WO identity</td><td>WO/job number, part, revision if visible, quantity, due date, and signed-in planner role.</td></tr>
+<tr><td>Setup readiness</td><td>Part, BOM, recipe, machine/work area, NC program, and required inspection readiness checked before release.</td></tr>
+<tr><td>Release evidence</td><td>Visible status/action area before release, the owner-confirmed release action, and visible status after refresh.</td></tr>
+<tr><td>Queue evidence</td><td>Matching <a href="../10-production/queue-system.html">Queue System</a> row with filters, WO/job, part/process, machine/work area, and queue state.</td></tr>
+<tr><td>Stop/contact</td><td>If the release/status action is unlabeled, the row disappears without queue evidence, or queue-ready status is unclear, contact the planner lead or production supervisor.</td></tr></tbody></table>
 <h2 id="stop-and-escalate">Stop And Escalate</h2>
 <table><thead><tr><th>If you see...</th><th>Escalate to</th><th>What to provide</th></tr></thead><tbody><tr><td>Required part, BOM, recipe, machine, or NC program is missing</td><td>Production engineer</td><td>Part number, WO, and missing setup page</td></tr>
 <tr><td>Release action is unclear or unavailable</td><td>Administrator or planner lead</td><td>Screenshot of the toolbar and current WO status</td></tr>

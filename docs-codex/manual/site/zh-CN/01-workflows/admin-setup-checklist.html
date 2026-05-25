@@ -172,41 +172,45 @@
 <h1 id="管理员设置检查清单">管理员设置检查清单</h1>
 <blockquote><p><a href="../../en/01-workflows/admin-setup-checklist.html">English</a> | 中文</p></blockquote>
 <p>在计划员、操作员或主管开始现场流程前，请使用本检查清单。本页区分手册可以确认的内容，以及仍需要负责人澄清的内容。</p>
-<p>操作标签、用户-工人设置、权限标签、语言设置、看板定义和报工页面证据等未结事项，请查看<a href="../00-open-decisions.html">证据与待决事项登记</a>。</p>
-<blockquote><p><strong>Needs decision:</strong> 第一天访问可以通过可见用户、角色、菜单和截图进行复查。只有在用户-工人关系、权限标签、角色名称和语言设置都由负责人确认后，本页才是完整设置流程。</p></blockquote>
+<p>操作标签、用户-作业人员设置、权限标签、语言设置、看板定义和报工页面证据等未结事项，请查看<a href="../00-open-decisions.html">证据与待决事项登记</a>。</p>
+<blockquote><p><strong>待确认</strong></p>
+<table><thead><tr><th>当前可安全执行</th><th>尚未确认</th><th>确认负责人</th><th>需要的准确答案</th></tr></thead><tbody><tr><td>复查可见用户、角色、侧边栏、菜单和截图，不重新设计访问权限。</td><td>用户-作业人员关系、权限标签、角色名称和语言设置。</td><td>管理员或实施负责人。</td><td>操作员使用登录用户、关联作业人员记录还是独立作业人员记录；哪些角色名称和权限标签对应每个必需页面/操作；语言设置由哪里控制。</td></tr></tbody></table></blockquote>
 <h2 id="设置顺序">设置顺序</h2>
 <table><thead><tr><th>顺序</th><th>区域</th><th>检查</th><th>页面</th></tr></thead><tbody><tr><td>1</td><td>用户访问</td><td>指定用户可以登录，并具有预期角色。</td><td><a href="../40-administration/users-and-roles.html">用户和角色</a></td></tr>
-<tr><td>2</td><td>工人身份</td><td>确认现场使用工人记录、用户账号，还是两者都用。</td><td><code>needs-decision</code></td></tr>
+<tr><td>2</td><td>作业人员身份</td><td>确认现场使用作业人员记录、用户账号，还是两者都用。</td><td><code>待确认</code></td></tr>
 <tr><td>3</td><td>主数据</td><td>零件存在，并且身份信息符合预期。</td><td><a href="../20-engineering/parts.html">零件</a></td></tr>
 <tr><td>4</td><td>结构</td><td>计划父件存在 BOM。</td><td><a href="../20-engineering/bom.html">BOM</a></td></tr>
 <tr><td>5</td><td>生产路线</td><td>配方、机台和 NC 程序可见且准备好。</td><td><a href="../20-engineering/recipes.html">配方</a>、<a href="../20-engineering/machines.html">机台</a>、<a href="../20-engineering/nc-programs.html">NC 程序</a></td></tr>
 <tr><td>6</td><td>计划流程</td><td>WO 可以复查、排程、释放，并能在队列中找到。</td><td><a href="planner-cold-start.html">计划员流程</a></td></tr>
 <tr><td>7</td><td>操作员流程</td><td>队列、开始作业、报工、检验和完成信号已经明确。</td><td><a href="operator-run-next-job.html">操作员流程</a></td></tr>
 <tr><td>8</td><td>质量流程</td><td>在需要时，检验设置、记录、NCR 和校准已经准备好。</td><td><a href="../30-quality/inspection-planning.html">检验计划</a>、<a href="../30-quality/inspection-records.html">检验记录</a>、<a href="../30-quality/ncr-non-conformance.html">NCR</a></td></tr>
-<tr><td>9</td><td>语言标签</td><td>可见语言和翻译页面需负责人确认后，才能写成设置步骤。</td><td><code>needs-decision</code></td></tr></tbody></table>
+<tr><td>9</td><td>语言标签</td><td>可见语言和翻译页面需负责人确认后，才能写成设置步骤。</td><td><code>待确认</code></td></tr></tbody></table>
 <h2 id="安全快速开始">安全快速开始</h2>
 <p>当您只需要让指定用户可以确认流程，而不是重新设计访问权限时，使用本表。</p>
-<table><thead><tr><th>步骤</th><th>操作</th><th>遇到以下情况就停止</th></tr></thead><tbody><tr><td>1</td><td>在<a href="../40-administration/users-and-roles.html">用户和角色</a>中确认登录账号存在且可用。</td><td>用户缺失或不可用。</td></tr>
-<tr><td>2</td><td>确认用户拥有现场场景预期角色。</td><td>角色缺失，或侧边栏与场景不匹配。</td></tr>
-<tr><td>3</td><td>确认操作员场景是否需要独立于登录账号的工人身份。</td><td>应用显示不明确的工人或工作区域字段。</td></tr>
-<tr><td>4</td><td>登录后确认预期菜单项和可见操作出现。</td><td>菜单或操作缺失。</td></tr>
-<tr><td>5</td><td>计划流程前确认<a href="../20-engineering/parts.html">零件</a>、<a href="../20-engineering/bom.html">BOM</a>、<a href="../20-engineering/recipes.html">配方</a>、<a href="../20-engineering/machines.html">机台</a>、<a href="../20-engineering/nc-programs.html">NC 程序</a>和检验设置可见。</td><td>指定物料的任何前提页面缺失或为空。</td></tr></tbody></table>
+<ol><li><strong>开始条件：</strong> 您有需要验证的培训用户或复查账号。 <strong>打开屏幕：</strong> <a href="../40-administration/users-and-roles.html">用户和角色</a>。 <strong>步骤：</strong> 确认登录账号存在且可用。 <strong>预期结果：</strong> 该账号可以识别，并可用于本次复查。 <strong>停止/联系条件：</strong> 如果用户缺失、不可用或登录身份不明确，请停止并联系管理员。</li><li><strong>开始条件：</strong> 账号存在。 <strong>打开屏幕：</strong> <a href="../40-administration/users-and-roles.html">用户和角色</a>。 <strong>步骤：</strong> 确认用户拥有计划员、操作员、主管或管理员场景预期角色。 <strong>预期结果：</strong> 用户的角色分配可见并已记录。 <strong>停止/联系条件：</strong> 如果角色缺失、角色名称为 <code>待确认</code>，或权限标签未经负责人确认，请停止。</li><li><strong>开始条件：</strong> 场景包含操作员执行或机台/工作区域分派。 <strong>打开屏幕：</strong> <a href="../40-administration/users-and-roles.html">用户和角色</a>，以及应用显示的任何作业人员或工作区域字段。 <strong>步骤：</strong> 记录流程使用登录用户、关联作业人员，还是独立作业人员记录。 <strong>预期结果：</strong> 分派身份已记录，可用于第一天场景。 <strong>停止/联系条件：</strong> 如果用户-作业人员关系未确认，请停止并联系管理员或实施负责人。</li><li><strong>开始条件：</strong> 角色和身份已记录。 <strong>打开屏幕：</strong> 使用目标用户登录，然后打开该角色必需的侧边栏页面。 <strong>步骤：</strong> 确认必需菜单和可见操作出现，不更改角色设置。 <strong>预期结果：</strong> 角色必需页面和操作可见；缺失项目已作为证据记录。 <strong>停止/联系条件：</strong> 如果菜单或操作隐藏、无标签或与预期场景不一致，请停止。</li><li><strong>开始条件：</strong> 角色已经可以进入对应流程。 <strong>打开屏幕：</strong> <a href="../20-engineering/parts.html">零件</a>、<a href="../20-engineering/bom.html">BOM</a>、<a href="../20-engineering/recipes.html">配方</a>、<a href="../20-engineering/machines.html">机台</a>、<a href="../20-engineering/nc-programs.html">NC 程序</a>和相关流程页。 <strong>步骤：</strong> 确认第一天场景需要的主数据和流程页面可见。 <strong>预期结果：</strong> 计划员、操作员或主管可以使用已确认的可见页面进入角色流程。 <strong>停止/联系条件：</strong> 如果指定物料的任何前提页面缺失或为空，请停止并联系“主数据准备”表中对应负责人。</li></ol>
 <h2 id="流程准备矩阵">流程准备矩阵</h2>
-<p>在计划员、操作员或主管开始冷启动流程前填写本矩阵。请使用应用中实际可见的标签。未确认的值保留为 <code>needs-decision</code>，并按证据列要求补充截图。</p>
-<table><thead><tr><th>流程角色</th><th>登录用户</th><th>工人身份</th><th>角色名称</th><th>必需侧边栏页面</th><th>必需可见操作</th><th>权限标签原文</th><th>语言预期</th><th>必需主数据</th><th>保留证据</th></tr></thead><tbody><tr><td>计划员</td><td><code>needs-decision</code></td><td>通常不需要，除非计划员也执行车间作业。</td><td><code>needs-decision</code></td><td><a href="../10-production/production-orders.html">Production Orders</a>、<a href="../10-production/planning.html">Planning</a>、<a href="../10-production/queue-system.html">Queue System</a>、<a href="../10-production/dashboards.html">OEE</a></td><td><code>New Production Orders</code>、排程操作、释放/状态操作、队列筛选、打开 OEE</td><td><code>needs-decision</code>，直到 <a href="../40-administration/users-and-roles.html">Roles</a> 页面标签已截图</td><td>保留屏幕上显示的实时 UI 标签；中文手册在必要时把实时标签放在括号中。</td><td><a href="../20-engineering/parts.html">零件</a>、<a href="../20-engineering/bom.html">BOM</a>、<a href="../20-engineering/recipes.html">配方</a>、<a href="../20-engineering/machines.html">机台</a>、<a href="../20-engineering/nc-programs.html">NC 程序</a>、需要时的检验设置</td><td>用户/角色截图、<a href="../10-production/production-orders.html">Production Orders</a> 工具栏截图、<a href="../10-production/planning.html">Planning</a> 排程操作截图</td></tr>
-<tr><td>操作员</td><td><code>needs-decision</code></td><td><code>needs-decision</code>：确认操作员使用登录用户、关联工人，还是独立工人记录。</td><td><code>needs-decision</code></td><td><a href="../10-production/queue-system.html">Queue System</a>、指定生产报工页面、<a href="../35-smartqc/inspection-data-entry.html">SMARTQC Inspection</a>、<a href="../30-quality/inspection-records.html">Inspection Records</a></td><td>队列筛选、行打开/开始操作、保存/报工操作、检验保存、完成/交接状态</td><td><code>needs-decision</code>，直到角色标签和操作可见性已截图</td><td>使用 <a href="../10-production/queue-system.html">Queue System</a>、报工和检验页面上显示的实时标签。</td><td>已释放 WO、指定机台/工作区域、需要时的检验计划/检验表</td><td>用户-工人证据、队列行操作截图、报工页面截图</td></tr>
-<tr><td>主管</td><td><code>needs-decision</code></td><td>通常不需要，除非主管也记录作业。</td><td><code>needs-decision</code></td><td><a href="../10-production/queue-system.html">Queue System</a>、<a href="../10-production/production-orders.html">Production Orders</a>、<a href="../10-production/planning.html">Planning</a>、<a href="../10-production/dashboards.html">Dashboards</a>、<a href="../30-quality/inspection-records.html">Inspection Records</a>、<a href="../30-quality/ncr-non-conformance.html">NCR</a>、访问受阻时的 <a href="../40-administration/users-and-roles.html">Users and Roles</a></td><td>队列筛选、阻塞/延误状态复查、<a href="../10-production/production-orders.html">Production Orders</a> 状态查看、打开看板、质量记录查询</td><td><code>needs-decision</code>，直到角色标签和操作可见性已截图</td><td>对状态、看板和上报证据使用实时标签。</td><td>已释放/已排程 WO、队列行、质量阻塞时的检验/NCR 数据</td><td>主管队列截图、延误作业证据截图、质量停止截图</td></tr></tbody></table>
-<h2 id="用户和工人">用户和工人</h2>
-<p>当前手册无法证明 Users 和 Workers 是同一记录、关联记录还是分开设置。操作员流程开始前必须把这点作为实施决定。请记录用户登录账号、屏幕上显示的工人身份、机台/工作区域和角色。</p>
+<p>在计划员、操作员或主管开始冷启动流程前填写本矩阵。请使用应用中实际可见的标签。未确认的值保留为 <code>待确认</code>，并按证据列要求补充截图。</p>
+<table><thead><tr><th>流程角色</th><th>登录用户</th><th>作业人员身份</th><th>角色名称</th><th>必需侧边栏页面</th><th>必需可见操作</th><th>权限标签原文</th><th>语言预期</th><th>必需主数据</th><th>保留证据</th></tr></thead><tbody><tr><td>计划员</td><td><code>待确认</code></td><td>通常不需要，除非计划员也执行车间作业。</td><td><code>待确认</code></td><td><a href="../10-production/production-orders.html">Production Orders</a>、<a href="../10-production/planning.html">Planning</a>、<a href="../10-production/queue-system.html">Queue System</a>、<a href="../10-production/dashboards.html">OEE</a></td><td><code>New Production Orders</code>、排程操作、释放/状态操作、队列筛选、打开 OEE</td><td><code>待确认</code>，直到 <a href="../40-administration/users-and-roles.html">Roles</a> 页面标签已截图</td><td>保留屏幕上显示的实时 UI 标签；中文手册在必要时把实时标签放在括号中。</td><td><a href="../20-engineering/parts.html">零件</a>、<a href="../20-engineering/bom.html">BOM</a>、<a href="../20-engineering/recipes.html">配方</a>、<a href="../20-engineering/machines.html">机台</a>、<a href="../20-engineering/nc-programs.html">NC 程序</a>、需要时的检验设置</td><td>用户/角色截图、<a href="../10-production/production-orders.html">Production Orders</a> 工具栏截图、<a href="../10-production/planning.html">Planning</a> 排程操作截图</td></tr>
+<tr><td>操作员</td><td><code>待确认</code></td><td><code>待确认</code>：确认操作员使用登录用户、关联作业人员，还是独立作业人员记录。</td><td><code>待确认</code></td><td><a href="../10-production/queue-system.html">Queue System</a>、指定生产报工页面、<a href="../35-smartqc/inspection-data-entry.html">SMARTQC Inspection</a>、<a href="../30-quality/inspection-records.html">Inspection Records</a></td><td>队列筛选、行打开/开始操作、保存/报工操作、检验保存、完成/交接状态</td><td><code>待确认</code>，直到角色标签和操作可见性已截图</td><td>使用 <a href="../10-production/queue-system.html">Queue System</a>、报工和检验页面上显示的实时标签。</td><td>已释放 WO、指定机台/工作区域、需要时的检验计划/检验表</td><td>用户-作业人员证据、队列行操作截图、报工页面截图</td></tr>
+<tr><td>主管</td><td><code>待确认</code></td><td>通常不需要，除非主管也记录作业。</td><td><code>待确认</code></td><td><a href="../10-production/queue-system.html">Queue System</a>、<a href="../10-production/production-orders.html">Production Orders</a>、<a href="../10-production/planning.html">Planning</a>、<a href="../10-production/dashboards.html">Dashboards</a>、<a href="../30-quality/inspection-records.html">Inspection Records</a>、<a href="../30-quality/ncr-non-conformance.html">NCR</a>、访问受阻时的 <a href="../40-administration/users-and-roles.html">Users and Roles</a></td><td>队列筛选、阻塞/延误状态复查、<a href="../10-production/production-orders.html">Production Orders</a> 状态查看、打开看板、质量记录查询</td><td><code>待确认</code>，直到角色标签和操作可见性已截图</td><td>对状态、看板和上报证据使用实时标签。</td><td>已释放/已排程 WO、队列行、质量阻塞时的检验/NCR 数据</td><td>主管队列截图、延误作业证据截图、质量停止截图</td></tr></tbody></table>
+<h2 id="用户和作业人员">用户和作业人员</h2>
+<p>当前手册无法证明 Users 和 Workers 是同一记录、关联记录还是分开设置。操作员流程开始前必须把这点作为实施决定。请记录用户登录账号、屏幕上显示的作业人员身份、机台/工作区域和角色。</p>
 <h2 id="角色和权限">角色和权限</h2>
 <p>使用<a href="../40-administration/users-and-roles.html">用户和角色</a>确认可见访问。除非管理员或负责人确认含义，否则不要自行解释看起来像技术标签的权限文字。如果页面或操作缺失，请记录用户、角色、预期页面/操作和当前截图。</p>
 <table><thead><tr><th>术语</th><th>实际含义</th></tr></thead><tbody><tr><td>用户</td><td>用于登录网页应用的账号。</td></tr>
-<tr><td>工人</td><td>如果现场流程使用，则表示车间身份或分派记录；在确认前，用户与工人的关系仍是待决事项。</td></tr>
+<tr><td>作业人员</td><td>如果现场流程使用，则表示车间身份或分派记录；在确认前，用户与作业人员的关系仍是待确认事项。</td></tr>
 <tr><td>角色</td><td>分配给用户的可见访问分组。</td></tr>
 <tr><td>权限标签</td><td>Roles 页面上可见的标签，可能解释为什么某个菜单或操作出现。除非负责人确认，不要把它翻译成技术规则。</td></tr>
 <tr><td>可见操作</td><td>登录用户能看到的按钮、图标、行操作、菜单项或弹窗操作。</td></tr></tbody></table>
 <h2 id="翻译">翻译</h2>
 <p>手册本身是双语的，但可见语言和翻译管理页面仍是待决事项。在负责人确认预期语言流程前，不要声称已有完整翻译设置流程。</p>
+<h2 id="通用示例管理员角色分配">通用示例：管理员角色分配</h2>
+<p>本示例只说明应保留什么类型的证据。请用现场环境中真实可见的值替换占位内容。</p>
+<table><thead><tr><th>字段</th><th>应保留的示例证据</th></tr></thead><tbody><tr><td>用户身份</td><td>登录账号、如可见则包含显示名称、账号状态和预期场景角色。</td></tr>
+<tr><td>角色分配</td><td>分配给用户的可见角色名称，以及显示该分配的角色页或用户详情截图。</td></tr>
+<tr><td>访问检查</td><td>使用该用户登录后，场景需要的侧边栏页面和可见操作。</td></tr>
+<tr><td>权限证据</td><td>按屏幕原文记录权限标签；在管理员确认映射前，不把它解释成规则。</td></tr>
+<tr><td>停止/联系条件</td><td>如果角色名称、权限标签、用户-作业人员关系或语言设置不明确，保持为 <code>待确认</code> 并联系管理员或实施负责人。</td></tr></tbody></table>
 <h2 id="主数据准备">主数据准备</h2>
 <table><thead><tr><th>如果缺少</th><th>受影响流程</th><th>联系对象</th></tr></thead><tbody><tr><td><a href="../20-engineering/parts.html">零件</a></td><td>计划员无法可靠建立或确认 WO。</td><td>生产工程师或计划负责人</td></tr>
 <tr><td><a href="../20-engineering/bom.html">BOM</a></td><td>计划员无法确认生产结构。</td><td>生产工程师</td></tr>
@@ -215,7 +219,7 @@
 <tr><td><a href="../20-engineering/nc-programs.html">NC 程序</a></td><td>操作员可能没有预期执行程序。</td><td>生产工程师</td></tr>
 <tr><td><a href="../30-quality/inspection-planning.html">检验计划</a>或<a href="../35-smartqc/check-sheets.html">检验表</a></td><td>作业可能尚未具备质量准备。</td><td>质量工程师</td></tr></tbody></table>
 <h2 id="截图请求">截图请求</h2>
-<p>在本页成为完整实施指南前，还需要用户与工人关系、带负责人解释的角色权限标签、语言/翻译设置，以及显示预期侧边栏的已确认用户登录截图。这些事项记录在<a href="../00-open-decisions.html">证据与待决事项登记</a>中。</p>
+<p>在本页成为完整实施指南前，还需要用户与作业人员关系、带负责人解释的角色权限标签、语言/翻译设置，以及显示预期侧边栏的已确认用户登录截图。这些事项记录在<a href="../00-open-decisions.html">证据与待决事项登记</a>中。</p>
       </article>
     </main>
   </div>
