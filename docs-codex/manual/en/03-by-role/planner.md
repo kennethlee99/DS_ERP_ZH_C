@@ -6,6 +6,18 @@ You are the **production planner**. You turn demand into scheduled,
 released, and monitorable work orders. You depend on production engineering
 for valid recipes and routings, and quality engineering for inspection readiness.
 
+## First-Day Checklist
+
+Use this before releasing a first sample WO or training scenario.
+
+| Check | Open | Safe result | Stop if |
+|---|---|---|---|
+| Access | [Admin Setup Checklist](../01-workflows/admin-setup-checklist.md) | Planner role can open Production Orders, Planning, Queue System, and Dashboards. | Role or permission labels are `needs-decision`. |
+| Item readiness | [Parts](../20-engineering/parts.md), [BOM](../20-engineering/bom.md) | The part revision and BOM structure match the training WO. | Part or structure is missing. |
+| Route readiness | [Recipes](../20-engineering/recipes.md), [Machines](../20-engineering/machines.md), [NC Programs](../20-engineering/nc-programs.md) | Recipe, machine/work area, and NC program are visible for the selected work. | Route or machine capability is unclear. |
+| Golden sample WO | [Planner cold-start walkthrough](../01-workflows/planner-cold-start.md) | The WO can be searched or created using confirmed controls. | Release, schedule, or status action is unlabeled. |
+| Queue verification | [Queue System](../10-production/queue-system.md) | The WO/job appears under the expected filter and maps to a documented queue state. | Dispatch or queue-ready label is unclear. |
+
 ## Planning Flow
 
 ```

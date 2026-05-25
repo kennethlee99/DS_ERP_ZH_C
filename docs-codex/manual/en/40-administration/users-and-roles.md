@@ -11,6 +11,21 @@ Use Users and Roles to review who can sign in and which visible menu actions a r
 
 User-worker relationship, permission-label meaning, and language setup remain tracked in the [Evidence and Decisions Register](../00-open-decisions.md) until the administrator or implementation owner confirms them.
 
+> **Needs decision:** This page confirms visible access only. Do not treat user-worker relationship, permission labels, role names, or language setup as finalized until the administrator or implementation owner confirms them.
+
+## First-Day Access Checklist
+
+Use this before asking a planner, operator, supervisor, or quality user to follow a workflow.
+
+| Check | Safe result | Stop if |
+|---|---|---|
+| Sign-in account | User exists, is active, and can log in. | User is missing, inactive, or login identity is unclear. |
+| Role assignment | Assigned role matches the intended training scenario. | Role name or permission labels are `needs-decision`. |
+| Sidebar visibility | Required pages for the role are visible after login. | Production, Quality, SMARTQC, or Administration pages are hidden unexpectedly. |
+| Action visibility | Expected buttons, icons, row actions, and save controls are visible where needed. | An action is missing or unlabeled. |
+| Worker identity | Operator identity, worker record if used, machine/work area, and role are recorded. | User-worker relationship is not confirmed. |
+| Evidence | User/role screenshot and affected page screenshot are captured. | The issue cannot be reproduced with visible labels. |
+
 ## What You See
 
 - A user-management list for reviewing accounts, names, status, and related login information.

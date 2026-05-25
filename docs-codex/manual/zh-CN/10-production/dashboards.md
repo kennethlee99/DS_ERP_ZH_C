@@ -11,6 +11,8 @@ URL: `<APP_BASE_URL>/Production/OEE`, `<APP_BASE_URL>/Production/KpiProduction`,
 
 在业务负责人确认截图、筛选和指标定义前，看板解释仍记录在[证据与待决事项登记](../00-open-decisions.md)中。
 
+> **Needs decision:** 看板指标定义、筛选和批准解释尚未确认。在业务负责人确认每个指标如何驱动行动前，只把看板作为查看趋势的页面。
+
 ## 本手册版本的看板范围
 
 在本手册版本中，看板页面只用于**打开观察**。计划员或主管可以打开 OEE、KPI Production 或 Main Layout，确认入口存在并记录可见趋势信号，但手册尚未把指标定义到足以支持释放、延误、质量、人员配置或交接决策的程度。

@@ -8,6 +8,19 @@ quickly. Depending on deployment, routine execution may happen on a dedicated
 terminal/kiosk workflow, while the web manual pages document the matching
 records, queues, work orders, manual tasks, and quality entries.
 
+## First-Day Checklist
+
+Use this before running the first assigned job.
+
+| Check | Open | Safe result | Stop if |
+|---|---|---|---|
+| Identity | [Admin Setup Checklist](../01-workflows/admin-setup-checklist.md) | Your sign-in user, role, and worker identity if used are known. | User-worker relationship is `needs-decision`. |
+| Machine or work area | [Queue System](../10-production/queue-system.md) | The selected machine, line, or work area matches the supervisor assignment. | The queue filter or work area is unclear. |
+| Queue row | [Operator Walkthrough](../01-workflows/operator-run-next-job.md) | The WO/job, part, process, and status match the assignment. | Dispatch rule or row priority is not confirmed. |
+| Start action | [Queue System](../10-production/queue-system.md) | The row open/start control is labeled or confirmed by the supervisor. | The action is an unlabeled icon or hidden control. |
+| Reporting screen | Assigned production reporting screen | The page, required fields, save action, and confirmation signal are known. | Reporting path is `needs-decision`. |
+| Handover evidence | [Queue System](../10-production/queue-system.md) or [Production Orders](../10-production/production-orders.md) | Refreshed status, saved record, or supervisor confirmation proves what changed. | Queue disappearance is the only completion signal. |
+
 ## Daily Flow
 
 ```

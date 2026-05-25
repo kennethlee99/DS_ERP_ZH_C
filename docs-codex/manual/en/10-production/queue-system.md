@@ -13,6 +13,8 @@ Use Queue System to confirm which released work is visible for execution. Operat
 
 Dispatch rules, row actions, and exact status labels remain tracked in the [Evidence and Decisions Register](../00-open-decisions.md) until they are confirmed with visible screenshots.
 
+> **Needs decision:** Queue dispatch rule, row open/start action, exact status labels, and completion signal are not confirmed. Operators should stop and ask the supervisor when those values are not visible or locally confirmed.
+
 ## What You See
 
 - A queue of available work with job, part, process, status, and timing information.

@@ -6,6 +6,8 @@ Use this walkthrough when an operator needs to understand what to run next and h
 
 Open items for dispatch rule, row start action, production reporting, inspection confirmation, and handover signal are tracked in the [Evidence and Decisions Register](../00-open-decisions.md).
 
+> **Needs decision:** Exact dispatch rule, queue row start action, production reporting screen, and completion/handover signal are not confirmed. Use this page to perform safe checks and collect evidence, not to infer an unconfirmed click path.
+
 ## Goal
 
 Find the next job, confirm it is ready, start through the visible local workflow, report progress through the assigned reporting screen, complete required inspection, and verify the result was saved.
@@ -22,7 +24,7 @@ Find the next job, confirm it is ready, start through the visible local workflow
 | 6 | [SMARTQC Inspection](../35-smartqc/inspection-data-entry.md) | If inspection is required, search using the job, stage, lot, or date shown in the work row. | Required measurements are saved and the result is visible. |
 | 7 | [Inspection Records](../30-quality/inspection-records.md) | Confirm the saved inspection record if quality status affects release or handover. | The record belongs to the same WO/job and shows the expected result. |
 
-## Operator Golden Path
+## Operator Standard Operating Path
 
 Use this table before treating a job as started, reported, inspected, or complete. Unknown local controls remain explicit blockers until the owner provides labeled screenshots.
 

@@ -3,7 +3,19 @@
 > [English](../../en/03-by-role/production-supervisor.md) | 中文
 
 您是**生产主管或线长**。您负责盯住当前班次，让已释放工单持续推进，协调操作员，
-并判断工单问题应升级给计划、工程、质量还是系统管理。
+并判断工单问题应联系计划、工程、质量还是系统管理处理。
+
+## 第一天检查清单
+
+监督现场班次或培训班次前，先完成本清单。
+
+| 检查项 | 打开 | 安全结果 | 停止条件 |
+|---|---|---|---|
+| 访问权限 | [管理员设置清单](../01-workflows/admin-setup-checklist.md) | 主管角色可打开队列、工单、计划和看板。 | 必需页面或操作被隐藏。 |
+| 班次队列 | [队列系统](../10-production/queue-system.md) | 每台机台或工作区域有预期作业，或没有作业的原因已知。 | 队列标签、筛选或派工规则不明确。 |
+| 排程一致性 | [计划](../10-production/planning.md)和[工单](../10-production/production-orders.md) | 队列行与已释放、已排程 WO 一致。 | WO 只出现在其中一个页面。 |
+| 看板使用 | [生产看板](../10-production/dashboards.md) | 看板只作为趋势信号，并与 WO/队列证据对照。 | 指标定义或筛选含义不明确。 |
+| 交接证据 | [主管排查流程](../01-workflows/supervisor-triage.md) | 阻塞、负责人、截图和未完成工作已记录。 | 完成/交接信号尚未确认。 |
 
 ## 班次流程
 
@@ -32,7 +44,7 @@
 |---|---|
 | [队列系统](../10-production/queue-system.md) | 查看每台机台或产线下一步应运行什么。 |
 | [计划](../10-production/planning.md) | 检查排程负载，并确认临时变更是否已反映。 |
-| [工单](../10-production/production-orders.md) | 检查工单状态、数量、嵌套工单与可用状态动作。 |
+| [工单](../10-production/production-orders.md) | 检查工单状态、数量、嵌套工单与可用状态操作。 |
 | [看板](../10-production/dashboards.md) | 打开 OEE、KPI Production 和 Main Layout 查看高层级信号；指标定义仍以业务负责人确认为准。 |
 | [手动任务](../10-production/manual-tasks.md) | 确认任务定义，并确认现场流程中已分派手动工作在哪里跟踪。 |
 | [检验记录](../30-quality/inspection-records.md) | 检查是否有质量失败或待检阻塞生产。 |
@@ -47,7 +59,7 @@
 
 ## 生产被阻塞时
 
-| 阻塞 | 先看页面 | 升级给 |
+| 阻塞 | 先看页面 | 联系对象 |
 |---|---|---|
 | 工单未释放或未排程 | [工单](../10-production/production-orders.md)、[计划](../10-production/planning.md) | 计划员 |
 | 机台能力或 NC 程序错误 | [机台](../20-engineering/machines.md)、[NC 程序](../20-engineering/nc-programs.md) | 生产工程师 |
@@ -62,7 +74,7 @@
 - 机台停机与未解决的机台问题。
 - 质量失败、NCR 编号，以及需要跟进的检验记录。
 - 仍未关闭的手动任务。
-- 对工单执行过的状态动作，尤其是取消、重置、强制结束。
+- 对工单执行过的状态操作，尤其是取消、重置、强制结束。
 
 ## 截图
 
@@ -72,7 +84,7 @@
 |---|---|
 | 班次队列 | [队列系统](../10-production/queue-system.md) |
 | 计划板 | [计划](../10-production/planning.md) |
-| 工单状态/动作区域 | [工单](../10-production/production-orders.md) |
+| 工单状态/操作区域 | [工单](../10-production/production-orders.md) |
 | 生产主看板 | [看板](../10-production/dashboards.md)截图请求 |
 | 手动任务列表 | [手动任务](../10-production/manual-tasks.md) |
 | 检验记录查询 | [检验记录](../30-quality/inspection-records.md) |
@@ -83,7 +95,7 @@
 
 ![DS_ERP 工单界面](../../assets/screenshots/role-planner-production-orders.png)
 
-工单截图展示主管处理或升级工单阻塞时查看的状态和动作区域。
+工单截图展示主管处理或上报工单阻塞时查看的状态和操作区域。
 
 [看板](../10-production/dashboards.md)页面仍需要单独的 OEE、KPI Production 和 Main Layout 截图，然后本角色页才能详细说明这些信号。
 

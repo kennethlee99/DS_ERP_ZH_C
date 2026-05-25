@@ -4,7 +4,9 @@
 
 在计划员、操作员或主管开始现场流程前，请使用本检查清单。本页区分手册可以确认的内容，以及仍需要负责人澄清的内容。
 
-动作标签、用户-工人设置、权限标签、语言设置、看板定义和报工页面证据等未结事项，请查看[证据与待决事项登记](../00-open-decisions.md)。
+操作标签、用户-工人设置、权限标签、语言设置、看板定义和报工页面证据等未结事项，请查看[证据与待决事项登记](../00-open-decisions.md)。
+
+> **Needs decision:** 第一天访问可以通过可见用户、角色、菜单和截图进行复查。只有在用户-工人关系、权限标签、角色名称和语言设置都由负责人确认后，本页才是完整设置流程。
 
 ## 设置顺序
 
@@ -29,18 +31,18 @@
 | 1 | 在[用户和角色](../40-administration/users-and-roles.md)中确认登录账号存在且可用。 | 用户缺失或不可用。 |
 | 2 | 确认用户拥有现场场景预期角色。 | 角色缺失，或侧边栏与场景不匹配。 |
 | 3 | 确认操作员场景是否需要独立于登录账号的工人身份。 | 应用显示不明确的工人或工作区域字段。 |
-| 4 | 登录后确认预期菜单项和可见动作出现。 | 菜单或动作缺失。 |
+| 4 | 登录后确认预期菜单项和可见操作出现。 | 菜单或操作缺失。 |
 | 5 | 计划流程前确认[零件](../20-engineering/parts.md)、[BOM](../20-engineering/bom.md)、[配方](../20-engineering/recipes.md)、[机台](../20-engineering/machines.md)、[NC 程序](../20-engineering/nc-programs.md)和检验设置可见。 | 指定物料的任何前提页面缺失或为空。 |
 
 ## 流程准备矩阵
 
 在计划员、操作员或主管开始冷启动流程前填写本矩阵。请使用应用中实际可见的标签。未确认的值保留为 `needs-decision`，并按证据列要求补充截图。
 
-| 流程角色 | 登录用户 | 工人身份 | 角色名称 | 必需侧边栏页面 | 必需可见动作 | 权限标签原文 | 语言预期 | 必需主数据 | 保留证据 |
+| 流程角色 | 登录用户 | 工人身份 | 角色名称 | 必需侧边栏页面 | 必需可见操作 | 权限标签原文 | 语言预期 | 必需主数据 | 保留证据 |
 |---|---|---|---|---|---|---|---|---|---|
-| 计划员 | `needs-decision` | 通常不需要，除非计划员也执行车间作业。 | `needs-decision` | [Production Orders](../10-production/production-orders.md)、[Planning](../10-production/planning.md)、[Queue System](../10-production/queue-system.md)、[OEE](../10-production/dashboards.md) | `New Production Orders`、排程动作、释放/状态动作、队列筛选、打开 OEE | `needs-decision`，直到 [Roles](../40-administration/users-and-roles.md) 页面标签已截图 | 保留屏幕上显示的实时 UI 标签；中文手册在必要时把实时标签放在括号中。 | [零件](../20-engineering/parts.md)、[BOM](../20-engineering/bom.md)、[配方](../20-engineering/recipes.md)、[机台](../20-engineering/machines.md)、[NC 程序](../20-engineering/nc-programs.md)、需要时的检验设置 | 用户/角色截图、[Production Orders](../10-production/production-orders.md) 工具栏截图、[Planning](../10-production/planning.md) 排程动作截图 |
-| 操作员 | `needs-decision` | `needs-decision`：确认操作员使用登录用户、关联工人，还是独立工人记录。 | `needs-decision` | [Queue System](../10-production/queue-system.md)、指定生产报工页面、[SMARTQC Inspection](../35-smartqc/inspection-data-entry.md)、[Inspection Records](../30-quality/inspection-records.md) | 队列筛选、行打开/开始动作、保存/报工动作、检验保存、完成/交接状态 | `needs-decision`，直到角色标签和动作可见性已截图 | 使用 [Queue System](../10-production/queue-system.md)、报工和检验页面上显示的实时标签。 | 已释放 WO、指定机台/工作区域、需要时的检验计划/检验表 | 用户-工人证据、队列行操作截图、报工页面截图 |
-| 主管 | `needs-decision` | 通常不需要，除非主管也记录作业。 | `needs-decision` | [Queue System](../10-production/queue-system.md)、[Production Orders](../10-production/production-orders.md)、[Planning](../10-production/planning.md)、[Dashboards](../10-production/dashboards.md)、[Inspection Records](../30-quality/inspection-records.md)、[NCR](../30-quality/ncr-non-conformance.md)、访问受阻时的 [Users and Roles](../40-administration/users-and-roles.md) | 队列筛选、阻塞/延误状态复查、[Production Orders](../10-production/production-orders.md) 状态查看、打开看板、质量记录查询 | `needs-decision`，直到角色标签和动作可见性已截图 | 对状态、看板和升级证据使用实时标签。 | 已释放/已排程 WO、队列行、质量阻塞时的检验/NCR 数据 | 主管队列截图、延误作业证据截图、质量停止截图 |
+| 计划员 | `needs-decision` | 通常不需要，除非计划员也执行车间作业。 | `needs-decision` | [Production Orders](../10-production/production-orders.md)、[Planning](../10-production/planning.md)、[Queue System](../10-production/queue-system.md)、[OEE](../10-production/dashboards.md) | `New Production Orders`、排程操作、释放/状态操作、队列筛选、打开 OEE | `needs-decision`，直到 [Roles](../40-administration/users-and-roles.md) 页面标签已截图 | 保留屏幕上显示的实时 UI 标签；中文手册在必要时把实时标签放在括号中。 | [零件](../20-engineering/parts.md)、[BOM](../20-engineering/bom.md)、[配方](../20-engineering/recipes.md)、[机台](../20-engineering/machines.md)、[NC 程序](../20-engineering/nc-programs.md)、需要时的检验设置 | 用户/角色截图、[Production Orders](../10-production/production-orders.md) 工具栏截图、[Planning](../10-production/planning.md) 排程操作截图 |
+| 操作员 | `needs-decision` | `needs-decision`：确认操作员使用登录用户、关联工人，还是独立工人记录。 | `needs-decision` | [Queue System](../10-production/queue-system.md)、指定生产报工页面、[SMARTQC Inspection](../35-smartqc/inspection-data-entry.md)、[Inspection Records](../30-quality/inspection-records.md) | 队列筛选、行打开/开始操作、保存/报工操作、检验保存、完成/交接状态 | `needs-decision`，直到角色标签和操作可见性已截图 | 使用 [Queue System](../10-production/queue-system.md)、报工和检验页面上显示的实时标签。 | 已释放 WO、指定机台/工作区域、需要时的检验计划/检验表 | 用户-工人证据、队列行操作截图、报工页面截图 |
+| 主管 | `needs-decision` | 通常不需要，除非主管也记录作业。 | `needs-decision` | [Queue System](../10-production/queue-system.md)、[Production Orders](../10-production/production-orders.md)、[Planning](../10-production/planning.md)、[Dashboards](../10-production/dashboards.md)、[Inspection Records](../30-quality/inspection-records.md)、[NCR](../30-quality/ncr-non-conformance.md)、访问受阻时的 [Users and Roles](../40-administration/users-and-roles.md) | 队列筛选、阻塞/延误状态复查、[Production Orders](../10-production/production-orders.md) 状态查看、打开看板、质量记录查询 | `needs-decision`，直到角色标签和操作可见性已截图 | 对状态、看板和上报证据使用实时标签。 | 已释放/已排程 WO、队列行、质量阻塞时的检验/NCR 数据 | 主管队列截图、延误作业证据截图、质量停止截图 |
 
 ## 用户和工人
 
@@ -55,8 +57,8 @@
 | 用户 | 用于登录网页应用的账号。 |
 | 工人 | 如果现场流程使用，则表示车间身份或分派记录；在确认前，用户与工人的关系仍是待决事项。 |
 | 角色 | 分配给用户的可见访问分组。 |
-| 权限标签 | Roles 页面上可见的标签，可能解释为什么某个菜单或动作出现。除非负责人确认，不要把它翻译成技术规则。 |
-| 可见动作 | 登录用户能看到的按钮、图标、行操作、菜单项或弹窗动作。 |
+| 权限标签 | Roles 页面上可见的标签，可能解释为什么某个菜单或操作出现。除非负责人确认，不要把它翻译成技术规则。 |
+| 可见操作 | 登录用户能看到的按钮、图标、行操作、菜单项或弹窗操作。 |
 
 ## 翻译
 
@@ -64,7 +66,7 @@
 
 ## 主数据准备
 
-| 如果缺少 | 受影响流程 | 升级给 |
+| 如果缺少 | 受影响流程 | 联系对象 |
 |---|---|---|
 | [零件](../20-engineering/parts.md) | 计划员无法可靠建立或确认 WO。 | 生产工程师或计划负责人 |
 | [BOM](../20-engineering/bom.md) | 计划员无法确认生产结构。 | 生产工程师 |

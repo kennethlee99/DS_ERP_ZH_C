@@ -7,6 +7,18 @@ shift, keep released work moving, coordinate operators, and decide when a
 work order issue must be escalated to planning, engineering, quality, or
 administration.
 
+## First-Day Checklist
+
+Use this before supervising a live or training shift.
+
+| Check | Open | Safe result | Stop if |
+|---|---|---|---|
+| Access | [Admin Setup Checklist](../01-workflows/admin-setup-checklist.md) | Supervisor role can open queue, WOs, planning, and dashboards. | A required page or action is hidden. |
+| Shift queue | [Queue System](../10-production/queue-system.md) | Each machine or work area has the expected visible jobs or a known reason for none. | Queue labels, filters, or dispatch rules are unclear. |
+| Schedule match | [Planning](../10-production/planning.md) and [Production Orders](../10-production/production-orders.md) | Queue rows match released and scheduled WOs. | WO appears in one place but not the other. |
+| Dashboard use | [Dashboards](../10-production/dashboards.md) | Dashboard is used only as a trend signal and compared with WO/queue evidence. | Metric definition or filter meaning is unclear. |
+| Handover evidence | [Supervisor triage walkthrough](../01-workflows/supervisor-triage.md) | Blockers, owners, screenshots, and unfinished work are recorded. | Completion/handover signal is not confirmed. |
+
 ## Shift Flow
 
 ```

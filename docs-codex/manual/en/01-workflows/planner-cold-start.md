@@ -6,6 +6,8 @@ Use this walkthrough when you need to follow a job from planning readiness to qu
 
 Open items for schedule, release, status actions, queue evidence, and OEE interpretation are tracked in the [Evidence and Decisions Register](../00-open-decisions.md).
 
+> **Needs decision:** Exact schedule, release, hold, reset, cancel, close, and queue-ready labels are not confirmed. Use this walkthrough to complete readiness checks and evidence capture; do not turn unlabeled icons into click instructions.
+
 ## Goal
 
 Create or review a WO, schedule it, release it when allowed, confirm it appears in [Queue System](../10-production/queue-system.md), and open the OEE dashboard entry.
@@ -29,7 +31,7 @@ Create or review a WO, schedule it, release it when allowed, confirm it appears 
 | 6 | [Queue System](../10-production/queue-system.md) | Filter by the same part, process, machine/work area, or date used in [Planning](../10-production/planning.md). | A queue row matches the WO and maps to the `Ready` working term, or to another documented state in the Queue Status Map. |
 | 7 | [Production Dashboards](../10-production/dashboards.md) | Open [OEE](../10-production/dashboards.md) from the sidebar. | Treat it as a trend signal only until the metric definition and dashboard screenshot are confirmed. |
 
-## Planner Golden Path
+## Planner Standard Operating Path
 
 Use this table as the cold-start task record. It separates confirmed actions from actions that still need screenshot confirmation, so a planner can complete the safe parts of the workflow without guessing.
 

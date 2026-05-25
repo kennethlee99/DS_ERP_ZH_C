@@ -6,6 +6,8 @@ Use this checklist before a planner, operator, or supervisor workflow. It separa
 
 For open action labels, user-worker setup, permission labels, language setup, dashboard definitions, and reporting-screen evidence, use the [Evidence and Decisions Register](../00-open-decisions.md).
 
+> **Needs decision:** First-day access can be reviewed with visible users, roles, menus, and screenshots. It is not a complete setup procedure until user-worker relationship, permission labels, role names, and language setup are owner-confirmed.
+
 ## Setup Order
 
 | Order | Area | Check | Page |
@@ -75,4 +77,4 @@ The manual is bilingual, but the visible language and translation administration
 
 ## Screenshot Requests
 
-This checklist needs screenshots for user-to-worker relationship, role permission labels with owner explanation, language/translation setup, and a confirmed confirmed user login showing the expected sidebar before it can become a full implementation guide. Track those items in the [Evidence and Decisions Register](../00-open-decisions.md).
+This checklist needs screenshots for user-to-worker relationship, role permission labels with owner explanation, language/translation setup, and a confirmed user login showing the expected sidebar before it can become a full implementation guide. Track those items in the [Evidence and Decisions Register](../00-open-decisions.md).
