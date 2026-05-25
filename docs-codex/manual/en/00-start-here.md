@@ -26,6 +26,7 @@ DS_ERP is used to prepare, release, execute, and review factory work. In the dem
 | Checking inspection and quality follow-up | [Quality Engineer Manual](03-by-role/quality-engineer.md) | [Inspection Planning](30-quality/inspection-planning.md), [Inspection Records](30-quality/inspection-records.md), [NCR](30-quality/ncr-non-conformance.md), [SMARTQC Check Sheets](35-smartqc/check-sheets.md) |
 | Checking access | [Admin Setup Checklist](01-workflows/admin-setup-checklist.md) | [Users and Roles](40-administration/users-and-roles.md), then return to the role page that cannot see the expected menu or action |
 | Checking status words | [Operating Glossary](00-glossary.md) | Return to the workflow page that uses the term |
+| Checking what still needs confirmation | [Evidence And Decisions Register](00-open-decisions.md) | Return to the workflow or screen page after the required screenshot or owner decision is available |
 
 ## Login To Daily Workflow
 
@@ -84,8 +85,8 @@ Supervisor and planner review status before handover
 | A work order is missing | Recheck [Production Orders](10-production/production-orders.md), then [Planning](10-production/planning.md), then [Queue System](10-production/queue-system.md). |
 | A job cannot be released | Check [Parts](20-engineering/parts.md), [BOM](20-engineering/bom.md), [Recipes](20-engineering/recipes.md), [Machines](20-engineering/machines.md), [NC Programs](20-engineering/nc-programs.md), and Quality readiness. |
 | A quality step is unclear | Start with [Inspection Planning](30-quality/inspection-planning.md), then [SMARTQC Inspection](35-smartqc/inspection-data-entry.md). |
-| A dashboard metric is unclear | Treat it as a needs-decision item until the business owner confirms the metric definition. |
+| A dashboard metric, action label, reporting screen, or worker setup is unclear | Check the [Evidence And Decisions Register](00-open-decisions.md) and treat it as open until the named owner confirms it. |
 
 ## Demo Scope Notes
 
-Quality/QC and Inspection Planning remain included, but their final demo scope still needs demo-owner confirmation. Other excluded or support-only areas are tracked in the scope notes, not in the operating guide.
+Quality/QC and Inspection Planning remain included, but their final demo scope still needs demo-owner confirmation. Open customer-demo evidence items are tracked in the [Evidence And Decisions Register](00-open-decisions.md). Other excluded or support-only areas are tracked in the scope notes, not in the operating guide.

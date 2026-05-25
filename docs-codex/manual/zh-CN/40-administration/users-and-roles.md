@@ -9,6 +9,8 @@ URL: `<APP_BASE_URL>/Administration/User`, `<APP_BASE_URL>/Administration/Role`
 
 Users and Roles 用于复查谁可以登录，以及某个角色可以使用哪些可见菜单和操作。本章只说明屏幕上可见的管理流程。
 
+用户-工人关系、权限标签含义和语言设置在管理员或实施负责人确认前，仍记录在[证据与待决事项登记](../00-open-decisions.md)中。
+
 ## 你会看到什么
 
 - 用户管理列表，用于复查账号、姓名、状态和相关登录信息。

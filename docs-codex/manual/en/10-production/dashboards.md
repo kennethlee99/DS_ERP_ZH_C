@@ -9,6 +9,8 @@ URL: `<APP_BASE_URL>/Production/OEE`, `<APP_BASE_URL>/Production/KpiProduction`,
 
 Use the production dashboard entries to open high-level production review views. Until dashboard screenshots and metric definitions are confirmed, treat OEE, KPI Production, and Main Layout as trend signals only, not as the sole basis for a production decision.
 
+Dashboard interpretation remains tracked in the [Evidence And Decisions Register](../00-open-decisions.md) until the business owner confirms screenshots, filters, and metric definitions.
+
 ## Dashboard Scope For This Manual Version
 
 Dashboard pages are **open-and-observe only** in this manual version. A planner or supervisor may open OEE, KPI Production, or Main Layout to confirm the entry exists and record a visible trend signal, but the manual does not yet define the metrics well enough for release, delay, quality, staffing, or handover decisions.

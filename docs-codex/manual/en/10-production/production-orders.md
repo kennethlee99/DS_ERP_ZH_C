@@ -9,6 +9,8 @@ URL: `<APP_BASE_URL>/Production/ProductionOrders`
 
 Use Production Orders to review, create, release, hold, cancel, reset, or close production work. This is the planner and supervisor starting point for checking whether work is ready for the floor.
 
+Release, hold, cancel, reset, close, and other status actions remain tracked in the [Evidence And Decisions Register](../00-open-decisions.md) until their visible labels and results are confirmed.
+
 ## What You See
 
 - A searchable work-order grid with status, quantity, item, date, and owner fields.

@@ -4,6 +4,8 @@
 
 Use this page when released work is missing, delayed, blocked, or unclear during a shift.
 
+Open items for delayed-work evidence, queue blocked status, quality-stop evidence, dashboard interpretation, and role visibility are tracked in the [Evidence And Decisions Register](../00-open-decisions.md).
+
 ## Triage Order
 
 1. Start with [Queue System](../10-production/queue-system.md).
@@ -73,4 +75,4 @@ When work is late or appears stuck, collect these visible fields before deciding
 
 ## Screenshot Requests
 
-This triage flow needs labeled screenshots for blocked queue rows, delayed work indicators, quality-stop evidence, and OEE/KPI trend signals before the manual can give exact click-by-click instructions.
+This triage flow needs labeled screenshots for blocked queue rows, delayed work indicators, quality-stop evidence, and OEE/KPI trend signals before the manual can give exact click-by-click instructions. Track those items in the [Evidence And Decisions Register](../00-open-decisions.md).

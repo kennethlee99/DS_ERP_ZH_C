@@ -1,4 +1,4 @@
-# DS_ERP User Guide
+# DS_ERP User Manual
 
 Use this site to review the user guide pages for the factory demo. If you are new to the app, start with the operating guide before opening role or screen chapters.
 
@@ -6,12 +6,14 @@ Use this site to review the user guide pages for the factory demo. If you are ne
 
 - [English operating guide](en/00-start-here.md)
 - [English operating glossary](en/00-glossary.md)
+- [English evidence and decisions register](en/00-open-decisions.md)
 - [Planner cold-start walkthrough](en/01-workflows/planner-cold-start.md)
 - [Operator next-job walkthrough](en/01-workflows/operator-run-next-job.md)
 - [Supervisor triage walkthrough](en/01-workflows/supervisor-triage.md)
 - [Admin setup checklist](en/01-workflows/admin-setup-checklist.md)
 - [中文操作指南](zh-CN/00-start-here.md)
 - [中文操作词汇表](zh-CN/00-glossary.md)
+- [中文证据与待决事项登记](zh-CN/00-open-decisions.md)
 - [计划员冷启动流程](zh-CN/01-workflows/planner-cold-start.md)
 - [操作员下一作业流程](zh-CN/01-workflows/operator-run-next-job.md)
 - [主管排查流程](zh-CN/01-workflows/supervisor-triage.md)

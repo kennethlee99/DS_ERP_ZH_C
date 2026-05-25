@@ -9,6 +9,8 @@ URL: `<APP_BASE_URL>/Administration/User`, `<APP_BASE_URL>/Administration/Role`
 
 Use Users and Roles to review who can sign in and which visible menu actions a role can use. This chapter covers the visible administration workflow only.
 
+User-worker relationship, permission-label meaning, and language setup remain tracked in the [Evidence And Decisions Register](../00-open-decisions.md) until the administrator or implementation owner confirms them.
+
 ## What You See
 
 - A user-management list for reviewing accounts, names, status, and related login information.

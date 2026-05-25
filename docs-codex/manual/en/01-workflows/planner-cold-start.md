@@ -4,6 +4,8 @@
 
 Use this walkthrough when you need to follow a job from planning readiness to queue verification. Some buttons and status icons still need screenshot verification, so the manual names only the visible actions already shown in current screenshots.
 
+Open items for schedule, release, status actions, queue evidence, and OEE interpretation are tracked in the [Evidence And Decisions Register](../00-open-decisions.md).
+
 ## Goal
 
 Create or review a WO, schedule it, release it when allowed, confirm it appears in [Queue System](../10-production/queue-system.md), and open the OEE dashboard entry.
@@ -71,4 +73,4 @@ Use this matrix before changing a WO. It is intentionally conservative: only the
 
 ## Screenshot Requests
 
-The toolbar icons for release, schedule, hold, cancel, reset, close, and other status actions need labeled screenshots before this walkthrough can name exact icon clicks safely.
+The toolbar icons for release, schedule, hold, cancel, reset, close, and other status actions need labeled screenshots before this walkthrough can name exact icon clicks safely. Track those screenshots in the [Evidence And Decisions Register](../00-open-decisions.md).

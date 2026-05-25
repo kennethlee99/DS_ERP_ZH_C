@@ -9,6 +9,8 @@ URL: `<APP_BASE_URL>/Production/OEE`, `<APP_BASE_URL>/Production/KpiProduction`,
 
 生产看板入口用于打开较高层级的生产复查页面。在看板截图和指标定义确认前，只把 OEE、KPI Production 和 Main Layout 当作趋势信号，不要把它作为生产决定的唯一依据。
 
+在业务负责人确认截图、筛选和指标定义前，看板解释仍记录在[证据与待决事项登记](../00-open-decisions.md)中。
+
 ## 本手册版本的看板范围
 
 在本手册版本中，看板页面只用于**打开观察**。计划员或主管可以打开 OEE、KPI Production 或 Main Layout，确认入口存在并记录可见趋势信号，但手册尚未把指标定义到足以支持释放、延误、质量、人员配置或交接决策的程度。

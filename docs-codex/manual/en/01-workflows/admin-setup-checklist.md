@@ -4,6 +4,8 @@
 
 Use this checklist before a planner, operator, or supervisor demo. It separates what the manual can confirm from what still needs demo-owner clarification.
 
+For open action labels, user-worker setup, permission labels, language setup, dashboard definitions, and reporting-screen evidence, use the [Evidence And Decisions Register](../00-open-decisions.md).
+
 ## Setup Order
 
 | Order | Area | Check | Page |
@@ -73,4 +75,4 @@ The manual is bilingual, but the visible language and translation administration
 
 ## Screenshot Requests
 
-This checklist needs screenshots for user-to-worker relationship, role permission labels with owner explanation, language/translation setup, and a confirmed demo-user login showing the expected sidebar before it can become a full implementation guide.
+This checklist needs screenshots for user-to-worker relationship, role permission labels with owner explanation, language/translation setup, and a confirmed demo-user login showing the expected sidebar before it can become a full implementation guide. Track those items in the [Evidence And Decisions Register](../00-open-decisions.md).

@@ -11,7 +11,7 @@ const navConfig = [
     label: 'English',
     home: 'en/00-start-here.md',
     groups: [
-      ['Start', ['en/00-start-here.md', 'en/00-glossary.md']],
+      ['Start', ['en/00-start-here.md', 'en/00-glossary.md', 'en/00-open-decisions.md']],
       ['Workflows', 'en/01-workflows'],
       ['Roles', 'en/03-by-role'],
       ['Production', 'en/10-production'],
@@ -25,7 +25,7 @@ const navConfig = [
     label: '中文',
     home: 'zh-CN/00-start-here.md',
     groups: [
-      ['开始', ['zh-CN/00-start-here.md', 'zh-CN/00-glossary.md']],
+      ['开始', ['zh-CN/00-start-here.md', 'zh-CN/00-glossary.md', 'zh-CN/00-open-decisions.md']],
       ['工作流程', 'zh-CN/01-workflows'],
       ['角色', 'zh-CN/03-by-role'],
       ['生产', 'zh-CN/10-production'],

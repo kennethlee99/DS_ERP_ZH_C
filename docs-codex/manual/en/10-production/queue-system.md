@@ -11,6 +11,8 @@ The current captured sidebar path is `Planner / Queue System`. Operators and sup
 
 Use Queue System to confirm which released work is visible for execution. Operators use it to find work, while supervisors use it to check whether the shift has the expected jobs available.
 
+Dispatch rules, row actions, and exact status labels remain tracked in the [Evidence And Decisions Register](../00-open-decisions.md) until they are confirmed with visible screenshots.
+
 ## What You See
 
 - A queue of available work with job, part, process, status, and timing information.

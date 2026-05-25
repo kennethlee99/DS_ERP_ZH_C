@@ -4,6 +4,8 @@
 
 Use this walkthrough when an operator needs to understand what to run next and how to confirm the work is complete enough to hand over.
 
+Open items for dispatch rule, row start action, production reporting, inspection confirmation, and handover signal are tracked in the [Evidence And Decisions Register](../00-open-decisions.md).
+
 ## Goal
 
 Find the next job, confirm it is ready, start through the visible local workflow, report progress through the assigned reporting screen, complete required inspection, and verify the result was saved.
@@ -76,4 +78,4 @@ Fill this before treating work as started, reported, or complete.
 
 ## Screenshot Requests
 
-This walkthrough still needs screenshots for the exact queue row action, start confirmation, progress/output reporting, and completion confirmation used in the review environment. Each screenshot should show the signed-in role, [Queue System](../10-production/queue-system.md) filters, WO/job row, visible action label, and the save or status signal after the action.
+This walkthrough still needs screenshots for the exact queue row action, start confirmation, progress/output reporting, and completion confirmation used in the review environment. Each screenshot should show the signed-in role, [Queue System](../10-production/queue-system.md) filters, WO/job row, visible action label, and the save or status signal after the action. Track the missing evidence in the [Evidence And Decisions Register](../00-open-decisions.md).
