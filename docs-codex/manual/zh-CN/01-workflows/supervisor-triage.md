@@ -4,7 +4,13 @@
 
 当班次中已释放作业缺失、延误、阻塞或不明确时，请使用本页。
 
-延误作业证据、队列阻塞状态、质量停止证据、看板解释和角色可见性的未结事项记录在[证据与待决事项登记](../00-open-decisions.md)中。
+延误作业证据、队列派工规则、队列开始操作、队列阻塞状态、质量停止证据、看板解释和角色可见性的未结事项记录在[证据与待决事项登记](../00-open-decisions.md)中。
+
+> **待确认**
+>
+> | 当前可安全执行 | 尚未确认 | 确认负责人 | 需要的准确答案 |
+> |---|---|---|---|
+> | 先对照队列、WO、计划、报工和可见看板证据，再分派问题；看板只作为辅助趋势信号。 | 延误作业标识、队列派工规则、队列开始操作、队列阻塞状态标签、看板指标定义、角色可见性和完成/交接信号。 | 生产主管；看板含义由业务负责人确认，角色可见性由管理员确认。 | 哪个可见条件证明延误/阻塞、多行可见时使用哪条选行规则、哪个行操作打开或开始作业、每类异常应交给哪位负责人，以及哪些证据足够用于班次交接。 |
 
 ## 排查顺序
 
@@ -16,7 +22,7 @@
 
 ## 看到这种情况时这样处理
 
-| 情况 | 先看页面 | 检查内容 | 操作 / 升级 |
+| 情况 | 先看页面 | 检查内容 | 操作 / 联系对象 |
 |---|---|---|---|
 | 队列中缺少作业 | [Queue System](../10-production/queue-system.md) | 筛选、机台/工作区域、零件、工序、状态 | 与[工单](../10-production/production-orders.md)对照；如果 WO 未释放，联系计划员处理。 |
 | WO 存在但未排程 | [Planning](../10-production/planning.md) | 日期范围、机台组、计划视图 | 带 WO 和预期机台/工作区域联系计划员处理。 |
@@ -31,15 +37,15 @@
 
 收集可见证据后使用本表。本表用于安全分派：不要把未确认图标、不明确看板指标或猜测的队列状态作为唯一行动依据。
 
-| 症状 | 可见证据 | 可能负责人 | 下一步安全动作 | 不要做 |
+| 症状 | 可见证据 | 可能负责人 | 下一步安全操作 | 不要做 |
 |---|---|---|---|---|
 | 队列行缺失 | 队列筛选、WO/作业、零件/工序、机台/工作区域、日期，以及没有匹配行。 | 如果 WO 未释放或未排程，负责人是计划员；如果访问隐藏 [Queue System](../10-production/queue-system.md)，负责人是管理员。 | 对照 [Production Orders](../10-production/production-orders.md) 和 [Planning](../10-production/planning.md)，然后把 WO/作业、筛选和截图发给负责人。 | 不要因为另一行排在第一位，就让操作员运行替代行。 |
-| WO 存在但未排程 | [Production Orders](../10-production/production-orders.md) 行存在；[Planning](../10-production/planning.md) 中没有匹配日期/区域的排程作业。 | 计划员 | 发送 WO、零件/工序、预期日期和预期机台/工作区域。 | 不要从不明确的状态动作释放、重置或关闭 WO。 |
-| 队列行无法开始 | 队列行存在，但状态映射到 `Paused / blocked`，行操作缺失，或必要检验/设置不明确。 | 根据缺失条件，可能是计划员、生产工程师、质量工程师或管理员。 | 使用[队列状态表](../10-production/queue-system.md#队列状态表)，保留行/动作区域截图，并按缺失证据分派。 | 不要绕过被阻塞的行，也不要推测隐藏的开始动作。 |
+| WO 存在但未排程 | [Production Orders](../10-production/production-orders.md) 行存在；[Planning](../10-production/planning.md) 中没有匹配日期/区域的排程作业。 | 计划员 | 发送 WO、零件/工序、预期日期和预期机台/工作区域。 | 不要从不明确的状态操作释放、重置或关闭 WO。 |
+| 队列行无法开始 | 队列行存在，但状态映射到 `Paused / blocked`，行操作缺失，或必要检验/设置不明确。 | 根据缺失条件，可能是计划员、生产工程师、质量工程师或管理员。 | 使用[队列状态表](../10-production/queue-system.md#队列状态表)，保留行/操作区域截图，并按缺失证据分派。 | 不要绕过被阻塞的行，也不要推测隐藏的开始操作。 |
 | 质量停止 | [Inspection Records](../30-quality/inspection-records.md) 或 [SMARTQC 检验](../35-smartqc/inspection-data-entry.md)显示检验缺失、失败、不明确或未保存。 | 质量工程师 | 暂停生产决定，直到质量确认检验结果、处置或返工要求。 | 不要只凭已保存但不明确的结果继续或完成生产。 |
-| NCR 未关闭 | [NCR](../30-quality/ncr-non-conformance.md) 行/状态影响同一 WO、零件、批次或工序。 | 质量工程师 | 记录 NCR 编号/状态，等待质量处置后再做生产动作。 | 不要只凭看板或队列状态关闭、释放或继续。 |
-| 看板不明确 | [OEE、KPI Production 或 Main Layout](../10-production/dashboards.md) 指标定义不清、页面为空或筛选不匹配。 | 负责人或业务负责人 | 只把看板作为查看项；与 [Production Orders](../10-production/production-orders.md)、[Planning](../10-production/planning.md) 和 [Queue System](../10-production/queue-system.md) 对照。 | 不要把 OEE/KPI 作为延误归属或生产动作的唯一原因。 |
-| 访问缺失 | 用户看不到预期侧边栏页面、工具栏动作、行操作或保存按钮。 | 管理员 | 保留用户、角色、预期页面/动作和当前截图；检查 [Users and Roles](../40-administration/users-and-roles.md)。 | 未经管理员或负责人批准，不要更改角色设置。 |
+| NCR 未关闭 | [NCR](../30-quality/ncr-non-conformance.md) 行/状态影响同一 WO、零件、批次或工序。 | 质量工程师 | 记录 NCR 编号/状态，等待质量处置后再做生产操作。 | 不要只凭看板或队列状态关闭、释放或继续。 |
+| 看板不明确 | [OEE、KPI Production 或 Main Layout](../10-production/dashboards.md) 指标定义不清、页面为空或筛选不匹配。 | 负责人或业务负责人 | 只把看板作为查看项；与 [Production Orders](../10-production/production-orders.md)、[Planning](../10-production/planning.md) 和 [Queue System](../10-production/queue-system.md) 对照。 | 不要把 OEE/KPI 作为延误归属或生产操作的唯一原因。 |
+| 访问缺失 | 用户看不到预期侧边栏页面、工具栏操作、行操作或保存按钮。 | 管理员 | 保留用户、角色、预期页面/操作和当前截图；检查 [Users and Roles](../40-administration/users-and-roles.md)。 | 未经管理员或负责人批准，不要更改角色设置。 |
 
 ## 延误作业证据
 
@@ -53,7 +59,7 @@
 | 最后可见更新 | [Queue System](../10-production/queue-system.md)、[工单](../10-production/production-orders.md) | 帮助区分过期队列行和刚变更的作业。 |
 | 产出与目标对比 | [工单](../10-production/production-orders.md)或指定报工页面 | 显示延误是否因为数量仍未完成。 |
 | 停机或停止原因 | 指定报工页面或主管记录 | 帮助把问题分派给生产、工程或维护。 |
-| 负责人或当前角色 | [工单](../10-production/production-orders.md)、[Queue System](../10-production/queue-system.md)、[Users and Roles](../40-administration/users-and-roles.md) | 显示谁可以执行下一步可见动作。 |
+| 负责人或当前角色 | [工单](../10-production/production-orders.md)、[Queue System](../10-production/queue-system.md)、[Users and Roles](../40-administration/users-and-roles.md) | 显示谁可以执行下一步可见操作。 |
 
 ## 质量停止检查
 
@@ -62,7 +68,7 @@
 | 缺少必要检验 | [检验计划](../30-quality/inspection-planning.md)、[SMARTQC 检验](../35-smartqc/inspection-data-entry.md) | 请质量工程师确认所需检验表或检验步骤。 |
 | 已录入检验但结果不明确 | [检验记录](../30-quality/inspection-records.md) | 不要根据不明确结果释放或继续生产。 |
 | 检验失败 | [检验记录](../30-quality/inspection-records.md)、[NCR](../30-quality/ncr-non-conformance.md) | 等质量确认处置后再做生产决定。 |
-| 设备或校准影响结果 | [设备校准](../30-quality/equipment-calibration.md) | 接受测量前先升级给质量。 |
+| 设备或校准影响结果 | [设备校准](../30-quality/equipment-calibration.md) | 接受测量前先联系质量处理。 |
 
 ## 交接时记录什么
 
@@ -71,8 +77,20 @@
 - 当前可见状态。
 - 发现问题的页面。
 - 当按钮、图标或状态不明确时附截图。
-- 已升级给的人员或角色。
+- 已联系的人员或角色。
+
+## 通用示例：主管异常复查
+
+本示例只说明应保留什么类型的证据。请用当前班次真实可见的值替换占位内容。
+
+| 字段 | 应保留的示例证据 |
+|---|---|
+| 异常类型 | 队列行缺失、队列行阻塞、排程不一致、访问问题、看板信号不明确或质量停止。 |
+| 可见证据 | 队列筛选、WO/作业、零件/工序、机台/工作区域、当前状态，以及问题所在页面截图。 |
+| 交叉核对 | [Production Orders](../10-production/production-orders.md)、[Planning](../10-production/planning.md)、指定报工页面或 [Users and Roles](../40-administration/users-and-roles.md) 中匹配或缺失的证据。 |
+| 负责人分派 | 释放/排程不一致联系计划员，设置/程序不一致联系生产工程师，访问问题联系管理员，派工/交接不明确由生产主管确认。 |
+| 交接说明 | 当前状态、已联系负责人、已保留证据，以及下一班可安全执行的下一步或停止条件。 |
 
 ## 截图请求
 
-在手册给出逐步点击说明前，本排查流程还需要阻塞队列行、延误作业标识、质量停止证据和 OEE/KPI 趋势信号的带标签截图。这些事项记录在[证据与待决事项登记](../00-open-decisions.md)中。
+在手册给出逐步点击说明前，本排查流程还需要派工证据、队列开始操作证据、阻塞队列行、延误作业标识、质量停止证据和 OEE/KPI 趋势信号的带标签截图。这些事项记录在[证据与待决事项登记](../00-open-decisions.md)中。

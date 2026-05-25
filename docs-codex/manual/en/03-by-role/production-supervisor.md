@@ -7,6 +7,36 @@ shift, keep released work moving, coordinate operators, and decide when a
 work order issue must be escalated to planning, engineering, quality, or
 administration.
 
+## First-Day Checklist
+
+Use this before supervising a live or training shift.
+
+1. **Start condition:** You are signed in before a live or training shift.
+   **Screen to open:** [Admin Setup Checklist](../01-workflows/admin-setup-checklist.md).
+   **Step:** Confirm the supervisor role can open queue, WO, planning, dashboard, and access-review pages needed for triage.
+   **Expected result:** Required review pages and visible actions are available.
+   **Stop/contact condition:** Stop if a required page or action is hidden; contact the administrator.
+2. **Start condition:** Supervisor access is visible.
+   **Screen to open:** [Queue System](../10-production/queue-system.md).
+   **Step:** Review each machine or work area for expected jobs, visible filters, and missing/blocked rows.
+   **Expected result:** Each area has expected visible jobs or a documented reason for none.
+   **Stop/contact condition:** Stop if queue labels, filters, or dispatch rules are unclear; keep evidence and route through the triage walkthrough.
+3. **Start condition:** The shift queue has been reviewed.
+   **Screen to open:** [Planning](../10-production/planning.md) and [Production Orders](../10-production/production-orders.md).
+   **Step:** Compare queue rows with released and scheduled WOs.
+   **Expected result:** Queue, planning, and WO evidence agree for the shift.
+   **Stop/contact condition:** Stop if the WO appears in one place but not another; contact the planner with WO, date, machine/work area, and screenshot.
+4. **Start condition:** Queue and schedule evidence are collected.
+   **Screen to open:** [Dashboards](../10-production/dashboards.md).
+   **Step:** Use dashboards only as trend signals and compare them with WO, planning, and queue evidence.
+   **Expected result:** Any dashboard observation is recorded as supporting context, not the sole action reason.
+   **Stop/contact condition:** Stop if metric definition or filter meaning is unclear; record it as `needs-decision` for the business owner.
+5. **Start condition:** A blocker, exception, or end-shift state needs handover.
+   **Screen to open:** [Supervisor triage walkthrough](../01-workflows/supervisor-triage.md).
+   **Step:** Record blocker, likely owner, evidence screenshot, action taken, and unfinished work.
+   **Expected result:** The next shift can see what happened, who owns it, and what remains safe to do.
+   **Stop/contact condition:** Stop if completion/handover signal is not confirmed; contact the production supervisor or owner before closing the issue.
+
 ## Shift Flow
 
 ```

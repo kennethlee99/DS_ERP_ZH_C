@@ -11,13 +11,19 @@ The current captured sidebar path is `Planner / Queue System`. Operators and sup
 
 Use Queue System to confirm which released work is visible for execution. Operators use it to find work, while supervisors use it to check whether the shift has the expected jobs available.
 
-Dispatch rules, row actions, and exact status labels remain tracked in the [Evidence and Decisions Register](../00-open-decisions.md) until they are confirmed with visible screenshots.
+Dispatch rules, queue start actions, and exact status labels remain tracked in the [Evidence and Decisions Register](../00-open-decisions.md) until they are confirmed with visible screenshots.
+
+> **Needs decision**
+>
+> | Safe now | Not confirmed | Owner | Exact answer needed |
+> |---|---|---|---|
+> | Use the queue to match WO/job, part, process, machine/work area, date, and visible state; stop before unclear row actions. | Queue dispatch rule, queue start action, exact status labels, and completion signal. | Production supervisor. | Which filter/row rule selects the next job when multiple rows are visible, which visible row action opens or starts work after the row is selected, which visible labels map to the manual status terms, and what signal proves completion. |
 
 ## What You See
 
 - A queue of available work with job, part, process, status, and timing information.
 - Filters for work area, machine, date, or status.
-- Row actions that open the job or move the user into the next visible work step.
+- Row actions that open the job or move the user into the next visible work step after the correct row is selected.
 - Status indicators that must be read through the shared queue status map below until exact app labels are screenshot-confirmed.
 
 ## Queue Status Map
@@ -36,7 +42,7 @@ Use the manual working terms below whenever planner, operator, or supervisor pag
 
 1. Select the work area or machine used in the workflow.
 2. Find the released job and confirm the part and process.
-3. Open the job only after checking that the visible status maps to the `Ready` working term and the dispatch rule is confirmed.
+3. Open the job only after checking that the visible status maps to the `Ready` working term, the dispatch rule is confirmed, and the start action is visible.
 4. Escalate missing or blocked jobs to the planner or supervisor.
 
 ## What To Check

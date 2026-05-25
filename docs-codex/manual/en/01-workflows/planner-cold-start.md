@@ -6,6 +6,12 @@ Use this walkthrough when you need to follow a job from planning readiness to qu
 
 Open items for schedule, release, status actions, queue evidence, and OEE interpretation are tracked in the [Evidence and Decisions Register](../00-open-decisions.md).
 
+> **Needs decision**
+>
+> | Safe now | Not confirmed | Owner | Exact answer needed |
+> |---|---|---|---|
+> | Confirm master data, find or create only the specified WO when the visible control is confirmed, compare planning and queue evidence, and stop before unclear status actions. | Exact schedule, release, hold, reset, cancel, close, and queue-ready labels. | Planner lead or owner, with administrator input if action visibility depends on role. | Which visible control performs each status/schedule action, what before-status allows it, and what after-status proves the WO is ready for the queue. |
+
 ## Goal
 
 Create or review a WO, schedule it, release it when allowed, confirm it appears in [Queue System](../10-production/queue-system.md), and open the OEE dashboard entry.
@@ -29,7 +35,7 @@ Create or review a WO, schedule it, release it when allowed, confirm it appears 
 | 6 | [Queue System](../10-production/queue-system.md) | Filter by the same part, process, machine/work area, or date used in [Planning](../10-production/planning.md). | A queue row matches the WO and maps to the `Ready` working term, or to another documented state in the Queue Status Map. |
 | 7 | [Production Dashboards](../10-production/dashboards.md) | Open [OEE](../10-production/dashboards.md) from the sidebar. | Treat it as a trend signal only until the metric definition and dashboard screenshot are confirmed. |
 
-## Planner Golden Path
+## Planner Standard Operating Path
 
 Use this table as the cold-start task record. It separates confirmed actions from actions that still need screenshot confirmation, so a planner can complete the safe parts of the workflow without guessing.
 
@@ -61,6 +67,18 @@ Use this matrix before changing a WO. It is intentionally conservative: only the
 | Visible status |  |  |
 | Planned date / machine or work area |  |  |
 | Queue row visible? |  |  |
+
+## Generic Example: Released Work Order
+
+This example describes the evidence shape only. Replace the placeholder values with visible values from the deployment.
+
+| Field | Example evidence to capture |
+|---|---|
+| WO identity | WO/job number, part, revision if visible, quantity, due date, and signed-in planner role. |
+| Setup readiness | Part, BOM, recipe, machine/work area, NC program, and required inspection readiness checked before release. |
+| Release evidence | Visible status/action area before release, the owner-confirmed release action, and visible status after refresh. |
+| Queue evidence | Matching [Queue System](../10-production/queue-system.md) row with filters, WO/job, part/process, machine/work area, and queue state. |
+| Stop/contact | If the release/status action is unlabeled, the row disappears without queue evidence, or queue-ready status is unclear, contact the planner lead or production supervisor. |
 
 ## Stop And Escalate
 

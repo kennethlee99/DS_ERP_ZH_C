@@ -4,7 +4,13 @@
 
 Use this page when released work is missing, delayed, blocked, or unclear during a shift.
 
-Open items for delayed-work evidence, queue blocked status, quality-stop evidence, dashboard interpretation, and role visibility are tracked in the [Evidence and Decisions Register](../00-open-decisions.md).
+Open items for delayed-work evidence, queue dispatch rule, queue start action, queue blocked status, quality-stop evidence, dashboard interpretation, and role visibility are tracked in the [Evidence and Decisions Register](../00-open-decisions.md).
+
+> **Needs decision**
+>
+> | Safe now | Not confirmed | Owner | Exact answer needed |
+> |---|---|---|---|
+> | Compare queue, WO, planning, reporting, and visible dashboard evidence before routing the issue; use dashboards only as supporting trend signals. | Delayed-work indicator labels, queue dispatch rule, queue start action, queue blocked status labels, dashboard metric definitions, role visibility, and completion/handover signal. | Production supervisor, with business owner input for dashboard meaning and administrator input for role visibility. | Which visible condition proves a delay/block, which row-selection rule applies when multiple rows are visible, which row action opens or starts work, which owner should receive each exception, and what evidence is enough for shift handover. |
 
 ## Triage Order
 
@@ -73,6 +79,18 @@ When work is late or appears stuck, collect these visible fields before deciding
 - Screenshot when a button, icon, or status is unclear.
 - Person or role escalated to.
 
+## Generic Example: Supervisor Exception Review
+
+This example describes the evidence shape only. Replace the placeholder values with visible values from the shift.
+
+| Field | Example evidence to capture |
+|---|---|
+| Exception | Missing queue row, blocked queue row, schedule mismatch, access issue, unclear dashboard signal, or quality stop. |
+| Visible evidence | Queue filters, WO/job, part/process, machine/work area, current status, and screenshot of the page where the issue appears. |
+| Cross-check | Matching or missing evidence from [Production Orders](../10-production/production-orders.md), [Planning](../10-production/planning.md), assigned reporting screen, or [Users and Roles](../40-administration/users-and-roles.md). |
+| Owner routing | Planner for release/schedule mismatch, production engineer for setup/program mismatch, administrator for access, or production supervisor when dispatch/handover is unclear. |
+| Handover note | Current state, owner contacted, evidence kept, and the next safe action or stop condition for the next shift. |
+
 ## Screenshot Requests
 
-This triage flow needs labeled screenshots for blocked queue rows, delayed work indicators, quality-stop evidence, and OEE/KPI trend signals before the manual can give exact click-by-click instructions. Track those items in the [Evidence and Decisions Register](../00-open-decisions.md).
+This triage flow needs labeled screenshots for dispatch evidence, queue start-action evidence, blocked queue rows, delayed work indicators, quality-stop evidence, and OEE/KPI trend signals before the manual can give exact click-by-click instructions. Track those items in the [Evidence and Decisions Register](../00-open-decisions.md).

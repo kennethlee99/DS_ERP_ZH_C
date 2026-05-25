@@ -8,6 +8,41 @@ quickly. Depending on deployment, routine execution may happen on a dedicated
 terminal/kiosk workflow, while the web manual pages document the matching
 records, queues, work orders, manual tasks, and quality entries.
 
+## First-Day Checklist
+
+Use this before running the first assigned job.
+
+1. **Start condition:** You are signed in for the first assigned job.
+   **Screen to open:** [Admin Setup Checklist](../01-workflows/admin-setup-checklist.md).
+   **Step:** Confirm your sign-in user, role, and worker identity if the site workflow uses one.
+   **Expected result:** Your identity for assignment is known before selecting work.
+   **Stop/contact condition:** Stop if user-worker relationship is `needs-decision`; contact the supervisor or administrator.
+2. **Start condition:** Your identity is known.
+   **Screen to open:** [Queue System](../10-production/queue-system.md).
+   **Step:** Select only the machine, line, work area, date, or status filter assigned by the supervisor or site procedure.
+   **Expected result:** The queue view matches your assigned machine or work area.
+   **Stop/contact condition:** Stop if the queue filter or work area is unclear; contact the supervisor.
+3. **Start condition:** The assigned queue view is visible.
+   **Screen to open:** [Operator Walkthrough](../01-workflows/operator-run-next-job.md).
+   **Step:** Match the queue row to the assigned WO/job, part, process, and visible status.
+   **Expected result:** The row can be documented as the assigned work without relying on row order alone.
+   **Stop/contact condition:** Stop if the dispatch rule, priority, or row identity is not confirmed; contact the supervisor.
+4. **Start condition:** The queue row is confirmed.
+   **Screen to open:** [Queue System](../10-production/queue-system.md).
+   **Step:** Use a row open/start action only when it is labeled or supervisor-confirmed.
+   **Expected result:** The job opens, starts, or shows an owner-confirmed status change.
+   **Stop/contact condition:** Stop if the action is unlabeled, hidden, or different from the site procedure; contact the supervisor.
+5. **Start condition:** The job has started or is ready for reporting.
+   **Screen to open:** The assigned production reporting screen.
+   **Step:** Record output, downtime, or issue notes only in the assigned reporting path.
+   **Expected result:** Required fields, save action, and confirmation signal are known before leaving the page.
+   **Stop/contact condition:** Stop if reporting path, fields, save action, or confirmation signal is `needs-decision`; contact the supervisor or planner.
+6. **Start condition:** Work is complete enough to hand over or stop for the shift.
+   **Screen to open:** [Queue System](../10-production/queue-system.md), [Production Orders](../10-production/production-orders.md), or the assigned reporting screen.
+   **Step:** Verify the same WO/job after refresh and record unfinished work, saved output, or supervisor confirmation.
+   **Expected result:** Handover evidence explains what changed and what remains open.
+   **Stop/contact condition:** Stop if queue disappearance is the only completion signal; contact the supervisor before assuming completion.
+
 ## Daily Flow
 
 ```

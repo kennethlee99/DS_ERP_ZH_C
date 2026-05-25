@@ -13,7 +13,7 @@
 3. 使用[操作员流程](../01-workflows/operator-run-next-job.md)理解如何找到、开始、报工、检验并完成作业。
 4. 使用[主管排查流程](../01-workflows/supervisor-triage.md)检查阻塞和交接。
 5. 当检验、NCR、SMARTQC 或校准影响作业时，使用质量流程。
-6. 当访问权限、工人身份、角色、翻译或主数据前提影响用户能看到的内容时，使用[管理员设置清单](../01-workflows/admin-setup-checklist.md)。
+6. 当访问权限、作业人员身份、角色、翻译或主数据前提影响用户能看到的内容时，使用[管理员设置清单](../01-workflows/admin-setup-checklist.md)。
 7. 当状态或队列术语不明确时，使用[操作词汇表](../00-glossary.md)。
 
 | 角色 | 从这里开始 | 主要目标 |

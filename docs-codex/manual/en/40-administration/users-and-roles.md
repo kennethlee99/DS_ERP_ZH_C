@@ -11,6 +11,42 @@ Use Users and Roles to review who can sign in and which visible menu actions a r
 
 User-worker relationship, permission-label meaning, and language setup remain tracked in the [Evidence and Decisions Register](../00-open-decisions.md) until the administrator or implementation owner confirms them.
 
+> **Needs decision**
+>
+> | Safe now | Not confirmed | Owner | Exact answer needed |
+> |---|---|---|---|
+> | Confirm visible access, role assignment, sidebar visibility, and screenshots without changing access design. | User-worker relationship, permission labels, role names, and language setup. | Administrator or implementation owner. | Which role names are approved for each first-day scenario, how visible permission labels map to pages/actions, and whether operators use sign-in users, linked worker records, or separate worker records. |
+
+## First-Day Access Checklist
+
+Use this before asking a planner, operator, supervisor, or administrator to follow a first-day workflow.
+
+1. **Start condition:** You have the user account that will perform the first-day scenario.
+   **Screen to open:** Administration / User Management.
+   **Step:** Confirm the account exists, is active, and can sign in.
+   **Expected result:** The login identity is visible and usable.
+   **Stop/contact condition:** Stop if the user is missing, inactive, or login identity is unclear; contact the administrator.
+2. **Start condition:** The sign-in account is usable.
+   **Screen to open:** Administration / Roles and the selected user detail if available.
+   **Step:** Confirm the assigned role matches the intended planner, operator, supervisor, or admin scenario.
+   **Expected result:** The role assignment is visible and recorded.
+   **Stop/contact condition:** Stop if the role name or permission labels are `needs-decision`; contact the administrator or implementation owner.
+3. **Start condition:** The role assignment is visible.
+   **Screen to open:** Log in as the target user and open the required sidebar pages for the scenario.
+   **Step:** Confirm each required page and visible action appears for that role.
+   **Expected result:** The role can open the screens required by the first-day walkthrough.
+   **Stop/contact condition:** Stop if a page, toolbar action, row action, or save control is missing or unlabeled.
+4. **Start condition:** The scenario includes operator execution or machine/work-area assignment.
+   **Screen to open:** User, role, and any visible worker/work-area field shown by the app.
+   **Step:** Record the sign-in user, worker identity if used, machine/work area, and role.
+   **Expected result:** The assignment identity is documented before work is assigned.
+   **Stop/contact condition:** Stop if user-worker relationship is not confirmed; contact the administrator or implementation owner.
+5. **Start condition:** The access issue or successful access check can be reproduced.
+   **Screen to open:** The affected page and [Users and Roles](users-and-roles.md).
+   **Step:** Capture user/role evidence and the affected page screenshot.
+   **Expected result:** The screenshot set shows the visible label, page, action, or missing item clearly.
+   **Stop/contact condition:** Stop if the issue cannot be reproduced with visible labels; collect owner confirmation before changing access.
+
 ## What You See
 
 - A user-management list for reviewing accounts, names, status, and related login information.

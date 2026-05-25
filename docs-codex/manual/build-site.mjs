@@ -1,10 +1,49 @@
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const manualRoot = path.dirname(fileURLToPath(import.meta.url));
 const siteRoot = path.join(manualRoot, 'site');
 const sourceRoots = ['en', 'zh-CN'];
+
+const orderedPageSuffixes = [
+  '00-start-here.md',
+  '00-glossary.md',
+  '00-open-decisions.md',
+  '01-workflows/planner-cold-start.md',
+  '01-workflows/operator-run-next-job.md',
+  '01-workflows/supervisor-triage.md',
+  '01-workflows/admin-setup-checklist.md',
+  '03-by-role/README.md',
+  '03-by-role/planner.md',
+  '03-by-role/operator.md',
+  '03-by-role/production-supervisor.md',
+  '03-by-role/production-engineer.md',
+  '03-by-role/quality-engineer.md',
+  '10-production/production-orders.md',
+  '10-production/planning.md',
+  '10-production/queue-system.md',
+  '10-production/manual-tasks.md',
+  '10-production/dashboards.md',
+  '20-engineering/parts.md',
+  '20-engineering/bom.md',
+  '20-engineering/recipes.md',
+  '20-engineering/machines.md',
+  '20-engineering/nc-programs.md',
+  '30-quality/inspection-planning.md',
+  '30-quality/inspection-records.md',
+  '30-quality/ncr-non-conformance.md',
+  '30-quality/equipment-calibration.md',
+  '35-smartqc/check-sheets.md',
+  '35-smartqc/inspection-data-entry.md',
+  '35-smartqc/methods-and-groups.md',
+  '40-administration/users-and-roles.md',
+];
+
+const preferredFileOrder = new Map([
+  'index.md',
+  ...sourceRoots.flatMap((sourceRoot) => orderedPageSuffixes.map((suffix) => `${sourceRoot}/${suffix}`)),
+].map((file, index) => [file, index]));
 
 const navConfig = [
   {
@@ -460,7 +499,7 @@ function isBlockStart(lines, index) {
     || (line.includes('|') && looksLikeTableSeparator(next));
 }
 
-function renderMarkdown(markdown, sourceRel) {
+export function renderMarkdown(markdown, sourceRel) {
   const lines = markdown.replace(/^\uFEFF/, '').replace(/\r\n/g, '\n').split('\n');
   const output = [];
   const headingCounts = new Map();
@@ -545,8 +584,13 @@ function renderMarkdown(markdown, sourceRel) {
     if (/^\s*[-*+]\s+/.test(line)) {
       const items = [];
       while (index < lines.length && /^\s*[-*+]\s+/.test(lines[index])) {
-        items.push(lines[index].replace(/^\s*[-*+]\s+/, ''));
+        const itemLines = [lines[index].replace(/^\s*[-*+]\s+/, '')];
         index += 1;
+        while (index < lines.length && /^\s{2,}\S/.test(lines[index]) && !/^\s{2,}[-*+]\s+/.test(lines[index]) && !/^\s{2,}\d+\.\s+/.test(lines[index])) {
+          itemLines.push(lines[index].trim());
+          index += 1;
+        }
+        items.push(itemLines.join(' '));
       }
       output.push(`<ul>${items.map((item) => `<li>${renderInline(item, sourceRel)}</li>`).join('')}</ul>`);
       continue;
@@ -555,8 +599,13 @@ function renderMarkdown(markdown, sourceRel) {
     if (/^\s*\d+\.\s+/.test(line)) {
       const items = [];
       while (index < lines.length && /^\s*\d+\.\s+/.test(lines[index])) {
-        items.push(lines[index].replace(/^\s*\d+\.\s+/, ''));
+        const itemLines = [lines[index].replace(/^\s*\d+\.\s+/, '')];
         index += 1;
+        while (index < lines.length && /^\s{2,}\S/.test(lines[index]) && !/^\s{2,}[-*+]\s+/.test(lines[index]) && !/^\s{2,}\d+\.\s+/.test(lines[index])) {
+          itemLines.push(lines[index].trim());
+          index += 1;
+        }
+        items.push(itemLines.join(' '));
       }
       output.push(`<ol>${items.map((item) => `<li>${renderInline(item, sourceRel)}</li>`).join('')}</ol>`);
       continue;
@@ -571,6 +620,19 @@ function renderMarkdown(markdown, sourceRel) {
   }
 
   return output.join('\n');
+}
+
+export function orderMarkdownFiles(files) {
+  return [...files].sort((a, b) => {
+    const rankA = preferredFileOrder.get(a) ?? Number.MAX_SAFE_INTEGER;
+    const rankB = preferredFileOrder.get(b) ?? Number.MAX_SAFE_INTEGER;
+
+    if (rankA !== rankB) {
+      return rankA - rankB;
+    }
+
+    return a.localeCompare(b, 'en');
+  });
 }
 
 async function walkFiles(root, visitor) {
@@ -594,7 +656,7 @@ async function collectMarkdownFiles() {
       }
     });
   }
-  return files.sort((a, b) => a.localeCompare(b, 'en'));
+  return orderMarkdownFiles(files);
 }
 
 async function collectAssetFiles() {
@@ -762,7 +824,9 @@ async function main() {
   console.log(`Generated ${markdownFiles.length} pages at ${siteRoot}`);
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}
