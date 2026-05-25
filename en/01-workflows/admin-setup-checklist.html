@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Setup Checklist - DS_ERP User Guide</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="../../index.html">DS_ERP User Guide</a>
+      <div class="subtitle">Generated from docs-codex/manual Markdown</div>
+      <nav aria-label="Manual pages">
+<section class="nav-section"><h2>Start</h2><a href="../../index.html">DSERP User Guide</a></section>
+<section class="nav-section"><h2>English - Start</h2><a href="../00-start-here.html">Start Here: Demo Operating Guide</a>
+<a href="../00-glossary.html">Operating Glossary</a></section>
+<section class="nav-section"><h2>English - Workflows</h2><a class="active" href="admin-setup-checklist.html">Admin Setup Checklist</a>
+<a href="operator-run-next-job.html">Operator Run The Next Job Walkthrough</a>
+<a href="planner-cold-start.html">Planner Cold Start Walkthrough</a>
+<a href="supervisor-triage.html">Supervisor Delayed Production Triage</a></section>
+<section class="nav-section"><h2>English - Roles</h2><a href="../03-by-role/operator.html">Operator Manual</a>
+<a href="../03-by-role/planner.html">Planner Manual</a>
+<a href="../03-by-role/production-engineer.html">Production Engineer Manual</a>
+<a href="../03-by-role/production-supervisor.html">Production Supervisor Manual</a>
+<a href="../03-by-role/quality-engineer.html">Quality Engineer Manual</a>
+<a href="../03-by-role/README.html">Role-Based User Manuals</a></section>
+<section class="nav-section"><h2>English - Production</h2><a href="../10-production/dashboards.html">Production Dashboards</a>
+<a href="../10-production/manual-tasks.html">Manual Tasks</a>
+<a href="../10-production/planning.html">Planning</a>
+<a href="../10-production/production-orders.html">Production Orders</a>
+<a href="../10-production/queue-system.html">Queue System</a></section>
+<section class="nav-section"><h2>English - Engineering</h2><a href="../20-engineering/bom.html">BOM</a>
+<a href="../20-engineering/machines.html">Machines</a>
+<a href="../20-engineering/nc-programs.html">NC Programs</a>
+<a href="../20-engineering/parts.html">Parts</a>
+<a href="../20-engineering/recipes.html">Recipes</a></section>
+<section class="nav-section"><h2>English - Quality</h2><a href="../30-quality/equipment-calibration.html">Equipment Calibration</a>
+<a href="../30-quality/inspection-planning.html">Inspection Planning</a>
+<a href="../30-quality/inspection-records.html">Inspection Records</a>
+<a href="../30-quality/ncr-non-conformance.html">NCR Non-Conformance</a></section>
+<section class="nav-section"><h2>English - SMARTQC</h2><a href="../35-smartqc/check-sheets.html">SMARTQC Check Sheets</a>
+<a href="../35-smartqc/inspection-data-entry.html">SMARTQC Inspection Data Entry</a>
+<a href="../35-smartqc/methods-and-groups.html">SMARTQC Methods and Groups</a></section>
+<section class="nav-section"><h2>English - Administration</h2><a href="../40-administration/users-and-roles.html">Users and Roles</a></section>
+<section class="nav-section"><h2>Chinese - Start</h2><a href="../../zh-CN/00-start-here.html">从这里开始：演示操作指南</a>
+<a href="../../zh-CN/00-glossary.html">操作术语表</a></section>
+<section class="nav-section"><h2>Chinese - Workflows</h2><a href="../../zh-CN/01-workflows/admin-setup-checklist.html">管理员设置检查清单</a>
+<a href="../../zh-CN/01-workflows/operator-run-next-job.html">操作员运行下一个作业流程</a>
+<a href="../../zh-CN/01-workflows/planner-cold-start.html">计划员冷启动流程</a>
+<a href="../../zh-CN/01-workflows/supervisor-triage.html">生产主管延误作业排查</a></section>
+<section class="nav-section"><h2>Chinese - Roles</h2><a href="../../zh-CN/03-by-role/operator.html">操作员手册</a>
+<a href="../../zh-CN/03-by-role/planner.html">计划员手册</a>
+<a href="../../zh-CN/03-by-role/production-engineer.html">生产工程师手册</a>
+<a href="../../zh-CN/03-by-role/production-supervisor.html">生产主管手册</a>
+<a href="../../zh-CN/03-by-role/quality-engineer.html">质量工程师手册</a>
+<a href="../../zh-CN/03-by-role/README.html">按角色阅读的用户手册</a></section>
+<section class="nav-section"><h2>Chinese - Production</h2><a href="../../zh-CN/10-production/dashboards.html">生产看板</a>
+<a href="../../zh-CN/10-production/manual-tasks.html">手动任务</a>
+<a href="../../zh-CN/10-production/planning.html">计划</a>
+<a href="../../zh-CN/10-production/production-orders.html">工单</a>
+<a href="../../zh-CN/10-production/queue-system.html">队列系统</a></section>
+<section class="nav-section"><h2>Chinese - Engineering</h2><a href="../../zh-CN/20-engineering/bom.html">BOM</a>
+<a href="../../zh-CN/20-engineering/machines.html">机台</a>
+<a href="../../zh-CN/20-engineering/nc-programs.html">NC 程序</a>
+<a href="../../zh-CN/20-engineering/parts.html">零件</a>
+<a href="../../zh-CN/20-engineering/recipes.html">配方</a></section>
+<section class="nav-section"><h2>Chinese - Quality</h2><a href="../../zh-CN/30-quality/equipment-calibration.html">设备校准</a>
+<a href="../../zh-CN/30-quality/inspection-planning.html">检验计划</a>
+<a href="../../zh-CN/30-quality/inspection-records.html">检验记录</a>
+<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格</a></section>
+<section class="nav-section"><h2>Chinese - SMARTQC</h2><a href="../../zh-CN/35-smartqc/check-sheets.html">SMARTQC 检验表</a>
+<a href="../../zh-CN/35-smartqc/inspection-data-entry.html">SMARTQC 检验录入</a>
+<a href="../../zh-CN/35-smartqc/methods-and-groups.html">SMARTQC 方法与方法组</a></section>
+<section class="nav-section"><h2>Chinese - Administration</h2><a href="../../zh-CN/40-administration/users-and-roles.html">用户和角色</a></section>
+      </nav>
+    </aside>
+    <main class="content">
+      <article class="article">
+        <div class="page-path">en/01-workflows/admin-setup-checklist.md</div>
+<h1>Admin Setup Checklist</h1>
+<blockquote><p>English | <a href="../../zh-CN/01-workflows/admin-setup-checklist.html">中文</a></p></blockquote>
+<p>Use this checklist before a planner, operator, or supervisor demo. It separates what the manual can confirm from what still needs demo-owner clarification.</p>
+<h2>Setup Order</h2>
+<table><thead><tr><th>Order</th><th>Area</th><th>Check</th><th>Page</th></tr></thead><tbody><tr><td>1</td><td>User access</td><td>Demo users can sign in and have the intended role.</td><td><a href="../40-administration/users-and-roles.html">Users and Roles</a></td></tr>
+<tr><td>2</td><td>Worker identity</td><td>Confirm whether the demo uses a worker record, a user account, or both.</td><td><code>needs-decision</code></td></tr>
+<tr><td>3</td><td>Master data</td><td>Part exists and has the expected identity.</td><td><a href="../20-engineering/parts.html">Parts</a></td></tr>
+<tr><td>4</td><td>Structure</td><td>BOM exists for the planned parent item.</td><td><a href="../20-engineering/bom.html">BOM</a></td></tr>
+<tr><td>5</td><td>Production route</td><td>Recipe, machine, and NC program are visible and ready.</td><td><a href="../20-engineering/recipes.html">Recipes</a>, <a href="../20-engineering/machines.html">Machines</a>, <a href="../20-engineering/nc-programs.html">NC Programs</a></td></tr>
+<tr><td>6</td><td>Planning flow</td><td>WO can be reviewed, scheduled, released, and found in the queue.</td><td><a href="planner-cold-start.html">Planner Walkthrough</a></td></tr>
+<tr><td>7</td><td>Operator flow</td><td>Queue, work start, reporting, inspection, and completion signals are understood.</td><td><a href="operator-run-next-job.html">Operator Walkthrough</a></td></tr>
+<tr><td>8</td><td>Quality flow</td><td>Inspection setup, records, NCR, and calibration are ready where needed.</td><td><a href="../30-quality/inspection-planning.html">Inspection Planning</a>, <a href="../30-quality/inspection-records.html">Inspection Records</a>, <a href="../30-quality/ncr-non-conformance.html">NCR</a></td></tr>
+<tr><td>9</td><td>Language labels</td><td>The visible language and translation pages need demo-owner confirmation before they are documented as setup steps.</td><td><code>needs-decision</code></td></tr></tbody></table>
+<h2>Safe Quick Start</h2>
+<p>Use this when you only need a demo user ready for review and do not intend to redesign access.</p>
+<table><thead><tr><th>Step</th><th>Do</th><th>Stop if</th></tr></thead><tbody><tr><td>1</td><td>Confirm the sign-in account exists and is active in <a href="../40-administration/users-and-roles.html">Users and Roles</a>.</td><td>The user is missing or inactive.</td></tr>
+<tr><td>2</td><td>Confirm the user has the intended role for the demo scenario.</td><td>The role is missing or the sidebar does not match the scenario.</td></tr>
+<tr><td>3</td><td>Confirm whether the operator scenario needs a worker identity separate from the sign-in account.</td><td>The app shows a worker or work-area field that is not understood.</td></tr>
+<tr><td>4</td><td>Confirm the expected menu items and visible actions appear after login.</td><td>A menu or action is missing.</td></tr>
+<tr><td>5</td><td>Confirm the <a href="../20-engineering/parts.html">part</a>, <a href="../20-engineering/bom.html">BOM</a>, <a href="../20-engineering/recipes.html">recipe</a>, <a href="../20-engineering/machines.html">machine</a>, <a href="../20-engineering/nc-programs.html">NC program</a>, and inspection setup are visible before the planner flow.</td><td>Any prerequisite page is missing or empty for the demo item.</td></tr></tbody></table>
+<h2>Demo Readiness Matrix</h2>
+<p>Fill this matrix before the planner, operator, or supervisor starts the cold-start demo. Use the exact labels visible in the app. If a value is not confirmed, leave it as <code>needs-decision</code> and capture the screenshot named in the evidence column.</p>
+<table><thead><tr><th>Demo role</th><th>Sign-in user</th><th>Worker identity</th><th>Role name</th><th>Required sidebar pages</th><th>Required visible actions</th><th>Permission labels as displayed</th><th>Language expectation</th><th>Required master data</th><th>Evidence to keep</th></tr></thead><tbody><tr><td>Planner</td><td><code>needs-decision</code></td><td>Not normally needed unless the planner also executes work.</td><td><code>needs-decision</code></td><td><a href="../10-production/production-orders.html">Production Orders</a>, <a href="../10-production/planning.html">Planning</a>, <a href="../10-production/queue-system.html">Queue System</a>, <a href="../10-production/dashboards.html">OEE</a></td><td><code>New Production Orders</code>; schedule action; release/status action; queue filter; OEE open</td><td><code>needs-decision</code> until <a href="../40-administration/users-and-roles.html">Users and Roles</a> page labels are captured</td><td>Use live UI labels exactly as displayed; translated manual pages keep live labels in parentheses.</td><td><a href="../20-engineering/parts.html">Part</a>, <a href="../20-engineering/bom.html">BOM</a>, <a href="../20-engineering/recipes.html">recipe</a>, <a href="../20-engineering/machines.html">machine</a>, <a href="../20-engineering/nc-programs.html">NC program</a>, inspection setup when required</td><td>User/role screenshot, <a href="../10-production/production-orders.html">Production Orders</a> toolbar screenshot, <a href="../10-production/planning.html">Planning</a> schedule-action screenshot</td></tr>
+<tr><td>Operator</td><td><code>needs-decision</code></td><td><code>needs-decision</code>: confirm whether the operator uses the sign-in user, a linked worker, or a separate worker record.</td><td><code>needs-decision</code></td><td><a href="../10-production/queue-system.html">Queue System</a>, assigned production reporting screen, <a href="../35-smartqc/inspection-data-entry.html">SMARTQC Inspection</a>, <a href="../30-quality/inspection-records.html">Inspection Records</a></td><td>Queue filter; row open/start action; save/report action; inspection save; completion/handover status</td><td><code>needs-decision</code> until role labels and action visibility are captured</td><td>Use the live labels shown on <a href="../10-production/queue-system.html">Queue System</a>, reporting, and inspection screens.</td><td>Released WO, assigned machine/work area, inspection plan/check sheet if required</td><td>User-worker evidence, queue row action screenshot, reporting screen screenshot</td></tr>
+<tr><td>Supervisor</td><td><code>needs-decision</code></td><td>Not normally needed unless the supervisor also records work.</td><td><code>needs-decision</code></td><td><a href="../10-production/queue-system.html">Queue System</a>, <a href="../10-production/production-orders.html">Production Orders</a>, <a href="../10-production/planning.html">Planning</a>, <a href="../10-production/dashboards.html">Dashboards</a>, <a href="../30-quality/inspection-records.html">Inspection Records</a>, <a href="../30-quality/ncr-non-conformance.html">NCR</a>, <a href="../40-administration/users-and-roles.html">Users and Roles</a> when access blocks triage</td><td>Queue filters; blocked/delayed status review; <a href="../10-production/production-orders.html">Production Orders</a> status view; dashboard open; quality record lookup</td><td><code>needs-decision</code> until role labels and action visibility are captured</td><td>Use live labels for statuses, dashboards, and escalation evidence.</td><td>Released/scheduled WO, queue row, inspection/NCR data when quality blocks work</td><td>Supervisor queue screenshot, delayed-work evidence screenshot, quality-stop screenshot</td></tr></tbody></table>
+<h2>Users And Workers</h2>
+<p>The current manual does not prove whether Users and Workers are the same record, linked records, or separate setup. Treat this as a required implementation decision before an operator demo. Record the demo user&#39;s sign-in account, worker identity if shown, machine/work area, and role.</p>
+<h2>Roles And Permissions</h2>
+<p>Use <a href="../40-administration/users-and-roles.html">Users and Roles</a> to confirm visible access. Do not interpret technical-looking permission labels unless the administrator or demo owner confirms their meaning. If a page or action is missing, capture the user, role, expected page/action, and current screenshot.</p>
+<table><thead><tr><th>Term</th><th>Practical meaning</th></tr></thead><tbody><tr><td>User</td><td>The sign-in account used to access the web app.</td></tr>
+<tr><td>Worker</td><td>A shop-floor identity or assignment record if the demo uses one; the user-to-worker relationship is still needs-decision until confirmed.</td></tr>
+<tr><td>Role</td><td>The visible access grouping assigned to a user.</td></tr>
+<tr><td>Permission label</td><td>A visible label on the Roles page that may explain why a menu or action appears. Do not translate it into a technical rule unless the owner confirms it.</td></tr>
+<tr><td>Visible action</td><td>A button, icon, row action, menu item, or dialog action the signed-in user can see.</td></tr></tbody></table>
+<h2>Translations</h2>
+<p>The manual is bilingual, but the visible language and translation administration pages are still needs-decision. Do not claim a complete translation setup process until the demo owner confirms the intended language workflow.</p>
+<h2>Master Data Readiness</h2>
+<table><thead><tr><th>If this is missing</th><th>Workflow affected</th><th>Escalate to</th></tr></thead><tbody><tr><td><a href="../20-engineering/parts.html">Part</a></td><td>Planner cannot create or verify the WO confidently.</td><td>Production engineer or planner lead</td></tr>
+<tr><td><a href="../20-engineering/bom.html">BOM</a></td><td>Planner cannot confirm build structure.</td><td>Production engineer</td></tr>
+<tr><td><a href="../20-engineering/recipes.html">Recipe</a></td><td>Planner may generate or release the wrong work.</td><td>Production engineer</td></tr>
+<tr><td><a href="../20-engineering/machines.html">Machine</a></td><td>Planning and queue assignment may be wrong.</td><td>Production engineer</td></tr>
+<tr><td><a href="../20-engineering/nc-programs.html">NC program</a></td><td>Operator may not have the expected execution program.</td><td>Production engineer</td></tr>
+<tr><td><a href="../30-quality/inspection-planning.html">Inspection plan</a> or <a href="../35-smartqc/check-sheets.html">check sheet</a></td><td>Work may not be quality-ready.</td><td>Quality engineer</td></tr></tbody></table>
+<h2>Screenshot Requests</h2>
+<p>This checklist needs screenshots for user-to-worker relationship, role permission labels with owner explanation, language/translation setup, and a confirmed demo-user login showing the expected sidebar before it can become a full implementation guide.</p>
+        <div class="footer">Generated from the manual source. Use &lt;APP_BASE_URL&gt; as the actual factory deployment address.</div>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

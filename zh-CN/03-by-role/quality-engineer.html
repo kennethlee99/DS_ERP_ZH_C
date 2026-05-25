@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>质量工程师手册 - DS_ERP User Guide</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="../../index.html">DS_ERP User Guide</a>
+      <div class="subtitle">Generated from docs-codex/manual Markdown</div>
+      <nav aria-label="Manual pages">
+<section class="nav-section"><h2>Start</h2><a href="../../index.html">DSERP User Guide</a></section>
+<section class="nav-section"><h2>English - Start</h2><a href="../../en/00-start-here.html">Start Here: Demo Operating Guide</a>
+<a href="../../en/00-glossary.html">Operating Glossary</a></section>
+<section class="nav-section"><h2>English - Workflows</h2><a href="../../en/01-workflows/admin-setup-checklist.html">Admin Setup Checklist</a>
+<a href="../../en/01-workflows/operator-run-next-job.html">Operator Run The Next Job Walkthrough</a>
+<a href="../../en/01-workflows/planner-cold-start.html">Planner Cold Start Walkthrough</a>
+<a href="../../en/01-workflows/supervisor-triage.html">Supervisor Delayed Production Triage</a></section>
+<section class="nav-section"><h2>English - Roles</h2><a href="../../en/03-by-role/operator.html">Operator Manual</a>
+<a href="../../en/03-by-role/planner.html">Planner Manual</a>
+<a href="../../en/03-by-role/production-engineer.html">Production Engineer Manual</a>
+<a href="../../en/03-by-role/production-supervisor.html">Production Supervisor Manual</a>
+<a href="../../en/03-by-role/quality-engineer.html">Quality Engineer Manual</a>
+<a href="../../en/03-by-role/README.html">Role-Based User Manuals</a></section>
+<section class="nav-section"><h2>English - Production</h2><a href="../../en/10-production/dashboards.html">Production Dashboards</a>
+<a href="../../en/10-production/manual-tasks.html">Manual Tasks</a>
+<a href="../../en/10-production/planning.html">Planning</a>
+<a href="../../en/10-production/production-orders.html">Production Orders</a>
+<a href="../../en/10-production/queue-system.html">Queue System</a></section>
+<section class="nav-section"><h2>English - Engineering</h2><a href="../../en/20-engineering/bom.html">BOM</a>
+<a href="../../en/20-engineering/machines.html">Machines</a>
+<a href="../../en/20-engineering/nc-programs.html">NC Programs</a>
+<a href="../../en/20-engineering/parts.html">Parts</a>
+<a href="../../en/20-engineering/recipes.html">Recipes</a></section>
+<section class="nav-section"><h2>English - Quality</h2><a href="../../en/30-quality/equipment-calibration.html">Equipment Calibration</a>
+<a href="../../en/30-quality/inspection-planning.html">Inspection Planning</a>
+<a href="../../en/30-quality/inspection-records.html">Inspection Records</a>
+<a href="../../en/30-quality/ncr-non-conformance.html">NCR Non-Conformance</a></section>
+<section class="nav-section"><h2>English - SMARTQC</h2><a href="../../en/35-smartqc/check-sheets.html">SMARTQC Check Sheets</a>
+<a href="../../en/35-smartqc/inspection-data-entry.html">SMARTQC Inspection Data Entry</a>
+<a href="../../en/35-smartqc/methods-and-groups.html">SMARTQC Methods and Groups</a></section>
+<section class="nav-section"><h2>English - Administration</h2><a href="../../en/40-administration/users-and-roles.html">Users and Roles</a></section>
+<section class="nav-section"><h2>Chinese - Start</h2><a href="../00-start-here.html">从这里开始：演示操作指南</a>
+<a href="../00-glossary.html">操作术语表</a></section>
+<section class="nav-section"><h2>Chinese - Workflows</h2><a href="../01-workflows/admin-setup-checklist.html">管理员设置检查清单</a>
+<a href="../01-workflows/operator-run-next-job.html">操作员运行下一个作业流程</a>
+<a href="../01-workflows/planner-cold-start.html">计划员冷启动流程</a>
+<a href="../01-workflows/supervisor-triage.html">生产主管延误作业排查</a></section>
+<section class="nav-section"><h2>Chinese - Roles</h2><a href="operator.html">操作员手册</a>
+<a href="planner.html">计划员手册</a>
+<a href="production-engineer.html">生产工程师手册</a>
+<a href="production-supervisor.html">生产主管手册</a>
+<a class="active" href="quality-engineer.html">质量工程师手册</a>
+<a href="README.html">按角色阅读的用户手册</a></section>
+<section class="nav-section"><h2>Chinese - Production</h2><a href="../10-production/dashboards.html">生产看板</a>
+<a href="../10-production/manual-tasks.html">手动任务</a>
+<a href="../10-production/planning.html">计划</a>
+<a href="../10-production/production-orders.html">工单</a>
+<a href="../10-production/queue-system.html">队列系统</a></section>
+<section class="nav-section"><h2>Chinese - Engineering</h2><a href="../20-engineering/bom.html">BOM</a>
+<a href="../20-engineering/machines.html">机台</a>
+<a href="../20-engineering/nc-programs.html">NC 程序</a>
+<a href="../20-engineering/parts.html">零件</a>
+<a href="../20-engineering/recipes.html">配方</a></section>
+<section class="nav-section"><h2>Chinese - Quality</h2><a href="../30-quality/equipment-calibration.html">设备校准</a>
+<a href="../30-quality/inspection-planning.html">检验计划</a>
+<a href="../30-quality/inspection-records.html">检验记录</a>
+<a href="../30-quality/ncr-non-conformance.html">NCR 不合格</a></section>
+<section class="nav-section"><h2>Chinese - SMARTQC</h2><a href="../35-smartqc/check-sheets.html">SMARTQC 检验表</a>
+<a href="../35-smartqc/inspection-data-entry.html">SMARTQC 检验录入</a>
+<a href="../35-smartqc/methods-and-groups.html">SMARTQC 方法与方法组</a></section>
+<section class="nav-section"><h2>Chinese - Administration</h2><a href="../40-administration/users-and-roles.html">用户和角色</a></section>
+      </nav>
+    </aside>
+    <main class="content">
+      <article class="article">
+        <div class="page-path">zh-CN/03-by-role/quality-engineer.md</div>
+<h1>质量工程师手册</h1>
+<blockquote><p><a href="../../en/03-by-role/quality-engineer.html">English</a> | 中文</p></blockquote>
+<p>内部演示复查质量页面时使用本角色手册。Quality/QC 与 Inspection Planning 仍待上级确认，因此本手册保留这些页面，并加入已截图页面供复查，而不是隐藏该范围。</p>
+<h2>日常流程</h2>
+<ol><li>确认哪些生产阶段需要检验。</li><li>在作业到达现场前，确认 SMARTQC 检验表已准备好。</li><li>复查检验录入结果，并跟进失败或未完成的记录。</li><li>当缺陷需要正式复查时，建立或复查 NCR。</li><li>在量具用于检验前，确认校准状态可用。</li></ol>
+<h2>最常用的屏幕</h2>
+<table><thead><tr><th>屏幕</th><th>在这里做什么</th><th>视觉状态</th></tr></thead><tbody><tr><td><a href="../30-quality/inspection-planning.html">Inspection Planning</a></td><td>将检验要求关联到生产阶段。</td><td>已截图</td></tr>
+<tr><td><a href="../35-smartqc/check-sheets.html">SMARTQC Check Sheets</a></td><td>复查检验表版本和检验项目。</td><td>已截图</td></tr>
+<tr><td><a href="../35-smartqc/inspection-data-entry.html">SMARTQC Inspection Data Entry</a></td><td>复查或录入检验结果。</td><td>已截图</td></tr>
+<tr><td><a href="../35-smartqc/methods-and-groups.html">SMARTQC Methods and Groups</a></td><td>维护检验表使用的可见方法名称与方法组。</td><td>已截图</td></tr>
+<tr><td><a href="../30-quality/ncr-non-conformance.html">NCR</a></td><td>记录和复查不合格详情。</td><td>已截图</td></tr>
+<tr><td><a href="../30-quality/equipment-calibration.html">Equipment Calibration</a></td><td>确认测量设备是否可用于检验。</td><td>已截图</td></tr></tbody></table>
+<h2>复查时要检查什么</h2>
+<ul><li>本指南中的侧边栏名称与本地应用登录后看到的名称一致。</li><li>每个屏幕都能打开到预期的列表或表单。</li><li>用户保存前可以看到必填字段。</li><li>失败或阻塞以屏幕上可见的状态解释，不写成隐藏系统行为。</li></ul>
+<h2>常见问题</h2>
+<table><thead><tr><th>问题</th><th>可能原因</th><th>下一步</th></tr></thead><tbody><tr><td>找不到检验</td><td>作业可能还没有到达计划的检验阶段，或未选择检验表。</td><td>复查 Inspection Planning 和相关 SMARTQC 检验表。</td></tr>
+<tr><td>用户能打开页面但不能保存</td><td>可能有必填字段未填，或角色不允许编辑。</td><td>先检查屏幕上的必填字段，再请 Administration 复查角色。</td></tr>
+<tr><td>某个测量值无法编辑</td><td>部分测量行可能由机台或 CMM 采集控制。</td><td>确认该行是否应允许手工录入。</td></tr>
+<tr><td>校准状态看起来不对</td><td>校准记录或设备主资料可能未更新。</td><td>使用设备前复查 Equipment Calibration。</td></tr></tbody></table>
+<h2>截图</h2>
+<p><img src="../../assets/screenshots/quality-inspection-planning.png" alt="DS_ERP 检验计划界面"></p>
+<p><img src="../../assets/screenshots/smartqc-check-sheets.png" alt="DS_ERP SMARTQC 检验表界面"></p>
+<p><img src="../../assets/screenshots/smartqc-inspection-data-entry.png" alt="DS_ERP SMARTQC 检验界面"></p>
+<p><img src="../../assets/screenshots/smartqc-methods-and-groups.png" alt="DS_ERP SMARTQC 方法界面"></p>
+<p><img src="../../assets/screenshots/quality-ncr.png" alt="DS_ERP NCR 界面"></p>
+<p><img src="../../assets/screenshots/quality-equipment-calibration.png" alt="DS_ERP 设备校准界面"></p>
+<p><img src="../../assets/screenshots/administration-users-roles.png" alt="DS_ERP 角色管理界面"></p>
+<p>Administration 截图仅用于说明当用户能打开页面但无法执行预期动作时，在哪里复查角色访问设置。</p>
+<h2>相关页面</h2>
+<ul><li><a href="../30-quality/inspection-planning.html">检验计划</a></li><li><a href="../30-quality/ncr-non-conformance.html">NCR 不合格</a></li><li><a href="../30-quality/equipment-calibration.html">设备校准</a></li><li><a href="../35-smartqc/check-sheets.html">SMARTQC 检验表</a></li><li><a href="../35-smartqc/inspection-data-entry.html">SMARTQC 检验录入</a></li><li><a href="../35-smartqc/methods-and-groups.html">SMARTQC 方法与方法组</a></li></ul>
+        <div class="footer">Generated from the manual source. Use &lt;APP_BASE_URL&gt; as the actual factory deployment address.</div>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

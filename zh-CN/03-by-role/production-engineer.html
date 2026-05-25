@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>生产工程师手册 - DS_ERP User Guide</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="../../index.html">DS_ERP User Guide</a>
+      <div class="subtitle">Generated from docs-codex/manual Markdown</div>
+      <nav aria-label="Manual pages">
+<section class="nav-section"><h2>Start</h2><a href="../../index.html">DSERP User Guide</a></section>
+<section class="nav-section"><h2>English - Start</h2><a href="../../en/00-start-here.html">Start Here: Demo Operating Guide</a>
+<a href="../../en/00-glossary.html">Operating Glossary</a></section>
+<section class="nav-section"><h2>English - Workflows</h2><a href="../../en/01-workflows/admin-setup-checklist.html">Admin Setup Checklist</a>
+<a href="../../en/01-workflows/operator-run-next-job.html">Operator Run The Next Job Walkthrough</a>
+<a href="../../en/01-workflows/planner-cold-start.html">Planner Cold Start Walkthrough</a>
+<a href="../../en/01-workflows/supervisor-triage.html">Supervisor Delayed Production Triage</a></section>
+<section class="nav-section"><h2>English - Roles</h2><a href="../../en/03-by-role/operator.html">Operator Manual</a>
+<a href="../../en/03-by-role/planner.html">Planner Manual</a>
+<a href="../../en/03-by-role/production-engineer.html">Production Engineer Manual</a>
+<a href="../../en/03-by-role/production-supervisor.html">Production Supervisor Manual</a>
+<a href="../../en/03-by-role/quality-engineer.html">Quality Engineer Manual</a>
+<a href="../../en/03-by-role/README.html">Role-Based User Manuals</a></section>
+<section class="nav-section"><h2>English - Production</h2><a href="../../en/10-production/dashboards.html">Production Dashboards</a>
+<a href="../../en/10-production/manual-tasks.html">Manual Tasks</a>
+<a href="../../en/10-production/planning.html">Planning</a>
+<a href="../../en/10-production/production-orders.html">Production Orders</a>
+<a href="../../en/10-production/queue-system.html">Queue System</a></section>
+<section class="nav-section"><h2>English - Engineering</h2><a href="../../en/20-engineering/bom.html">BOM</a>
+<a href="../../en/20-engineering/machines.html">Machines</a>
+<a href="../../en/20-engineering/nc-programs.html">NC Programs</a>
+<a href="../../en/20-engineering/parts.html">Parts</a>
+<a href="../../en/20-engineering/recipes.html">Recipes</a></section>
+<section class="nav-section"><h2>English - Quality</h2><a href="../../en/30-quality/equipment-calibration.html">Equipment Calibration</a>
+<a href="../../en/30-quality/inspection-planning.html">Inspection Planning</a>
+<a href="../../en/30-quality/inspection-records.html">Inspection Records</a>
+<a href="../../en/30-quality/ncr-non-conformance.html">NCR Non-Conformance</a></section>
+<section class="nav-section"><h2>English - SMARTQC</h2><a href="../../en/35-smartqc/check-sheets.html">SMARTQC Check Sheets</a>
+<a href="../../en/35-smartqc/inspection-data-entry.html">SMARTQC Inspection Data Entry</a>
+<a href="../../en/35-smartqc/methods-and-groups.html">SMARTQC Methods and Groups</a></section>
+<section class="nav-section"><h2>English - Administration</h2><a href="../../en/40-administration/users-and-roles.html">Users and Roles</a></section>
+<section class="nav-section"><h2>Chinese - Start</h2><a href="../00-start-here.html">从这里开始：演示操作指南</a>
+<a href="../00-glossary.html">操作术语表</a></section>
+<section class="nav-section"><h2>Chinese - Workflows</h2><a href="../01-workflows/admin-setup-checklist.html">管理员设置检查清单</a>
+<a href="../01-workflows/operator-run-next-job.html">操作员运行下一个作业流程</a>
+<a href="../01-workflows/planner-cold-start.html">计划员冷启动流程</a>
+<a href="../01-workflows/supervisor-triage.html">生产主管延误作业排查</a></section>
+<section class="nav-section"><h2>Chinese - Roles</h2><a href="operator.html">操作员手册</a>
+<a href="planner.html">计划员手册</a>
+<a class="active" href="production-engineer.html">生产工程师手册</a>
+<a href="production-supervisor.html">生产主管手册</a>
+<a href="quality-engineer.html">质量工程师手册</a>
+<a href="README.html">按角色阅读的用户手册</a></section>
+<section class="nav-section"><h2>Chinese - Production</h2><a href="../10-production/dashboards.html">生产看板</a>
+<a href="../10-production/manual-tasks.html">手动任务</a>
+<a href="../10-production/planning.html">计划</a>
+<a href="../10-production/production-orders.html">工单</a>
+<a href="../10-production/queue-system.html">队列系统</a></section>
+<section class="nav-section"><h2>Chinese - Engineering</h2><a href="../20-engineering/bom.html">BOM</a>
+<a href="../20-engineering/machines.html">机台</a>
+<a href="../20-engineering/nc-programs.html">NC 程序</a>
+<a href="../20-engineering/parts.html">零件</a>
+<a href="../20-engineering/recipes.html">配方</a></section>
+<section class="nav-section"><h2>Chinese - Quality</h2><a href="../30-quality/equipment-calibration.html">设备校准</a>
+<a href="../30-quality/inspection-planning.html">检验计划</a>
+<a href="../30-quality/inspection-records.html">检验记录</a>
+<a href="../30-quality/ncr-non-conformance.html">NCR 不合格</a></section>
+<section class="nav-section"><h2>Chinese - SMARTQC</h2><a href="../35-smartqc/check-sheets.html">SMARTQC 检验表</a>
+<a href="../35-smartqc/inspection-data-entry.html">SMARTQC 检验录入</a>
+<a href="../35-smartqc/methods-and-groups.html">SMARTQC 方法与方法组</a></section>
+<section class="nav-section"><h2>Chinese - Administration</h2><a href="../40-administration/users-and-roles.html">用户和角色</a></section>
+      </nav>
+    </aside>
+    <main class="content">
+      <article class="article">
+        <div class="page-path">zh-CN/03-by-role/production-engineer.md</div>
+<h1>生产工程师手册</h1>
+<blockquote><p><a href="../../en/03-by-role/production-engineer.html">English</a> | 中文</p></blockquote>
+<p>您是<strong>生产工程师</strong>。您负责让制造定义可执行：零件、BOM、配方、工序、机台能力、 NC 程序、节拍假设，以及计划、生产、质量之间的交接规则。</p>
+<h2>工作流程</h2>
+<pre><code>新零件 / 新修订
+      |
+      v
+核对零件 + BOM ──► 建配方/工序 ──► 确认机台
+      |                    |                  |
+      v                    v                  v
+准备 NC 程序          验证节拍              移交计划员
+      |                                      |
+      v                                      v
+支持首件生产  ──►  复盘问题  ──►  更新配方/设置数据</code></pre>
+<h2>最常用的屏幕</h2>
+<table><thead><tr><th>屏幕</th><th>您在这里做什么</th></tr></thead><tbody><tr><td><a href="../20-engineering/parts.html">零件</a></td><td>确认生产零件、修订、图纸、材料与质量链接已准备好。</td></tr>
+<tr><td><a href="../20-engineering/bom.html">BOM 主档 与 BOM 结构</a></td><td>在计划生成工单前检查父子物料结构。</td></tr>
+<tr><td><a href="../20-engineering/recipes.html">配方</a></td><td>维护零件或产品族的路线框架。</td></tr>
+<tr><td><a href="../20-engineering/recipes.html">配方工序</a></td><td>定义制造工序顺序、预估节拍与工序关系。</td></tr>
+<tr><td><a href="../20-engineering/machines.html">机台 与 机台组/线别</a></td><td>确认目标机台与机台组存在，且能力匹配工序。</td></tr>
+<tr><td><a href="../20-engineering/nc-programs.html">NC 程序</a></td><td>维护 CNC 程序引用，确认正确修订已可用于生产。</td></tr>
+<tr><td><a href="../10-production/production-orders.html">工单</a></td><td>检查已生成工单，诊断路线、数量或状态问题。</td></tr>
+<tr><td><a href="../30-quality/inspection-planning.html">检验计划</a></td><td>与 QA 协调，确认正确检验阶段已挂到工序。</td></tr></tbody></table>
+<h2>首件 / 新修订检查清单</h2>
+<ol><li>确认零件的修订、描述、图纸引用与启用状态正确。</li><li>检查 BOM 主档是否缺料或有异常子件。</li><li>新建或更新配方。</li><li>按真实车间顺序加入每道配方工序。</li><li>分配有能力执行的机台或机台组。</li><li>在计划员发布工单前，确认 NC 程序记录与修订可用。</li><li>请 QA 确认<a href="../30-quality/inspection-planning.html">检验计划</a>与 SMARTQC 设置。</li><li>支持首件生产；如果实际表现与配方假设不同，更新节拍或设置数据。</li></ol>
+<h2>生产中要检查什么</h2>
+<table><thead><tr><th>情况</th><th>检查内容</th></tr></thead><tbody><tr><td>计划员无法生成预期工单</td><td><a href="../20-engineering/recipes.html">配方</a>工序列表、<a href="../20-engineering/bom.html">BOM</a> 链接、<a href="../20-engineering/parts.html">零件</a>修订设置</td></tr>
+<tr><td>工单到了错误机台组</td><td><a href="../20-engineering/recipes.html">配方</a>工序的<a href="../20-engineering/machines.html">机台</a>分配与机台组映射</td></tr>
+<tr><td>现场 NC 程序不匹配</td><td><a href="../20-engineering/nc-programs.html">NC 程序</a>记录、零件修订、机台兼容性</td></tr>
+<tr><td>节拍不现实</td><td><a href="../20-engineering/recipes.html">配方</a>工序节拍字段与近期生产记录</td></tr>
+<tr><td>质量检查出现在错误阶段</td><td><a href="../30-quality/inspection-planning.html">检验计划</a>与检验表到零件/工序的链接</td></tr></tbody></table>
+<h2>交接规则</h2>
+<ul><li>只有当零件、BOM、配方、机台能力与 NC 程序准备好后，才移交给<strong>计划员</strong>。</li><li>当检验阶段、CMM 程序或 SMARTQC 检验表需要定义或修订时，移交给<a href="quality-engineer.html">质量工程师</a>。</li><li>如果所需页面因权限隐藏，或主数据设置被权限阻塞，移交给<strong>管理员</strong>。</li></ul>
+<h2>截图</h2>
+<p>建议为本角色补充以下截图：</p>
+<table><thead><tr><th>截图</th><th>建议页面</th></tr></thead><tbody><tr><td>生产准备状态下的零件设置</td><td><a href="../20-engineering/parts.html">零件</a></td></tr>
+<tr><td>配方工序路线</td><td><a href="../20-engineering/recipes.html">配方工序</a></td></tr>
+<tr><td>机台能力列表</td><td><a href="../20-engineering/machines.html">机台</a></td></tr>
+<tr><td>NC 程序列表</td><td><a href="../20-engineering/nc-programs.html">NC 程序</a></td></tr>
+<tr><td>BOM 结构复查</td><td><a href="../20-engineering/bom.html">BOM</a></td></tr></tbody></table>
+<p><img src="../../assets/screenshots/role-production-engineer-recipes.png" alt="DS_ERP 配方界面"></p>
+<p>配方截图展示已登录后的配方维护页面，用于查看生产路线和工序定义。</p>
+<p><img src="../../assets/screenshots/role-production-engineer-machines.png" alt="DS_ERP 机台界面"></p>
+<p>机台截图展示用于确认机台能力和分组的主数据列表。</p>
+<p><img src="../../assets/screenshots/role-production-engineer-nc-programs.png" alt="DS_ERP NC 程序界面"></p>
+<p>NC 程序截图展示程序目录，用于生产放行前确认 CNC 程序准备状态。</p>
+<p><img src="../../assets/screenshots/parts-list.png" alt="DS_ERP 零件列表界面"></p>
+<p>零件截图展示已登录后的零件列表，用于在路线和 BOM 复查前确认生产零件准备状态。</p>
+<p><img src="../../assets/screenshots/bom-master-structure.png" alt="DS_ERP BOM 结构界面"></p>
+<p>BOM 截图展示已登录后的结构页面，用于复查父件与子件关系。</p>
+<h2>接下来读</h2>
+<ul><li><a href="planner.html">计划员手册</a></li><li><a href="quality-engineer.html">质量工程师手册</a></li></ul>
+        <div class="footer">Generated from the manual source. Use &lt;APP_BASE_URL&gt; as the actual factory deployment address.</div>
+      </article>
+    </main>
+  </div>
+</body>
+</html>
