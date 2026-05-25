@@ -1,6 +1,6 @@
 # DS_ERP User Manual
 
-Use this site to review the user guide pages for the factory demo. If you are new to the app, start with the operating guide before opening role or screen chapters.
+Use this site to review the DS_ERP user guide pages. If you are new to the app, start with the operating guide before opening role or screen chapters.
 
 ## Start Here
 

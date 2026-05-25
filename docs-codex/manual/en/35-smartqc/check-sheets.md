@@ -26,10 +26,10 @@ Use SMARTQC Check Sheets to review the inspection template used by operators and
 
 ## What To Check
 
-- The active version is the one expected for the demo job.
+- The active version is the one expected for the site job.
 - The stage and part information match the inspection plan.
 - Inspection items are visible and ordered clearly enough for review.
-- Upload actions should not be used during demo review unless the file has been approved.
+- Upload actions should not be used during workflow review unless the file has been approved.
 
 ## Common Issues
 

@@ -2,7 +2,7 @@
 
 > English | [zh-CN](../../zh-CN/03-by-role/README.md)
 
-New to the demo? Start with the [operating guide](../00-start-here.md), then return here to choose the role that matches your review question.
+New to the workflow? Start with the [operating guide](../00-start-here.md), then return here to choose the role that matches your review question.
 
 Use this section when you want a practical manual by job role instead of by
 module. Each role page lists the normal daily workflow, the screens to open,

@@ -21,16 +21,16 @@
 <details class="nav-group">
         <summary>Start</summary>
         <div class="nav-links">
-<a href="../00-start-here.html">Start Here: Demo Operating Guide</a>
+<a href="../00-start-here.html">Start Here: Factory Operating Guide</a>
 <a href="../00-glossary.html">Operating Glossary</a>
-<a href="../00-open-decisions.html">Evidence And Decisions Register</a>
+<a href="../00-open-decisions.html">Evidence and Decisions Register</a>
         </div>
       </details>
 <details class="nav-group">
         <summary>Workflows</summary>
         <div class="nav-links">
 <a href="../01-workflows/admin-setup-checklist.html">Admin Setup Checklist</a>
-<a href="../01-workflows/operator-run-next-job.html">Operator Run The Next Job Walkthrough</a>
+<a href="../01-workflows/operator-run-next-job.html">Operator: Run the Next Job Walkthrough</a>
 <a href="../01-workflows/planner-cold-start.html">Planner Cold Start Walkthrough</a>
 <a href="../01-workflows/supervisor-triage.html">Supervisor Delayed Production Triage</a>
         </div>
@@ -96,7 +96,7 @@
 <details class="nav-group">
         <summary>开始</summary>
         <div class="nav-links">
-<a href="../../zh-CN/00-start-here.html">从这里开始：演示操作指南</a>
+<a href="../../zh-CN/00-start-here.html">从这里开始：工厂操作指南</a>
 <a href="../../zh-CN/00-glossary.html">操作术语表</a>
 <a href="../../zh-CN/00-open-decisions.html">证据与待决事项登记</a>
         </div>
@@ -147,7 +147,7 @@
 <a href="../../zh-CN/30-quality/equipment-calibration.html">设备校准</a>
 <a href="../../zh-CN/30-quality/inspection-planning.html">检验计划</a>
 <a href="../../zh-CN/30-quality/inspection-records.html">检验记录</a>
-<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格</a>
+<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格报告</a>
         </div>
       </details>
 <details class="nav-group">
@@ -169,33 +169,33 @@
     </aside>
     <main class="content">
       <article class="article">
-<h1>Queue System</h1>
+<h1 id="queue-system">Queue System</h1>
 <blockquote><p><a href="queue-system.html">English</a> | <a href="../../zh-CN/10-production/queue-system.html">中文</a></p></blockquote>
 <p>Path: Planner / Queue System URL: <code>&lt;APP_BASE_URL&gt;/Production/QueuePage</code></p>
 <p>The current captured sidebar path is <code>Planner / Queue System</code>. Operators and supervisors also use this same page when their role exposes it.</p>
-<h2>What This Page Is For</h2>
+<h2 id="what-this-page-is-for">What This Page Is For</h2>
 <p>Use Queue System to confirm which released work is visible for execution. Operators use it to find work, while supervisors use it to check whether the shift has the expected jobs available.</p>
-<p>Dispatch rules, row actions, and exact status labels remain tracked in the <a href="../00-open-decisions.html">Evidence And Decisions Register</a> until they are confirmed with visible screenshots.</p>
-<h2>What You See</h2>
+<p>Dispatch rules, row actions, and exact status labels remain tracked in the <a href="../00-open-decisions.html">Evidence and Decisions Register</a> until they are confirmed with visible screenshots.</p>
+<h2 id="what-you-see">What You See</h2>
 <ul><li>A queue of available work with job, part, process, status, and timing information.</li><li>Filters for work area, machine, date, or status.</li><li>Row actions that open the job or move the user into the next visible work step.</li><li>Status indicators that must be read through the shared queue status map below until exact app labels are screenshot-confirmed.</li></ul>
-<h2>Queue Status Map</h2>
+<h2 id="queue-status-map">Queue Status Map</h2>
 <p>Use the manual working terms below whenever planner, operator, or supervisor pages discuss queue state. The exact visible app labels still need screenshot confirmation; until then, do not invent a label that is not shown on screen.</p>
 <table><thead><tr><th>Manual working term</th><th>Visible status or condition</th><th>Meaning</th><th>Operator action</th><th>Supervisor action</th><th>Escalate to</th></tr></thead><tbody><tr><td>Ready</td><td>Confirmed visible label or status still needs screenshot capture.</td><td>The job appears available for the selected machine, line, work area, date, or status filter.</td><td>Open or start only if the dispatch rule and row action are confirmed.</td><td>Confirm the job matches Planning and the WO before telling an operator to run it.</td><td>Supervisor if multiple ready jobs compete; planner if the job should not be visible.</td></tr>
 <tr><td>Active</td><td>Confirmed visible label or status still needs screenshot capture.</td><td>Work appears to be in progress or already started.</td><td>Continue only in the assigned reporting flow.</td><td>Check output, downtime, last update, and whether the active job matches the shift plan.</td><td>Supervisor for production issues; quality engineer if inspection blocks progress.</td></tr>
 <tr><td>Paused / blocked</td><td>Confirmed visible label or blocked condition still needs screenshot capture.</td><td>Work cannot safely continue because a status, quality step, machine issue, missing setup, or access issue is blocking it.</td><td>Do not bypass the block; capture the row and current page.</td><td>Route by evidence: planning/release to planner, setup to production engineer, quality/NCR to quality engineer, access to administrator.</td><td>Planner, production engineer, quality engineer, or administrator based on the missing condition.</td></tr>
 <tr><td>Complete</td><td>Confirmed visible label or finished condition still needs screenshot capture.</td><td>The current operation may be complete, but queue disappearance alone is not proof.</td><td>Verify the same WO/job and process in Queue System, Production Orders, or Inspection Records before handover.</td><td>Confirm output, quality result, and handover notes before treating the job as closed for the shift.</td><td>Planner or quality engineer if status and records disagree.</td></tr>
-<tr><td>Hidden / missing</td><td>No row appears under the selected filters.</td><td>The job may be unreleased, unscheduled, filtered out, assigned elsewhere, or not created for the demo.</td><td>Do not choose a substitute job without supervisor instruction.</td><td>Compare Queue System with Production Orders and Planning before escalating.</td><td>Planner if unreleased/unscheduled; administrator if access hides the page/action.</td></tr></tbody></table>
-<h2>What You Do</h2>
-<ol><li>Select the work area or machine used in the demo.</li><li>Find the released job and confirm the part and process.</li><li>Open the job only after checking that the visible status maps to the <code>Ready</code> working term and the dispatch rule is confirmed.</li><li>Escalate missing or blocked jobs to the planner or supervisor.</li></ol>
-<h2>What To Check</h2>
+<tr><td>Hidden / missing</td><td>No row appears under the selected filters.</td><td>The job may be unreleased, unscheduled, filtered out, assigned elsewhere, or not created for the site workflow.</td><td>Do not choose a substitute job without supervisor instruction.</td><td>Compare Queue System with Production Orders and Planning before escalating.</td><td>Planner if unreleased/unscheduled; administrator if access hides the page/action.</td></tr></tbody></table>
+<h2 id="what-you-do">What You Do</h2>
+<ol><li>Select the work area or machine used in the workflow.</li><li>Find the released job and confirm the part and process.</li><li>Open the job only after checking that the visible status maps to the <code>Ready</code> working term and the dispatch rule is confirmed.</li><li>Escalate missing or blocked jobs to the planner or supervisor.</li></ol>
+<h2 id="what-to-check">What To Check</h2>
 <ul><li>The queue row matches the planned order and operation.</li><li>The operator sees only work that is ready for execution.</li><li>The selected filter is not hiding the work.</li><li>Required inspection or manual task steps are visible when expected.</li></ul>
-<h2>Common Issues</h2>
+<h2 id="common-issues">Common Issues</h2>
 <table><thead><tr><th>Issue</th><th>What it means</th></tr></thead><tbody><tr><td>Job is not shown</td><td>The order may not be released, or the queue filter may be wrong.</td></tr>
 <tr><td>Job is shown but cannot start</td><td>The current status or required step may block execution.</td></tr>
 <tr><td>Operator sees unexpected work</td><td>Recheck planning, release status, and work-area filters.</td></tr></tbody></table>
-<h2>Related Pages</h2>
+<h2 id="related-pages">Related Pages</h2>
 <ul><li><a href="../03-by-role/operator.html">Operator Manual</a></li><li><a href="../03-by-role/production-supervisor.html">Production Supervisor Manual</a></li><li><a href="production-orders.html">Production Orders</a></li><li><a href="manual-tasks.html">Manual Tasks</a></li></ul>
-<h2>Screenshot</h2>
+<h2 id="screenshot">Screenshot</h2>
 <p><img src="../../assets/screenshots/role-operator-queue.png" alt="DS_ERP queue system screen"></p>
       </article>
     </main>

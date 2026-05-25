@@ -18,7 +18,7 @@ Use Planning to place released or planned work into a schedule that supervisors 
 
 ## What You Do
 
-1. Choose the date range and production area for the demo.
+1. Choose the date range and production area for the site workflow.
 2. Find the work order and check where it is scheduled.
 3. Adjust only when the visible action and the business scenario allow it.
 4. Compare the schedule with Production Orders and Queue System before handover.

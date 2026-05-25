@@ -393,6 +393,14 @@ function stripMarkdown(value) {
     .trim();
 }
 
+function slugHeading(value) {
+  return stripMarkdown(value)
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}\s-]/gu, '')
+    .trim()
+    .replace(/\s+/g, '-');
+}
+
 function renderInline(value, sourceRel) {
   const codeTokens = [];
   let text = String(value).replace(/`([^`]+)`/g, (_, code) => {
@@ -455,6 +463,7 @@ function isBlockStart(lines, index) {
 function renderMarkdown(markdown, sourceRel) {
   const lines = markdown.replace(/^\uFEFF/, '').replace(/\r\n/g, '\n').split('\n');
   const output = [];
+  const headingCounts = new Map();
 
   for (let index = 0; index < lines.length;) {
     const line = lines[index];
@@ -483,7 +492,20 @@ function renderMarkdown(markdown, sourceRel) {
     const heading = /^(#{1,6})\s+(.+)$/.exec(line);
     if (heading) {
       const level = heading[1].length;
-      output.push(`<h${level}>${renderInline(heading[2].trim(), sourceRel)}</h${level}>`);
+      const headingText = heading[2].trim();
+      const baseId = slugHeading(headingText);
+      let id = baseId;
+
+      if (baseId) {
+        const count = headingCounts.get(baseId) ?? 0;
+        headingCounts.set(baseId, count + 1);
+        if (count > 0) {
+          id = `${baseId}-${count + 1}`;
+        }
+      }
+
+      const idAttribute = id ? ` id="${escapeAttribute(id)}"` : '';
+      output.push(`<h${level}${idAttribute}>${renderInline(headingText, sourceRel)}</h${level}>`);
       index += 1;
       continue;
     }

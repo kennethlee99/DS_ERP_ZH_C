@@ -18,7 +18,7 @@ Use Recipes to review the production route or processing setup that supports a p
 
 ## What You Do
 
-1. Search for the part, recipe name, or route used in the demo.
+1. Search for the part, recipe name, or route used in the workflow.
 2. Open the recipe and review visible operation or process information.
 3. Confirm the recipe is active and suitable for the planned work.
 4. Compare the recipe with BOM, machines, and NC program readiness before release.
@@ -36,7 +36,7 @@ Use Recipes to review the production route or processing setup that supports a p
 |---|---|
 | Recipe is missing | The item may not be ready for work-order generation. |
 | Recipe is inactive or unclear | Engineering should review before release. |
-| Recipe does not match BOM or machine setup | Resolve the setup mismatch before the demo. |
+| Recipe does not match BOM or machine setup | Resolve the setup mismatch before use. |
 
 ## Related Pages
 

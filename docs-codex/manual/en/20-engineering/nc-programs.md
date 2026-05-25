@@ -12,13 +12,13 @@ Use NC Programs to review production program records before work reaches the flo
 ## What You See
 
 - A program list with identifying fields, names, status, and related production information.
-- Search and filter controls for locating the program used by the demo job.
+- Search and filter controls for locating the program used by the site job.
 - Toolbar actions for creating, editing, refreshing, exporting, and opening records when available.
 - Detail forms for reviewing selected program information.
 
 ## What You Do
 
-1. Search for the program linked to the demo part or operation.
+1. Search for the program linked to the selected part or operation.
 2. Open the record and confirm the visible name, status, and context.
 3. Compare the program with the recipe and machine setup before release.
 4. Escalate missing or unclear program records to production engineering.

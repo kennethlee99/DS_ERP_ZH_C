@@ -100,7 +100,7 @@ open when a measurement or quality checkpoint is required.
 
 ![DS_ERP manual tasks screen](../../assets/screenshots/production-manual-tasks.png)
 
-The manual tasks screenshot shows the [Manual Tasks](../10-production/manual-tasks.md) task-definition page. Assigned manual work still needs confirmation in the queue or reporting screen used by the demo.
+The manual tasks screenshot shows the [Manual Tasks](../10-production/manual-tasks.md) task-definition page. Assigned manual work still needs confirmation in the queue or reporting screen used by the site workflow.
 
 ![DS_ERP inspection records screen](../../assets/screenshots/quality-inspection-records.png)
 

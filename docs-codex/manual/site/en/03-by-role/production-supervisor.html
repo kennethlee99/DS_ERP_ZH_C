@@ -21,16 +21,16 @@
 <details class="nav-group">
         <summary>Start</summary>
         <div class="nav-links">
-<a href="../00-start-here.html">Start Here: Demo Operating Guide</a>
+<a href="../00-start-here.html">Start Here: Factory Operating Guide</a>
 <a href="../00-glossary.html">Operating Glossary</a>
-<a href="../00-open-decisions.html">Evidence And Decisions Register</a>
+<a href="../00-open-decisions.html">Evidence and Decisions Register</a>
         </div>
       </details>
 <details class="nav-group">
         <summary>Workflows</summary>
         <div class="nav-links">
 <a href="../01-workflows/admin-setup-checklist.html">Admin Setup Checklist</a>
-<a href="../01-workflows/operator-run-next-job.html">Operator Run The Next Job Walkthrough</a>
+<a href="../01-workflows/operator-run-next-job.html">Operator: Run the Next Job Walkthrough</a>
 <a href="../01-workflows/planner-cold-start.html">Planner Cold Start Walkthrough</a>
 <a href="../01-workflows/supervisor-triage.html">Supervisor Delayed Production Triage</a>
         </div>
@@ -96,7 +96,7 @@
 <details class="nav-group">
         <summary>开始</summary>
         <div class="nav-links">
-<a href="../../zh-CN/00-start-here.html">从这里开始：演示操作指南</a>
+<a href="../../zh-CN/00-start-here.html">从这里开始：工厂操作指南</a>
 <a href="../../zh-CN/00-glossary.html">操作术语表</a>
 <a href="../../zh-CN/00-open-decisions.html">证据与待决事项登记</a>
         </div>
@@ -147,7 +147,7 @@
 <a href="../../zh-CN/30-quality/equipment-calibration.html">设备校准</a>
 <a href="../../zh-CN/30-quality/inspection-planning.html">检验计划</a>
 <a href="../../zh-CN/30-quality/inspection-records.html">检验记录</a>
-<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格</a>
+<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格报告</a>
         </div>
       </details>
 <details class="nav-group">
@@ -169,10 +169,10 @@
     </aside>
     <main class="content">
       <article class="article">
-<h1>Production Supervisor Manual</h1>
+<h1 id="production-supervisor-manual">Production Supervisor Manual</h1>
 <blockquote><p>English | <a href="../../zh-CN/03-by-role/production-supervisor.html">zh-CN</a></p></blockquote>
 <p>You are the <strong>production supervisor or line lead</strong>. You watch the current shift, keep released work moving, coordinate operators, and decide when a work order issue must be escalated to planning, engineering, quality, or administration.</p>
-<h2>Shift Flow</h2>
+<h2 id="shift-flow">Shift Flow</h2>
 <pre><code>Before shift
     |
     v
@@ -189,14 +189,14 @@ Resolve blockers or escalate
     |
     v
 End shift handover</code></pre>
-<h2>Screens You Use Most</h2>
+<h2 id="screens-you-use-most">Screens You Use Most</h2>
 <table><thead><tr><th>Screen</th><th>What you do here</th></tr></thead><tbody><tr><td><a href="../10-production/queue-system.html">Queue System</a></td><td>See what should run next by machine or line.</td></tr>
 <tr><td><a href="../10-production/planning.html">Planning</a></td><td>Check the scheduled load and confirm whether a late change is already reflected.</td></tr>
 <tr><td><a href="../10-production/production-orders.html">Production Orders</a></td><td>Inspect WO status, quantities, nested orders, and available status actions.</td></tr>
 <tr><td><a href="../10-production/dashboards.html">Dashboards</a></td><td>Open OEE, KPI Production, and Main Layout for high-level signals; treat metric definitions as pending owner confirmation.</td></tr>
-<tr><td><a href="../10-production/manual-tasks.html">Manual Tasks</a></td><td>Review task definitions and confirm where assigned manual work is tracked in the demo.</td></tr>
+<tr><td><a href="../10-production/manual-tasks.html">Manual Tasks</a></td><td>Review task definitions and confirm where assigned manual work is tracked in the workflow.</td></tr>
 <tr><td><a href="../30-quality/inspection-records.html">Inspection Records</a></td><td>Check whether quality failures or pending inspections are blocking production.</td></tr></tbody></table>
-<h2>Before-Shift Checklist</h2>
+<h2 id="before-shift-checklist">Before-Shift Checklist</h2>
 <ol><li>Open <a href="../10-production/queue-system.html">Queue System</a> and confirm the</li></ol>
 <p>first jobs for each machine or line.</p>
 <ol><li>Open <a href="../10-production/planning.html">Planning</a> to compare schedule versus</li></ol>
@@ -205,15 +205,15 @@ End shift handover</code></pre>
 <p>released WOs with missing quantity, due date, recipe, or machine assignment.</p>
 <ol><li>Check quality holds in <a href="../30-quality/inspection-records.html">Inspection Records</a></li></ol>
 <p>or <a href="../30-quality/ncr-non-conformance.html">NCR</a>.</p>
-<h2>When Something Blocks Production</h2>
+<h2 id="when-something-blocks-production">When Something Blocks Production</h2>
 <table><thead><tr><th>Blocker</th><th>First screen</th><th>Escalate to</th></tr></thead><tbody><tr><td>WO is not released or not scheduled</td><td><a href="../10-production/production-orders.html">Production Orders</a>, <a href="../10-production/planning.html">Planning</a></td><td>Planner</td></tr>
 <tr><td>Machine capability or NC program is wrong</td><td><a href="../20-engineering/machines.html">Machines</a>, <a href="../20-engineering/nc-programs.html">NC Programs</a></td><td>Production engineer</td></tr>
 <tr><td>Inspection failed or NCR is open</td><td><a href="../30-quality/inspection-records.html">Inspection Records</a>, <a href="../30-quality/ncr-non-conformance.html">NCR</a></td><td>Quality engineer</td></tr>
 <tr><td>User cannot access a page</td><td><a href="../40-administration/users-and-roles.html">Users and Roles</a></td><td>Administrator</td></tr></tbody></table>
-<h2>End-Shift Handover</h2>
+<h2 id="end-shift-handover">End-Shift Handover</h2>
 <p>Record or communicate:</p>
 <ul><li>WOs completed, still running, or blocked.</li><li>Machine downtime and unresolved machine issues.</li><li>Quality failures, NCR numbers, and inspection records that need follow-up.</li><li>Any manual tasks that remain open.</li><li>Any status actions performed on WOs, especially Cancel, Reset, or Force-Close.</li></ul>
-<h2>Screenshots</h2>
+<h2 id="screenshots">Screenshots</h2>
 <p>Recommended screenshots for this role:</p>
 <table><thead><tr><th>Capture</th><th>Suggested page</th></tr></thead><tbody><tr><td>Shift queue</td><td><a href="../10-production/queue-system.html">Queue System</a></td></tr>
 <tr><td>Planning board</td><td><a href="../10-production/planning.html">Planning</a></td></tr>
@@ -227,10 +227,10 @@ End shift handover</code></pre>
 <p>The production orders screenshot shows the status and action area supervisors use when escalating WO blockers.</p>
 <p>The <a href="../10-production/dashboards.html">Dashboards</a> pages still need separate OEE, KPI Production, and Main Layout screenshots before this role page can describe those signals in detail.</p>
 <p><img src="../../assets/screenshots/production-manual-tasks.png" alt="DS_ERP manual tasks screen"></p>
-<p>The <a href="../10-production/manual-tasks.html">Manual Tasks</a> screenshot shows the task-definition page. Use the demo&#39;s queue or reporting screen to confirm assigned manual work.</p>
+<p>The <a href="../10-production/manual-tasks.html">Manual Tasks</a> screenshot shows the task-definition page. Use the site workflow&#39;s queue or reporting screen to confirm assigned manual work.</p>
 <p><img src="../../assets/screenshots/quality-inspection-records.png" alt="DS_ERP inspection records screen"></p>
 <p>The inspection records screenshot shows where supervisors can check saved inspection outcomes when quality status blocks production.</p>
-<h2>Read Next</h2>
+<h2 id="read-next">Read Next</h2>
 <ul><li><a href="operator.html">Operator manual</a></li><li><a href="planner.html">Planner manual</a></li><li><a href="../01-workflows/supervisor-triage.html">Supervisor triage walkthrough</a></li><li><a href="../10-production/production-orders.html">Production Orders</a></li><li><a href="../30-quality/inspection-records.html">Inspection Records</a></li></ul>
       </article>
     </main>

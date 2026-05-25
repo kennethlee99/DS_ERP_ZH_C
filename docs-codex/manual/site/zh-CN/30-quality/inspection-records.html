@@ -21,16 +21,16 @@
 <details class="nav-group">
         <summary>Start</summary>
         <div class="nav-links">
-<a href="../../en/00-start-here.html">Start Here: Demo Operating Guide</a>
+<a href="../../en/00-start-here.html">Start Here: Factory Operating Guide</a>
 <a href="../../en/00-glossary.html">Operating Glossary</a>
-<a href="../../en/00-open-decisions.html">Evidence And Decisions Register</a>
+<a href="../../en/00-open-decisions.html">Evidence and Decisions Register</a>
         </div>
       </details>
 <details class="nav-group">
         <summary>Workflows</summary>
         <div class="nav-links">
 <a href="../../en/01-workflows/admin-setup-checklist.html">Admin Setup Checklist</a>
-<a href="../../en/01-workflows/operator-run-next-job.html">Operator Run The Next Job Walkthrough</a>
+<a href="../../en/01-workflows/operator-run-next-job.html">Operator: Run the Next Job Walkthrough</a>
 <a href="../../en/01-workflows/planner-cold-start.html">Planner Cold Start Walkthrough</a>
 <a href="../../en/01-workflows/supervisor-triage.html">Supervisor Delayed Production Triage</a>
         </div>
@@ -96,7 +96,7 @@
 <details class="nav-group">
         <summary>开始</summary>
         <div class="nav-links">
-<a href="../00-start-here.html">从这里开始：演示操作指南</a>
+<a href="../00-start-here.html">从这里开始：工厂操作指南</a>
 <a href="../00-glossary.html">操作术语表</a>
 <a href="../00-open-decisions.html">证据与待决事项登记</a>
         </div>
@@ -147,7 +147,7 @@
 <a href="equipment-calibration.html">设备校准</a>
 <a href="inspection-planning.html">检验计划</a>
 <a class="active" href="inspection-records.html">检验记录</a>
-<a href="ncr-non-conformance.html">NCR 不合格</a>
+<a href="ncr-non-conformance.html">NCR 不合格报告</a>
         </div>
       </details>
 <details class="nav-group">
@@ -169,24 +169,24 @@
     </aside>
     <main class="content">
       <article class="article">
-<h1>检验记录</h1>
+<h1 id="检验记录">检验记录</h1>
 <blockquote><p><a href="../../en/30-quality/inspection-records.html">English</a> | 中文</p></blockquote>
 <p>Path: Quality / QC / Inspection Records URL: <code>&lt;APP_BASE_URL&gt;/Production/InspectionRecord</code></p>
-<h2>页面用途</h2>
+<h2 id="页面用途">页面用途</h2>
 <p>Inspection Records 用于确认检验作业是否已经保存，以及结果是否支持下一步生产决定。操作员和主管用它做确认，质量工程师用它复查和跟进。</p>
-<h2>你会看到什么</h2>
+<h2 id="页面显示内容">页面显示内容</h2>
 <ul><li>已保存检验记录列表。</li><li>可按作业、零件、阶段、结果、日期或相关生产信息缩小范围的筛选条件。</li><li>显示检验通过、失败或仍需跟进的结果和状态字段。</li><li>用于复查所选检验记录的行详情。</li></ul>
-<h2>你会做什么</h2>
-<ol><li>使用生产流程中的 WO、作业、零件、阶段、批次或日期搜索。</li><li>打开匹配记录。</li><li>确认记录属于正在复查的同一作业或工序。</li><li>在释放、继续或交接前检查可见结果。</li><li>如果结果不清楚或失败，升级给质量工程师。</li></ol>
-<h2>要检查什么</h2>
-<ul><li>记录与 WO/作业和检验阶段匹配。</li><li>已保存结果可见。</li><li>结果支持下一步生产决定。</li><li>失败或不清楚的结果未在质量复查前被当作可生产状态。</li></ul>
-<h2>常见问题</h2>
+<h2 id="常用操作">常用操作</h2>
+<ol><li>使用生产流程中的 WO、作业、零件、阶段、批次或日期搜索。</li><li>打开匹配记录。</li><li>确认记录属于正在复查的同一作业或工序。</li><li>在释放、继续或交接前检查可见结果。</li><li>如果结果不明确或失败，联系质量工程师处理。</li></ol>
+<h2 id="要检查什么">要检查什么</h2>
+<ul><li>记录与 WO/作业和检验阶段匹配。</li><li>已保存结果可见。</li><li>结果支持下一步生产决定。</li><li>失败或不明确的结果未在质量确认前被当作可生产状态。</li></ul>
+<h2 id="常见问题">常见问题</h2>
 <table><thead><tr><th>问题</th><th>含义</th></tr></thead><tbody><tr><td>找不到记录</td><td>检验可能尚未保存，或筛选条件太窄。</td></tr>
 <tr><td>记录与作业不匹配</td><td>可能选错了 WO、零件、阶段或日期。</td></tr>
-<tr><td>结果失败或不清楚</td><td>生产继续前必须由质量确认下一步。</td></tr></tbody></table>
-<h2>相关页面</h2>
+<tr><td>结果失败或不明确</td><td>生产继续前必须由质量确认下一步。</td></tr></tbody></table>
+<h2 id="相关页面">相关页面</h2>
 <ul><li><a href="../01-workflows/operator-run-next-job.html">操作员流程</a></li><li><a href="../01-workflows/supervisor-triage.html">主管排查</a></li><li><a href="../35-smartqc/inspection-data-entry.html">SMARTQC 检验</a></li><li><a href="ncr-non-conformance.html">NCR</a></li></ul>
-<h2>截图</h2>
+<h2 id="截图">截图</h2>
 <p><img src="../../assets/screenshots/quality-inspection-records.png" alt="DS_ERP 检验记录界面"></p>
       </article>
     </main>

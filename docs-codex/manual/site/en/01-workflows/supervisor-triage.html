@@ -21,16 +21,16 @@
 <details class="nav-group">
         <summary>Start</summary>
         <div class="nav-links">
-<a href="../00-start-here.html">Start Here: Demo Operating Guide</a>
+<a href="../00-start-here.html">Start Here: Factory Operating Guide</a>
 <a href="../00-glossary.html">Operating Glossary</a>
-<a href="../00-open-decisions.html">Evidence And Decisions Register</a>
+<a href="../00-open-decisions.html">Evidence and Decisions Register</a>
         </div>
       </details>
 <details class="nav-group" open>
         <summary>Workflows</summary>
         <div class="nav-links">
 <a href="admin-setup-checklist.html">Admin Setup Checklist</a>
-<a href="operator-run-next-job.html">Operator Run The Next Job Walkthrough</a>
+<a href="operator-run-next-job.html">Operator: Run the Next Job Walkthrough</a>
 <a href="planner-cold-start.html">Planner Cold Start Walkthrough</a>
 <a class="active" href="supervisor-triage.html">Supervisor Delayed Production Triage</a>
         </div>
@@ -96,7 +96,7 @@
 <details class="nav-group">
         <summary>开始</summary>
         <div class="nav-links">
-<a href="../../zh-CN/00-start-here.html">从这里开始：演示操作指南</a>
+<a href="../../zh-CN/00-start-here.html">从这里开始：工厂操作指南</a>
 <a href="../../zh-CN/00-glossary.html">操作术语表</a>
 <a href="../../zh-CN/00-open-decisions.html">证据与待决事项登记</a>
         </div>
@@ -147,7 +147,7 @@
 <a href="../../zh-CN/30-quality/equipment-calibration.html">设备校准</a>
 <a href="../../zh-CN/30-quality/inspection-planning.html">检验计划</a>
 <a href="../../zh-CN/30-quality/inspection-records.html">检验记录</a>
-<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格</a>
+<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格报告</a>
         </div>
       </details>
 <details class="nav-group">
@@ -169,13 +169,13 @@
     </aside>
     <main class="content">
       <article class="article">
-<h1>Supervisor Delayed Production Triage</h1>
+<h1 id="supervisor-delayed-production-triage">Supervisor Delayed Production Triage</h1>
 <blockquote><p>English | <a href="../../zh-CN/01-workflows/supervisor-triage.html">中文</a></p></blockquote>
 <p>Use this page when released work is missing, delayed, blocked, or unclear during a shift.</p>
-<p>Open items for delayed-work evidence, queue blocked status, quality-stop evidence, dashboard interpretation, and role visibility are tracked in the <a href="../00-open-decisions.html">Evidence And Decisions Register</a>.</p>
-<h2>Triage Order</h2>
+<p>Open items for delayed-work evidence, queue blocked status, quality-stop evidence, dashboard interpretation, and role visibility are tracked in the <a href="../00-open-decisions.html">Evidence and Decisions Register</a>.</p>
+<h2 id="triage-order">Triage Order</h2>
 <ol><li>Start with <a href="../10-production/queue-system.html">Queue System</a>.</li><li>Compare with <a href="../10-production/production-orders.html">Production Orders</a>.</li><li>Confirm the schedule in <a href="../10-production/planning.html">Planning</a>.</li><li>Check quality status in <a href="../30-quality/inspection-records.html">Inspection Records</a> and <a href="../30-quality/ncr-non-conformance.html">NCR</a>.</li><li>Open <a href="../10-production/dashboards.html">Dashboards</a> only for high-level signals; OEE definitions still need business-owner confirmation.</li></ol>
-<h2>If You See This, Do This</h2>
+<h2 id="if-you-see-this-do-this">If You See This, Do This</h2>
 <table><thead><tr><th>Situation</th><th>First screen</th><th>What to check</th><th>Action / escalation</th></tr></thead><tbody><tr><td>Job missing from queue</td><td><a href="../10-production/queue-system.html">Queue System</a></td><td>Filters, machine/work area, part, process, status</td><td>Compare with <a href="../10-production/production-orders.html">Production Orders</a>; escalate to planner if WO is not released.</td></tr>
 <tr><td>WO exists but is not scheduled</td><td><a href="../10-production/planning.html">Planning</a></td><td>Date range, machine group, planning view</td><td>Escalate to planner with WO and expected machine/work area.</td></tr>
 <tr><td>Queue row exists but cannot start</td><td><a href="../10-production/queue-system.html">Queue System</a></td><td>Visible status, required inspection, blocked step</td><td>Escalate to planner, quality, or production engineer based on missing condition.</td></tr>
@@ -184,16 +184,16 @@
 <tr><td>NCR is open</td><td><a href="../30-quality/ncr-non-conformance.html">NCR</a></td><td>Status, affected WO/part, required follow-up</td><td>Hold production decision until quality confirms next action.</td></tr>
 <tr><td>OEE or dashboard signal is unclear</td><td><a href="../10-production/dashboards.html">Dashboards</a></td><td>Page, filters, metric name</td><td>Record as needs-decision; do not use unclear metric as the only reason for action.</td></tr>
 <tr><td>User cannot see a page or action</td><td><a href="../40-administration/users-and-roles.html">Users and Roles</a></td><td>User, role, visible menu/action</td><td>Escalate to administrator.</td></tr></tbody></table>
-<h2>Delay Decision Table</h2>
+<h2 id="delay-decision-table">Delay Decision Table</h2>
 <p>Use this table after collecting the visible evidence. It is written for safe routing: do not use unconfirmed icons, unclear dashboard metrics, or guessed queue states as the only reason for action.</p>
 <table><thead><tr><th>Symptom</th><th>Visible evidence</th><th>Likely owner</th><th>Next safe action</th><th>Do not do</th></tr></thead><tbody><tr><td>Missing queue row</td><td>Queue filters, WO/job, part/process, machine/work area, date, and no matching row.</td><td>Planner if the WO is unreleased or unscheduled; administrator if access hides <a href="../10-production/queue-system.html">Queue System</a>.</td><td>Compare <a href="../10-production/production-orders.html">Production Orders</a> and <a href="../10-production/planning.html">Planning</a>, then send WO/job, filters, and screenshot to the owner.</td><td>Do not tell the operator to run a different row because it is first in the list.</td></tr>
 <tr><td>WO exists but is not scheduled</td><td><a href="../10-production/production-orders.html">Production Orders</a> row exists; <a href="../10-production/planning.html">Planning</a> has no matching scheduled work for date/area.</td><td>Planner</td><td>Send WO, part/process, expected date, and expected machine/work area.</td><td>Do not release, reset, or close the WO from an unclear status action.</td></tr>
 <tr><td>Queue row cannot start</td><td>Queue row exists but status maps to <code>Paused / blocked</code>, the row action is missing, or required inspection/setup is unclear.</td><td>Planner, production engineer, quality engineer, or administrator based on missing condition.</td><td>Use the <a href="../10-production/queue-system.html#queue-status-map">Queue Status Map</a>, capture the row/action area, and route by the missing evidence.</td><td>Do not bypass a blocked row or infer a hidden start action.</td></tr>
 <tr><td>Quality stop</td><td><a href="../30-quality/inspection-records.html">Inspection Records</a> or <a href="../35-smartqc/inspection-data-entry.html">SMARTQC Inspection</a> shows missing, failed, unclear, or unsaved inspection evidence.</td><td>Quality engineer</td><td>Hold production decision until quality confirms inspection result, disposition, or required rework.</td><td>Do not continue or complete production based only on a saved-but-unclear result.</td></tr>
 <tr><td>NCR open</td><td><a href="../30-quality/ncr-non-conformance.html">NCR</a> row/status affects the same WO, part, lot, or process.</td><td>Quality engineer</td><td>Record NCR number/status and wait for quality disposition before production action.</td><td>Do not close, release, or continue based on dashboard or queue status alone.</td></tr>
-<tr><td>Dashboard unclear</td><td><a href="../10-production/dashboards.html">OEE, KPI Production, or Main Layout</a> metric has unclear definition, blank page, or mismatched filters.</td><td>Demo owner or business owner</td><td>Treat dashboard as open-and-observe only; compare with <a href="../10-production/production-orders.html">Production Orders</a>, <a href="../10-production/planning.html">Planning</a>, and <a href="../10-production/queue-system.html">Queue System</a>.</td><td>Do not use OEE/KPI as the sole reason for delay ownership or production action.</td></tr>
-<tr><td>Access missing</td><td>User cannot see expected sidebar page, toolbar action, row action, or save button.</td><td>Administrator</td><td>Capture user, role, expected page/action, and current screenshot; verify <a href="../40-administration/users-and-roles.html">Users and Roles</a>.</td><td>Do not change role setup without administrator or demo-owner approval.</td></tr></tbody></table>
-<h2>Delayed Work Evidence</h2>
+<tr><td>Dashboard unclear</td><td><a href="../10-production/dashboards.html">OEE, KPI Production, or Main Layout</a> metric has unclear definition, blank page, or mismatched filters.</td><td>Owner or business owner</td><td>Treat dashboard as view-only in this manual version; compare with <a href="../10-production/production-orders.html">Production Orders</a>, <a href="../10-production/planning.html">Planning</a>, and <a href="../10-production/queue-system.html">Queue System</a>.</td><td>Do not use OEE/KPI as the sole reason for delay ownership or production action.</td></tr>
+<tr><td>Access missing</td><td>User cannot see expected sidebar page, toolbar action, row action, or save button.</td><td>Administrator</td><td>Capture user, role, expected page/action, and current screenshot; verify <a href="../40-administration/users-and-roles.html">Users and Roles</a>.</td><td>Do not change role setup without administrator or owner approval.</td></tr></tbody></table>
+<h2 id="delayed-work-evidence">Delayed Work Evidence</h2>
 <p>When work is late or appears stuck, collect these visible fields before deciding who owns the issue.</p>
 <table><thead><tr><th>Evidence</th><th>Where to look first</th><th>Why it matters</th></tr></thead><tbody><tr><td>Due time or production date</td><td><a href="../10-production/production-orders.html">Production Orders</a>, <a href="../10-production/planning.html">Planning</a></td><td>Confirms whether the job is actually late for the current review window.</td></tr>
 <tr><td>Planned start/end or planned area</td><td><a href="../10-production/planning.html">Planning</a></td><td>Shows the expected machine, group, line, or date.</td></tr>
@@ -202,15 +202,15 @@
 <tr><td>Output versus target</td><td><a href="../10-production/production-orders.html">Production Orders</a> or assigned reporting screen</td><td>Shows whether delay is caused by quantity still open.</td></tr>
 <tr><td>Downtime or stop reason</td><td>Assigned reporting screen or supervisor note</td><td>Helps route the issue to production, engineering, or maintenance.</td></tr>
 <tr><td>Owner or current role</td><td><a href="../10-production/production-orders.html">Production Orders</a>, <a href="../10-production/queue-system.html">Queue System</a>, <a href="../40-administration/users-and-roles.html">Users and Roles</a></td><td>Shows who can take the next visible action.</td></tr></tbody></table>
-<h2>Quality Stop Checks</h2>
+<h2 id="quality-stop-checks">Quality Stop Checks</h2>
 <table><thead><tr><th>Stop condition</th><th>Check</th><th>Next action</th></tr></thead><tbody><tr><td>Required inspection is missing</td><td><a href="../30-quality/inspection-planning.html">Inspection Planning</a>, <a href="../35-smartqc/inspection-data-entry.html">SMARTQC Inspection</a></td><td>Ask quality engineer to confirm required check sheet or inspection step.</td></tr>
 <tr><td>Inspection was entered but result is unclear</td><td><a href="../30-quality/inspection-records.html">Inspection Records</a></td><td>Do not release or continue based on an unclear result.</td></tr>
 <tr><td>Inspection failed</td><td><a href="../30-quality/inspection-records.html">Inspection Records</a>, <a href="../30-quality/ncr-non-conformance.html">NCR</a></td><td>Hold production decision until quality confirms disposition.</td></tr>
 <tr><td>Equipment or calibration affects the result</td><td><a href="../30-quality/equipment-calibration.html">Equipment Calibration</a></td><td>Escalate to quality before accepting the measurement.</td></tr></tbody></table>
-<h2>What To Record For Handover</h2>
+<h2 id="what-to-record-for-handover">What To Record For Handover</h2>
 <ul><li>WO or queue row.</li><li>Machine/work area.</li><li>Current visible status.</li><li>The screen where the issue was found.</li><li>Screenshot when a button, icon, or status is unclear.</li><li>Person or role escalated to.</li></ul>
-<h2>Screenshot Requests</h2>
-<p>This triage flow needs labeled screenshots for blocked queue rows, delayed work indicators, quality-stop evidence, and OEE/KPI trend signals before the manual can give exact click-by-click instructions. Track those items in the <a href="../00-open-decisions.html">Evidence And Decisions Register</a>.</p>
+<h2 id="screenshot-requests">Screenshot Requests</h2>
+<p>This triage flow needs labeled screenshots for blocked queue rows, delayed work indicators, quality-stop evidence, and OEE/KPI trend signals before the manual can give exact click-by-click instructions. Track those items in the <a href="../00-open-decisions.html">Evidence and Decisions Register</a>.</p>
       </article>
     </main>
   </div>

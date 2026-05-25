@@ -21,16 +21,16 @@
 <details class="nav-group">
         <summary>Start</summary>
         <div class="nav-links">
-<a href="../00-start-here.html">Start Here: Demo Operating Guide</a>
+<a href="../00-start-here.html">Start Here: Factory Operating Guide</a>
 <a href="../00-glossary.html">Operating Glossary</a>
-<a href="../00-open-decisions.html">Evidence And Decisions Register</a>
+<a href="../00-open-decisions.html">Evidence and Decisions Register</a>
         </div>
       </details>
 <details class="nav-group">
         <summary>Workflows</summary>
         <div class="nav-links">
 <a href="../01-workflows/admin-setup-checklist.html">Admin Setup Checklist</a>
-<a href="../01-workflows/operator-run-next-job.html">Operator Run The Next Job Walkthrough</a>
+<a href="../01-workflows/operator-run-next-job.html">Operator: Run the Next Job Walkthrough</a>
 <a href="../01-workflows/planner-cold-start.html">Planner Cold Start Walkthrough</a>
 <a href="../01-workflows/supervisor-triage.html">Supervisor Delayed Production Triage</a>
         </div>
@@ -96,7 +96,7 @@
 <details class="nav-group">
         <summary>开始</summary>
         <div class="nav-links">
-<a href="../../zh-CN/00-start-here.html">从这里开始：演示操作指南</a>
+<a href="../../zh-CN/00-start-here.html">从这里开始：工厂操作指南</a>
 <a href="../../zh-CN/00-glossary.html">操作术语表</a>
 <a href="../../zh-CN/00-open-decisions.html">证据与待决事项登记</a>
         </div>
@@ -147,7 +147,7 @@
 <a href="../../zh-CN/30-quality/equipment-calibration.html">设备校准</a>
 <a href="../../zh-CN/30-quality/inspection-planning.html">检验计划</a>
 <a href="../../zh-CN/30-quality/inspection-records.html">检验记录</a>
-<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格</a>
+<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格报告</a>
         </div>
       </details>
 <details class="nav-group">
@@ -169,24 +169,24 @@
     </aside>
     <main class="content">
       <article class="article">
-<h1>Inspection Records</h1>
+<h1 id="inspection-records">Inspection Records</h1>
 <blockquote><p><a href="inspection-records.html">English</a> | <a href="../../zh-CN/30-quality/inspection-records.html">中文</a></p></blockquote>
 <p>Path: Quality / QC / Inspection Records URL: <code>&lt;APP_BASE_URL&gt;/Production/InspectionRecord</code></p>
-<h2>What This Page Is For</h2>
+<h2 id="what-this-page-is-for">What This Page Is For</h2>
 <p>Use Inspection Records to confirm whether inspection work has been saved and whether the result supports the next production decision. Operators and supervisors use it for confirmation; quality engineers use it for review and follow-up.</p>
-<h2>What You See</h2>
+<h2 id="what-you-see">What You See</h2>
 <ul><li>A list of saved inspection records.</li><li>Filters for narrowing records by job, part, stage, result, date, or related production details.</li><li>Result and status fields that show whether the inspection passed, failed, or still needs follow-up.</li><li>Row details for reviewing the selected inspection record.</li></ul>
-<h2>What You Do</h2>
+<h2 id="what-you-do">What You Do</h2>
 <ol><li>Search using the WO, job, part, stage, lot, or date from the production flow.</li><li>Open the matching record.</li><li>Confirm the record belongs to the same job or process being reviewed.</li><li>Check the visible result before releasing, continuing, or handing over work.</li><li>If the result is unclear or failed, escalate to the quality engineer.</li></ol>
-<h2>What To Check</h2>
+<h2 id="what-to-check">What To Check</h2>
 <ul><li>The record matches the WO/job and inspection stage.</li><li>The saved result is visible.</li><li>The result supports the next production decision.</li><li>A failed or unclear result is not treated as production-ready without quality review.</li></ul>
-<h2>Common Issues</h2>
+<h2 id="common-issues">Common Issues</h2>
 <table><thead><tr><th>Issue</th><th>What it means</th></tr></thead><tbody><tr><td>No record appears</td><td>The inspection may not have been saved, or filters may be too narrow.</td></tr>
 <tr><td>Record does not match the job</td><td>The wrong WO, part, stage, or date may be selected.</td></tr>
 <tr><td>Result is failed or unclear</td><td>Quality must confirm the next action before production proceeds.</td></tr></tbody></table>
-<h2>Related Pages</h2>
+<h2 id="related-pages">Related Pages</h2>
 <ul><li><a href="../01-workflows/operator-run-next-job.html">Operator Walkthrough</a></li><li><a href="../01-workflows/supervisor-triage.html">Supervisor Triage</a></li><li><a href="../35-smartqc/inspection-data-entry.html">SMARTQC Inspection</a></li><li><a href="ncr-non-conformance.html">NCR</a></li></ul>
-<h2>Screenshot</h2>
+<h2 id="screenshot">Screenshot</h2>
 <p><img src="../../assets/screenshots/quality-inspection-records.png" alt="DS_ERP inspection records screen"></p>
       </article>
     </main>

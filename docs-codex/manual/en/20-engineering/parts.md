@@ -7,7 +7,7 @@ URL: `<APP_BASE_URL>/Parts/Parts`
 
 ## What This Page Is For
 
-Use Parts to confirm that an item exists before planning, engineering, or quality review continues. This is the shared reference point for item identity in the demo.
+Use Parts to confirm that an item exists before planning, engineering, or quality review continues. This is the shared reference point for item identity in the workflow.
 
 ## What You See
 
@@ -18,7 +18,7 @@ Use Parts to confirm that an item exists before planning, engineering, or qualit
 
 ## What You Do
 
-1. Search for the part used in the demo scenario.
+1. Search for the part used in the site scenario.
 2. Confirm the displayed item identity before checking BOM or recipe setup.
 3. Open the row and review visible fields that affect planning or engineering review.
 4. Use related pages to confirm BOM, recipe, machine, or quality readiness.
@@ -26,14 +26,14 @@ Use Parts to confirm that an item exists before planning, engineering, or qualit
 ## What To Check
 
 - The correct part appears in the list.
-- The part name, number, and status are consistent with the demo scenario.
+- The part name, number, and status are consistent with the site scenario.
 - The part is ready before the planner creates or releases work.
 
 ## Common Issues
 
 | Issue | What it means |
 |---|---|
-| Part cannot be found | Search criteria may be too narrow, or the item may not be prepared for the demo. |
+| Part cannot be found | Search criteria may be too narrow, or the item may not be prepared for the site workflow. |
 | Similar parts appear | Confirm the exact item before planning or quality review. |
 | Part exists but work cannot proceed | BOM, recipe, machine, or inspection setup may still need review. |
 

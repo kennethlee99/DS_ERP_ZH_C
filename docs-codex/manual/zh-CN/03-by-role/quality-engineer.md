@@ -2,7 +2,7 @@
 
 > [English](../../en/03-by-role/quality-engineer.md) | 中文
 
-内部演示复查质量页面时使用本角色手册。Quality/QC 与 Inspection Planning 仍待上级确认，因此本手册保留这些页面，并加入已截图页面供复查，而不是隐藏该范围。
+确认质量页面时使用本角色手册。Quality/QC 与 Inspection Planning 仍待负责人确认，因此本手册保留这些页面，并加入已截图页面供确认，而不是隐藏该范围。
 
 ## 日常流程
 
@@ -23,7 +23,7 @@
 | [NCR](../30-quality/ncr-non-conformance.md) | 记录和复查不合格详情。 | 已截图 |
 | [Equipment Calibration](../30-quality/equipment-calibration.md) | 确认测量设备是否可用于检验。 | 已截图 |
 
-## 复查时要检查什么
+## 确认时要检查什么
 
 - 本指南中的侧边栏名称与本地应用登录后看到的名称一致。
 - 每个屏幕都能打开到预期的列表或表单。
@@ -34,8 +34,8 @@
 
 | 问题 | 可能原因 | 下一步 |
 |---|---|---|
-| 找不到检验 | 作业可能还没有到达计划的检验阶段，或未选择检验表。 | 复查 Inspection Planning 和相关 SMARTQC 检验表。 |
-| 用户能打开页面但不能保存 | 可能有必填字段未填，或角色不允许编辑。 | 先检查屏幕上的必填字段，再请 Administration 复查角色。 |
+| 找不到检验 | 作业可能还没有到达计划的检验阶段，或未选择检验表。 | 检查 Inspection Planning 和相关 SMARTQC 检验表。 |
+| 用户能打开页面但不能保存 | 可能有必填字段未填，或角色不允许编辑。 | 先检查屏幕上的必填字段，再请 Administration 确认角色。 |
 | 某个测量值无法编辑 | 部分测量行可能由机台或 CMM 采集控制。 | 确认该行是否应允许手工录入。 |
 | 校准状态看起来不对 | 校准记录或设备主资料可能未更新。 | 使用设备前复查 Equipment Calibration。 |
 
@@ -55,7 +55,7 @@
 
 ![DS_ERP 角色管理界面](../../assets/screenshots/administration-users-roles.png)
 
-Administration 截图仅用于说明当用户能打开页面但无法执行预期动作时，在哪里复查角色访问设置。
+Administration 截图仅用于说明当用户能打开页面但无法执行预期动作时，在哪里确认角色访问设置。
 
 ## 相关页面
 

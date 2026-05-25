@@ -11,7 +11,7 @@ The current captured sidebar path is `Planner / Queue System`. Operators and sup
 
 Use Queue System to confirm which released work is visible for execution. Operators use it to find work, while supervisors use it to check whether the shift has the expected jobs available.
 
-Dispatch rules, row actions, and exact status labels remain tracked in the [Evidence And Decisions Register](../00-open-decisions.md) until they are confirmed with visible screenshots.
+Dispatch rules, row actions, and exact status labels remain tracked in the [Evidence and Decisions Register](../00-open-decisions.md) until they are confirmed with visible screenshots.
 
 ## What You See
 
@@ -30,11 +30,11 @@ Use the manual working terms below whenever planner, operator, or supervisor pag
 | Active | Confirmed visible label or status still needs screenshot capture. | Work appears to be in progress or already started. | Continue only in the assigned reporting flow. | Check output, downtime, last update, and whether the active job matches the shift plan. | Supervisor for production issues; quality engineer if inspection blocks progress. |
 | Paused / blocked | Confirmed visible label or blocked condition still needs screenshot capture. | Work cannot safely continue because a status, quality step, machine issue, missing setup, or access issue is blocking it. | Do not bypass the block; capture the row and current page. | Route by evidence: planning/release to planner, setup to production engineer, quality/NCR to quality engineer, access to administrator. | Planner, production engineer, quality engineer, or administrator based on the missing condition. |
 | Complete | Confirmed visible label or finished condition still needs screenshot capture. | The current operation may be complete, but queue disappearance alone is not proof. | Verify the same WO/job and process in Queue System, Production Orders, or Inspection Records before handover. | Confirm output, quality result, and handover notes before treating the job as closed for the shift. | Planner or quality engineer if status and records disagree. |
-| Hidden / missing | No row appears under the selected filters. | The job may be unreleased, unscheduled, filtered out, assigned elsewhere, or not created for the demo. | Do not choose a substitute job without supervisor instruction. | Compare Queue System with Production Orders and Planning before escalating. | Planner if unreleased/unscheduled; administrator if access hides the page/action. |
+| Hidden / missing | No row appears under the selected filters. | The job may be unreleased, unscheduled, filtered out, assigned elsewhere, or not created for the site workflow. | Do not choose a substitute job without supervisor instruction. | Compare Queue System with Production Orders and Planning before escalating. | Planner if unreleased/unscheduled; administrator if access hides the page/action. |
 
 ## What You Do
 
-1. Select the work area or machine used in the demo.
+1. Select the work area or machine used in the workflow.
 2. Find the released job and confirm the part and process.
 3. Open the job only after checking that the visible status maps to the `Ready` working term and the dispatch rule is confirmed.
 4. Escalate missing or blocked jobs to the planner or supervisor.

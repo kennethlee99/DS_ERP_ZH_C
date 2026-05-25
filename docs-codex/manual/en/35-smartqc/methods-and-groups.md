@@ -20,14 +20,14 @@ Use SMARTQC Methods and Groups to review the visible method names used by check 
 
 1. Search for the method name used on the check sheet.
 2. Confirm the method belongs to the expected group.
-3. Review timing fields when the demo flow discusses inspection time.
+3. Review timing fields when the workflow discusses inspection time.
 4. Check method-group names for clarity before reviewers use the guide.
 
 ## What To Check
 
 - Method names match what appears in the check sheet and inspection entry screens.
 - Unassigned methods are intentional and easy to explain.
-- Timing values are reviewed before they are used in planning or demo talking points.
+- Timing values are reviewed before they are used in planning or workflow notes.
 - Group names are clear enough for non-author reviewers.
 
 ## Common Issues
@@ -36,7 +36,7 @@ Use SMARTQC Methods and Groups to review the visible method names used by check 
 |---|---|
 | Method appears under Unassigned | A method group may not have been selected. |
 | Check sheet shows an unexpected method | The uploaded check sheet may contain a new or misspelled method name. |
-| Timing looks wrong | Review the method and the check-sheet version before using it in the demo. |
+| Timing looks wrong | Review the method and the check-sheet version before using it in the workflow. |
 | Save fails | A required visible field may be missing, or the role may not allow edits. |
 
 ## Related Pages

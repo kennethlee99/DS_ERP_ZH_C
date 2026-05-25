@@ -2,7 +2,7 @@
 
 > [English](quality-engineer.md) | [中文](../../zh-CN/03-by-role/quality-engineer.md)
 
-Use this role guide when reviewing the quality screens during the internal demo. Quality/QC and Inspection Planning are still pending superior confirmation, so this manual keeps them visible and includes captured screens for review instead of hiding the area.
+Use this role guide when reviewing the quality screens during the internal workflow. Quality/QC and Inspection Planning are still pending owner confirmation, so this manual keeps them visible and includes captured screens for review instead of hiding the area.
 
 ## Daily Flow
 

@@ -18,14 +18,14 @@ Use Machines to review machine records that planning and production execution re
 
 ## What You Do
 
-1. Search for the machine or machine group used in the demo.
+1. Search for the machine or machine group used in the workflow.
 2. Confirm it is visible and active for production review.
 3. Check whether the machine details align with the planning and queue views.
 4. Escalate missing or unexpected records before scheduling work.
 
 ## What To Check
 
-- The machine name matches the demo scenario.
+- The machine name matches the site scenario.
 - The machine belongs to the expected line or group.
 - Status and visible setup support scheduling and execution.
 

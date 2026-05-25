@@ -4,7 +4,7 @@
 
 Use this page when released work is missing, delayed, blocked, or unclear during a shift.
 
-Open items for delayed-work evidence, queue blocked status, quality-stop evidence, dashboard interpretation, and role visibility are tracked in the [Evidence And Decisions Register](../00-open-decisions.md).
+Open items for delayed-work evidence, queue blocked status, quality-stop evidence, dashboard interpretation, and role visibility are tracked in the [Evidence and Decisions Register](../00-open-decisions.md).
 
 ## Triage Order
 
@@ -38,8 +38,8 @@ Use this table after collecting the visible evidence. It is written for safe rou
 | Queue row cannot start | Queue row exists but status maps to `Paused / blocked`, the row action is missing, or required inspection/setup is unclear. | Planner, production engineer, quality engineer, or administrator based on missing condition. | Use the [Queue Status Map](../10-production/queue-system.md#queue-status-map), capture the row/action area, and route by the missing evidence. | Do not bypass a blocked row or infer a hidden start action. |
 | Quality stop | [Inspection Records](../30-quality/inspection-records.md) or [SMARTQC Inspection](../35-smartqc/inspection-data-entry.md) shows missing, failed, unclear, or unsaved inspection evidence. | Quality engineer | Hold production decision until quality confirms inspection result, disposition, or required rework. | Do not continue or complete production based only on a saved-but-unclear result. |
 | NCR open | [NCR](../30-quality/ncr-non-conformance.md) row/status affects the same WO, part, lot, or process. | Quality engineer | Record NCR number/status and wait for quality disposition before production action. | Do not close, release, or continue based on dashboard or queue status alone. |
-| Dashboard unclear | [OEE, KPI Production, or Main Layout](../10-production/dashboards.md) metric has unclear definition, blank page, or mismatched filters. | Demo owner or business owner | Treat dashboard as open-and-observe only; compare with [Production Orders](../10-production/production-orders.md), [Planning](../10-production/planning.md), and [Queue System](../10-production/queue-system.md). | Do not use OEE/KPI as the sole reason for delay ownership or production action. |
-| Access missing | User cannot see expected sidebar page, toolbar action, row action, or save button. | Administrator | Capture user, role, expected page/action, and current screenshot; verify [Users and Roles](../40-administration/users-and-roles.md). | Do not change role setup without administrator or demo-owner approval. |
+| Dashboard unclear | [OEE, KPI Production, or Main Layout](../10-production/dashboards.md) metric has unclear definition, blank page, or mismatched filters. | Owner or business owner | Treat dashboard as view-only in this manual version; compare with [Production Orders](../10-production/production-orders.md), [Planning](../10-production/planning.md), and [Queue System](../10-production/queue-system.md). | Do not use OEE/KPI as the sole reason for delay ownership or production action. |
+| Access missing | User cannot see expected sidebar page, toolbar action, row action, or save button. | Administrator | Capture user, role, expected page/action, and current screenshot; verify [Users and Roles](../40-administration/users-and-roles.md). | Do not change role setup without administrator or owner approval. |
 
 ## Delayed Work Evidence
 
@@ -75,4 +75,4 @@ When work is late or appears stuck, collect these visible fields before deciding
 
 ## Screenshot Requests
 
-This triage flow needs labeled screenshots for blocked queue rows, delayed work indicators, quality-stop evidence, and OEE/KPI trend signals before the manual can give exact click-by-click instructions. Track those items in the [Evidence And Decisions Register](../00-open-decisions.md).
+This triage flow needs labeled screenshots for blocked queue rows, delayed work indicators, quality-stop evidence, and OEE/KPI trend signals before the manual can give exact click-by-click instructions. Track those items in the [Evidence and Decisions Register](../00-open-decisions.md).

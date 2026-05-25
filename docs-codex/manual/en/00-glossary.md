@@ -2,7 +2,7 @@
 
 > English | [中文](../zh-CN/00-glossary.md)
 
-Use this glossary when a page uses production words that are easy to confuse.
+Use this glossary for production terms that are easy to confuse.
 
 | Term | Meaning in the manual | What to check next |
 |---|---|---|
@@ -17,7 +17,7 @@ Use this glossary when a page uses production words that are easy to confuse.
 | Complete | The work or inspection shows a saved finished state on the relevant page. | Check the queue row, WO status, or inspection record. |
 | Inspection trigger | A visible sign that quality entry or review is required before work continues. | Open [SMARTQC Inspection](35-smartqc/inspection-data-entry.md) or [Inspection Records](30-quality/inspection-records.md). |
 | User | The account used to sign in to the web app. | Check [Users and Roles](40-administration/users-and-roles.md). |
-| Worker | A shop-floor identity or assignment record if the demo uses one. | Confirm the user-to-worker relationship with the demo owner. |
+| Worker | A shop-floor identity or assignment record if the workflow uses one. | Confirm the user-to-worker relationship with the owner. |
 | Role | A visible access grouping assigned to a user. | Compare the role with the sidebar and visible actions. |
 | Permission label | A label visible on the Roles page that may explain menu or action access. | Do not interpret it as a technical rule unless the owner confirms it. |
 | Visible action | A button, icon, row action, menu item, or dialog action shown to the signed-in user. | If unlabeled, request a screenshot before documenting exact clicks. |

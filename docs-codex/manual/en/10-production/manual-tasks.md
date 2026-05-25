@@ -18,7 +18,7 @@ Use Manual Tasks to review worker task definitions that may appear during produc
 
 ## What You Do
 
-1. Search for the task used in the demo.
+1. Search for the task used in the workflow.
 2. Open the row and confirm the displayed task name and status.
 3. Check whether the task is active before expecting it in operator workflows.
 4. Return to Queue System, Production Orders, or the assigned reporting screen to confirm whether the task appears as live work in the right context.
@@ -28,7 +28,7 @@ Use Manual Tasks to review worker task definitions that may appear during produc
 - The task label is clear enough for operators.
 - The task is active and visible for the expected scenario.
 - The task does not duplicate another visible choice.
-- The demo owner has confirmed where assigned manual work is actually executed.
+- The owner has confirmed where assigned manual work is actually executed.
 
 ## Common Issues
 
@@ -36,7 +36,7 @@ Use Manual Tasks to review worker task definitions that may appear during produc
 |---|---|
 | Task is missing | The filter may hide it, or the task may not be active. |
 | Task name is unclear | Operators may need supervisor guidance before using it. |
-| Task appears in the wrong workflow | Review the production setup before the demo. |
+| Task appears in the wrong workflow | Review the production setup before use. |
 | Task exists here but not in live work | This page may only define the task; check Queue System or the assigned reporting screen. |
 
 ## Related Pages

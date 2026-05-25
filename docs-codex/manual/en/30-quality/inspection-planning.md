@@ -7,7 +7,7 @@ URL: `needs-decision` (authenticated screenshot exists, but the exact deployed r
 
 ## What This Page Is For
 
-Use Inspection Planning to review which production stages require inspection before, during, or after production. This area is still pending superior confirmation for demo scope, so keep it visible in the manual and flag any mismatch as a decision item instead of removing it.
+Use Inspection Planning to review which production stages require inspection before, during, or after production. This area is still pending owner confirmation for workflow scope, so keep it visible in the manual and flag any mismatch as a decision item instead of removing it.
 
 ## What You See
 

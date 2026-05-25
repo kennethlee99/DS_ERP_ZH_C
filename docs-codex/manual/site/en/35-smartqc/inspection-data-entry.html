@@ -21,16 +21,16 @@
 <details class="nav-group">
         <summary>Start</summary>
         <div class="nav-links">
-<a href="../00-start-here.html">Start Here: Demo Operating Guide</a>
+<a href="../00-start-here.html">Start Here: Factory Operating Guide</a>
 <a href="../00-glossary.html">Operating Glossary</a>
-<a href="../00-open-decisions.html">Evidence And Decisions Register</a>
+<a href="../00-open-decisions.html">Evidence and Decisions Register</a>
         </div>
       </details>
 <details class="nav-group">
         <summary>Workflows</summary>
         <div class="nav-links">
 <a href="../01-workflows/admin-setup-checklist.html">Admin Setup Checklist</a>
-<a href="../01-workflows/operator-run-next-job.html">Operator Run The Next Job Walkthrough</a>
+<a href="../01-workflows/operator-run-next-job.html">Operator: Run the Next Job Walkthrough</a>
 <a href="../01-workflows/planner-cold-start.html">Planner Cold Start Walkthrough</a>
 <a href="../01-workflows/supervisor-triage.html">Supervisor Delayed Production Triage</a>
         </div>
@@ -96,7 +96,7 @@
 <details class="nav-group">
         <summary>开始</summary>
         <div class="nav-links">
-<a href="../../zh-CN/00-start-here.html">从这里开始：演示操作指南</a>
+<a href="../../zh-CN/00-start-here.html">从这里开始：工厂操作指南</a>
 <a href="../../zh-CN/00-glossary.html">操作术语表</a>
 <a href="../../zh-CN/00-open-decisions.html">证据与待决事项登记</a>
         </div>
@@ -147,7 +147,7 @@
 <a href="../../zh-CN/30-quality/equipment-calibration.html">设备校准</a>
 <a href="../../zh-CN/30-quality/inspection-planning.html">检验计划</a>
 <a href="../../zh-CN/30-quality/inspection-records.html">检验记录</a>
-<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格</a>
+<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格报告</a>
         </div>
       </details>
 <details class="nav-group">
@@ -169,25 +169,25 @@
     </aside>
     <main class="content">
       <article class="article">
-<h1>SMARTQC Inspection Data Entry</h1>
+<h1 id="smartqc-inspection-data-entry">SMARTQC Inspection Data Entry</h1>
 <blockquote><p><a href="inspection-data-entry.html">English</a> | <a href="../../zh-CN/35-smartqc/inspection-data-entry.html">中文</a></p></blockquote>
 <p>Path: Quality / SMARTQC / Inspection URL: <code>needs-decision</code> (authenticated screenshot exists, but the exact deployed route was not recorded)</p>
-<h2>What This Page Is For</h2>
+<h2 id="what-this-page-is-for">What This Page Is For</h2>
 <p>Use SMARTQC Inspection Data Entry to enter, review, and save inspection results. Operators use it when a job requires inspection, and quality engineers use it to review saved measurement evidence.</p>
-<h2>What You See</h2>
+<h2 id="what-you-see">What You See</h2>
 <ul><li>An inspection list with search and filters.</li><li>A maximized inspection dialog when a row is opened.</li><li>Header fields for the inspection context, lot, sample, result, and remarks.</li><li>A result chart and an editable measurement grid.</li><li>Save, undo, filter, and export actions where the role allows them.</li></ul>
-<h2>What You Do</h2>
+<h2 id="what-you-do">What You Do</h2>
 <ol><li>Search for the inspection by job, stage, lot, or date.</li><li>Open the inspection and confirm the header details.</li><li>Enter or review measurement values in the grid.</li><li>Check the result chart and row results before saving.</li><li>Save changes, then confirm the visible update time or result status changed as expected.</li></ol>
-<h2>What To Check</h2>
-<ul><li>The inspection belongs to the correct job and stage.</li><li>Required header fields are filled before save.</li><li>Measurement rows show the expected characteristics and limits.</li><li>Result colors and status labels are understandable to the reviewer.</li></ul>
-<h2>Common Issues</h2>
+<h2 id="what-to-check">What To Check</h2>
+<ul><li>The inspection belongs to the correct job and stage.</li><li>Required header fields are filled before save.</li><li>Measurement rows show the expected characteristics and limits.</li><li>Result colors and status labels are clear to the reviewer.</li></ul>
+<h2 id="common-issues">Common Issues</h2>
 <table><thead><tr><th>Issue</th><th>What it means</th></tr></thead><tbody><tr><td>Save is disabled</td><td>Required visible fields may be empty, or the role may not allow edits.</td></tr>
 <tr><td>A value cannot be typed</td><td>The row may be controlled by machine or CMM collection.</td></tr>
 <tr><td>Result does not change</td><td>The value may be outside the expected format or needs manual result selection.</td></tr>
 <tr><td>Wrong rows are visible</td><td>Clear the subgroup or grid filters.</td></tr></tbody></table>
-<h2>Related Pages</h2>
+<h2 id="related-pages">Related Pages</h2>
 <ul><li><a href="check-sheets.html">SMARTQC Check Sheets</a></li><li><a href="methods-and-groups.html">SMARTQC Methods and Groups</a></li><li><a href="../30-quality/inspection-planning.html">Inspection Planning</a></li><li><a href="../03-by-role/quality-engineer.html">Quality Engineer Manual</a></li></ul>
-<h2>Screenshot</h2>
+<h2 id="screenshot">Screenshot</h2>
 <p><img src="../../assets/screenshots/smartqc-inspection-data-entry.png" alt="DS_ERP SMARTQC inspection screen"></p>
       </article>
     </main>

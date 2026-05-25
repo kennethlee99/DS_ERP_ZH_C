@@ -9,19 +9,19 @@ URL: `<APP_BASE_URL>/Production/OEE`, `<APP_BASE_URL>/Production/KpiProduction`,
 
 Use the production dashboard entries to open high-level production review views. Until dashboard screenshots and metric definitions are confirmed, treat OEE, KPI Production, and Main Layout as trend signals only, not as the sole basis for a production decision.
 
-Dashboard interpretation remains tracked in the [Evidence And Decisions Register](../00-open-decisions.md) until the business owner confirms screenshots, filters, and metric definitions.
+Dashboard interpretation remains tracked in the [Evidence and Decisions Register](../00-open-decisions.md) until the business owner confirms screenshots, filters, and metric definitions.
 
 ## Dashboard Scope For This Manual Version
 
-Dashboard pages are **open-and-observe only** in this manual version. A planner or supervisor may open OEE, KPI Production, or Main Layout to confirm the entry exists and record a visible trend signal, but the manual does not yet define the metrics well enough for release, delay, quality, staffing, or handover decisions.
+Dashboard pages are **view-only in this manual version** in this manual version. A planner or supervisor may open OEE, KPI Production, or Main Layout to confirm the entry exists and record a visible trend signal, but the manual does not yet define the metrics well enough for release, delay, quality, staffing, or handover decisions.
 
-Before a dashboard becomes decision-ready, the demo owner must confirm:
+Before a dashboard becomes decision-ready, the owner must confirm:
 
 | Dashboard entry | Current manual status | Needed before decision use |
 |---|---|---|
-| OEE | Open-and-observe only | Screenshot of the real OEE page, metric definitions, filter meanings, and how to compare with WO/queue evidence. |
-| KPI Production | Open-and-observe only | Screenshot of the real KPI Production page, metric definitions, filter meanings, and owner-approved interpretation. |
-| Main Layout | Open-and-observe only | Screenshot of the real Main Layout page, visible panel definitions, and owner-approved use during shift review. |
+| OEE | View-only | Screenshot of the real OEE page, metric definitions, filter meanings, and how to compare with WO/queue evidence. |
+| KPI Production | View-only | Screenshot of the real KPI Production page, metric definitions, filter meanings, and owner-approved interpretation. |
+| Main Layout | View-only | Screenshot of the real Main Layout page, visible panel definitions, and owner-approved use during shift review. |
 
 ## What You See
 
@@ -40,7 +40,7 @@ Before a dashboard becomes decision-ready, the demo owner must confirm:
 
 ## What To Check
 
-- The selected entry is the one intended for the demo.
+- The selected entry is the one intended for the site workflow.
 - The filter period matches the shift or job being discussed.
 - Any visible dashboard signal agrees with the underlying work-order view.
 - Any unclear metric name is recorded for clarification.
@@ -49,7 +49,7 @@ Before a dashboard becomes decision-ready, the demo owner must confirm:
 
 | Issue | What it means |
 |---|---|
-| Dashboard page is blank | The selected filters may have no data for the period, or the page may need demo-owner review. |
+| Dashboard page is blank | The selected filters may have no data for the period, or the page may need owner review. |
 | Metric meaning is unclear | Treat it as a trend signal only and confirm the metric definition before using it in review notes. |
 | Dashboard disagrees with a work order | Recheck filters and the latest order status. |
 

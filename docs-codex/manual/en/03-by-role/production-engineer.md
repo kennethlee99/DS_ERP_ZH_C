@@ -30,7 +30,7 @@ Support first run  -->  Review issues  -->  update recipe/setup data
 | [BOM Master and BOM Structure](../20-engineering/bom.md) | Check parent/child material structure before planning generates work. |
 | [Recipes](../20-engineering/recipes.md) | Maintain the routing shell for a part or product family. |
 | [Recipe Processes](../20-engineering/recipes.md) | Define the ordered manufacturing process steps, expected cycle time, and process relationships. |
-| [Machines and Machine groups/lines](../20-engineering/machines.md) | Confirm the target machines and groups exist and match the process capability. |
+| [Machines, machine groups, and lines](../20-engineering/machines.md) | Confirm the target machines and groups exist and match the process capability. |
 | [NC Programs](../20-engineering/nc-programs.md) | Maintain CNC program references and make sure the correct revision is ready for production. |
 | [Production Orders](../10-production/production-orders.md) | Inspect generated work orders and diagnose routing, quantity, or status issues. |
 | [Inspection Planning](../30-quality/inspection-planning.md) | Coordinate with QA so the correct inspection stage is attached to the process. |

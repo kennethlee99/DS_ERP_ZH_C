@@ -37,7 +37,7 @@ Monitor queue, dashboards, and exceptions
 | [Planning](../10-production/planning.md) | Schedule WOs across dates, machine groups, and planning views. |
 | [Queue System](../10-production/queue-system.md) | Confirm released work appears in the execution queue. |
 | [Dashboards](../10-production/dashboards.md) | Open OEE, KPI Production, and Main Layout as entry points; treat metric definitions as pending owner confirmation. |
-| [Status actions](../10-production/production-orders.md) | Review visible status/action icons only when they are labeled or confirmed by the demo owner. |
+| [Status actions](../10-production/production-orders.md) | Review visible status/action icons only when they are labeled or confirmed by the owner. |
 
 ## Before Creating A Work Order
 
@@ -57,7 +57,7 @@ Monitor queue, dashboards, and exceptions
 | Before release | Check part, BOM, recipe, quantity, due date, and machine group. |
 | During shift | Watch [Queue System](../10-production/queue-system.md) and respond to supervisor escalations. |
 | After changes | Recheck [Planning](../10-production/planning.md) so the schedule matches the floor. |
-| End of day | Review [Dashboards](../10-production/dashboards.md) and WOs that need reschedule, cancel, or force-close review. |
+| End of day | Review [Dashboards](../10-production/dashboards.md) and WOs that need rescheduling, cancellation, or force-close review. |
 
 ## Escalation Rules
 

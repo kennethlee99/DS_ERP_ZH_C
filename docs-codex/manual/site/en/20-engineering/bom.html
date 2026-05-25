@@ -21,16 +21,16 @@
 <details class="nav-group">
         <summary>Start</summary>
         <div class="nav-links">
-<a href="../00-start-here.html">Start Here: Demo Operating Guide</a>
+<a href="../00-start-here.html">Start Here: Factory Operating Guide</a>
 <a href="../00-glossary.html">Operating Glossary</a>
-<a href="../00-open-decisions.html">Evidence And Decisions Register</a>
+<a href="../00-open-decisions.html">Evidence and Decisions Register</a>
         </div>
       </details>
 <details class="nav-group">
         <summary>Workflows</summary>
         <div class="nav-links">
 <a href="../01-workflows/admin-setup-checklist.html">Admin Setup Checklist</a>
-<a href="../01-workflows/operator-run-next-job.html">Operator Run The Next Job Walkthrough</a>
+<a href="../01-workflows/operator-run-next-job.html">Operator: Run the Next Job Walkthrough</a>
 <a href="../01-workflows/planner-cold-start.html">Planner Cold Start Walkthrough</a>
 <a href="../01-workflows/supervisor-triage.html">Supervisor Delayed Production Triage</a>
         </div>
@@ -96,7 +96,7 @@
 <details class="nav-group">
         <summary>开始</summary>
         <div class="nav-links">
-<a href="../../zh-CN/00-start-here.html">从这里开始：演示操作指南</a>
+<a href="../../zh-CN/00-start-here.html">从这里开始：工厂操作指南</a>
 <a href="../../zh-CN/00-glossary.html">操作术语表</a>
 <a href="../../zh-CN/00-open-decisions.html">证据与待决事项登记</a>
         </div>
@@ -147,7 +147,7 @@
 <a href="../../zh-CN/30-quality/equipment-calibration.html">设备校准</a>
 <a href="../../zh-CN/30-quality/inspection-planning.html">检验计划</a>
 <a href="../../zh-CN/30-quality/inspection-records.html">检验记录</a>
-<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格</a>
+<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格报告</a>
         </div>
       </details>
 <details class="nav-group">
@@ -169,24 +169,24 @@
     </aside>
     <main class="content">
       <article class="article">
-<h1>BOM</h1>
+<h1 id="bom">BOM</h1>
 <blockquote><p><a href="bom.html">English</a> | <a href="../../zh-CN/20-engineering/bom.html">中文</a></p></blockquote>
 <p>Path: Parts / BOM Master and BOM Structure URL: <code>&lt;APP_BASE_URL&gt;/BOM/BomMaster</code>, <code>&lt;APP_BASE_URL&gt;/BOM/BOMStructure/BOMStructureDiagram</code></p>
-<h2>What This Page Is For</h2>
+<h2 id="what-this-page-is-for">What This Page Is For</h2>
 <p>Use BOM pages to review parent and child material relationships before work is planned. The reviewer should be able to confirm whether the planned item has the expected structure.</p>
-<h2>What You See</h2>
+<h2 id="what-you-see">What You See</h2>
 <ul><li>BOM master records for parent items.</li><li>Structure or diagram views that show child items and quantities.</li><li>Search and filter controls for finding the parent item.</li><li>Toolbar actions for opening, refreshing, exporting, and reviewing records when available.</li></ul>
-<h2>What You Do</h2>
-<ol><li>Search for the parent item used in the demo.</li><li>Open the BOM or structure view.</li><li>Confirm the visible child items and quantities match the intended build.</li><li>Escalate missing or unexpected structure before releasing production work.</li></ol>
-<h2>What To Check</h2>
+<h2 id="what-you-do">What You Do</h2>
+<ol><li>Search for the parent item used in the workflow.</li><li>Open the BOM or structure view.</li><li>Confirm the visible child items and quantities match the intended build.</li><li>Escalate missing or unexpected structure before releasing production work.</li></ol>
+<h2 id="what-to-check">What To Check</h2>
 <ul><li>The parent item is the expected part.</li><li>Child items and quantities are visible and reasonable.</li><li>The displayed structure matches the planned production route.</li><li>Planning does not proceed until the structure is understood.</li></ul>
-<h2>Common Issues</h2>
-<table><thead><tr><th>Issue</th><th>What it means</th></tr></thead><tbody><tr><td>Parent item has no structure</td><td>The BOM may not be ready for the demo scenario.</td></tr>
+<h2 id="common-issues">Common Issues</h2>
+<table><thead><tr><th>Issue</th><th>What it means</th></tr></thead><tbody><tr><td>Parent item has no structure</td><td>The BOM may not be ready for the site scenario.</td></tr>
 <tr><td>Child quantity looks wrong</td><td>Ask engineering or planning to review before release.</td></tr>
-<tr><td>Structure differs from recipe expectations</td><td>Confirm which setup should drive the demo workflow.</td></tr></tbody></table>
-<h2>Related Pages</h2>
+<tr><td>Structure differs from recipe expectations</td><td>Confirm which setup should drive the site workflow.</td></tr></tbody></table>
+<h2 id="related-pages">Related Pages</h2>
 <ul><li><a href="parts.html">Parts</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="../03-by-role/planner.html">Planner Manual</a></li><li><a href="../03-by-role/production-engineer.html">Production Engineer Manual</a></li></ul>
-<h2>Screenshot</h2>
+<h2 id="screenshot">Screenshot</h2>
 <p><img src="../../assets/screenshots/bom-master-structure.png" alt="DS_ERP BOM structure screen"></p>
       </article>
     </main>

@@ -7,14 +7,14 @@ URL: `<APP_BASE_URL>/Production/ProductionOrders`
 
 ## What This Page Is For
 
-Use Production Orders to review, create, release, hold, cancel, reset, or close production work. This is the planner and supervisor starting point for checking whether work is ready for the floor.
+Use Production Orders to find and check production work. Use status actions only when the visible action label and result have been confirmed. This is the planner and supervisor starting point for checking whether work is ready for the floor.
 
-Release, hold, cancel, reset, close, and other status actions remain tracked in the [Evidence And Decisions Register](../00-open-decisions.md) until their visible labels and results are confirmed.
+Release, hold, cancel, reset, close, and other status actions remain tracked in the [Evidence and Decisions Register](../00-open-decisions.md) until their visible labels and results are confirmed.
 
 ## What You See
 
 - A searchable work-order grid with status, quantity, item, date, and owner fields.
-- The visible `New Production Orders` button for creating a work order when the demo script calls for one.
+- The visible `New Production Orders` button for creating a work order when the site procedure calls for one.
 - Toolbar actions for editing, exporting, refreshing, and changing status when allowed.
 - Filters that narrow the list by work order, date, part, status, or related production details.
 - Row actions that open the selected work order for review.
@@ -29,7 +29,7 @@ Release, hold, cancel, reset, close, and other status actions remain tracked in 
 ## What To Check
 
 - The order belongs to the correct part and revision.
-- The planned quantity and dates match the demo scenario.
+- The planned quantity and dates match the site scenario.
 - The status supports the next step before users look for it in Planning or Queue System.
 - Child work, inspection, or engineering readiness is not blocking release.
 

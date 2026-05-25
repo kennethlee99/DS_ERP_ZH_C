@@ -18,7 +18,7 @@ Use BOM pages to review parent and child material relationships before work is p
 
 ## What You Do
 
-1. Search for the parent item used in the demo.
+1. Search for the parent item used in the workflow.
 2. Open the BOM or structure view.
 3. Confirm the visible child items and quantities match the intended build.
 4. Escalate missing or unexpected structure before releasing production work.
@@ -34,9 +34,9 @@ Use BOM pages to review parent and child material relationships before work is p
 
 | Issue | What it means |
 |---|---|
-| Parent item has no structure | The BOM may not be ready for the demo scenario. |
+| Parent item has no structure | The BOM may not be ready for the site scenario. |
 | Child quantity looks wrong | Ask engineering or planning to review before release. |
-| Structure differs from recipe expectations | Confirm which setup should drive the demo workflow. |
+| Structure differs from recipe expectations | Confirm which setup should drive the site workflow. |
 
 ## Related Pages
 

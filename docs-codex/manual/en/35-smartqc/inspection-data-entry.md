@@ -30,7 +30,7 @@ Use SMARTQC Inspection Data Entry to enter, review, and save inspection results.
 - The inspection belongs to the correct job and stage.
 - Required header fields are filled before save.
 - Measurement rows show the expected characteristics and limits.
-- Result colors and status labels are understandable to the reviewer.
+- Result colors and status labels are clear to the reviewer.
 
 ## Common Issues
 

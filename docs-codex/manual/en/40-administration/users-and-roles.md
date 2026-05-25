@@ -9,7 +9,7 @@ URL: `<APP_BASE_URL>/Administration/User`, `<APP_BASE_URL>/Administration/Role`
 
 Use Users and Roles to review who can sign in and which visible menu actions a role can use. This chapter covers the visible administration workflow only.
 
-User-worker relationship, permission-label meaning, and language setup remain tracked in the [Evidence And Decisions Register](../00-open-decisions.md) until the administrator or implementation owner confirms them.
+User-worker relationship, permission-label meaning, and language setup remain tracked in the [Evidence and Decisions Register](../00-open-decisions.md) until the administrator or implementation owner confirms them.
 
 ## What You See
 
@@ -20,14 +20,14 @@ User-worker relationship, permission-label meaning, and language setup remain tr
 
 ## What You Do
 
-1. Open User Management to confirm the expected demo user exists and is active.
-2. Open Roles to confirm the role name used in the demo.
+1. Open User Management to confirm the expected user exists and is active.
+2. Open Roles to confirm the role name used for the site workflow.
 3. Review visible permission labels only when explaining why a menu item or action appears.
-4. Avoid changing access during the demo unless the administrator explicitly approves it.
+4. Avoid changing access during the workflow unless the administrator explicitly approves it.
 
 ## What To Check
 
-- The demo user is active.
+- The user is active.
 - The assigned role matches the intended reviewer scenario.
 - The visible sidebar and buttons are consistent with the role.
 - Any missing page is treated as an access or scope question before changing data.

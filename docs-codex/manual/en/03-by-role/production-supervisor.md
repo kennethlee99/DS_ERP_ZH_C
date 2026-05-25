@@ -36,7 +36,7 @@ End shift handover
 | [Planning](../10-production/planning.md) | Check the scheduled load and confirm whether a late change is already reflected. |
 | [Production Orders](../10-production/production-orders.md) | Inspect WO status, quantities, nested orders, and available status actions. |
 | [Dashboards](../10-production/dashboards.md) | Open OEE, KPI Production, and Main Layout for high-level signals; treat metric definitions as pending owner confirmation. |
-| [Manual Tasks](../10-production/manual-tasks.md) | Review task definitions and confirm where assigned manual work is tracked in the demo. |
+| [Manual Tasks](../10-production/manual-tasks.md) | Review task definitions and confirm where assigned manual work is tracked in the workflow. |
 | [Inspection Records](../30-quality/inspection-records.md) | Check whether quality failures or pending inspections are blocking production. |
 
 ## Before-Shift Checklist
@@ -97,7 +97,7 @@ screenshots before this role page can describe those signals in detail.
 
 ![DS_ERP manual tasks screen](../../assets/screenshots/production-manual-tasks.png)
 
-The [Manual Tasks](../10-production/manual-tasks.md) screenshot shows the task-definition page. Use the demo's queue or reporting screen to confirm assigned manual work.
+The [Manual Tasks](../10-production/manual-tasks.md) screenshot shows the task-definition page. Use the site workflow's queue or reporting screen to confirm assigned manual work.
 
 ![DS_ERP inspection records screen](../../assets/screenshots/quality-inspection-records.png)
 
