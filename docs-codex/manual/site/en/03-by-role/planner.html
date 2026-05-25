@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planner Manual - DS_ERP User Guide</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="../../index.html">DS_ERP User Guide</a>
+      <div class="subtitle">Generated from docs-codex/manual Markdown</div>
+      <nav aria-label="Manual pages">
+<section class="nav-section"><h2>Start</h2><a href="../../index.html">DSERP User Guide</a></section>
+<section class="nav-section"><h2>English - Start</h2><a href="../00-start-here.html">Start Here: Demo Operating Guide</a>
+<a href="../00-glossary.html">Operating Glossary</a></section>
+<section class="nav-section"><h2>English - Workflows</h2><a href="../01-workflows/admin-setup-checklist.html">Admin Setup Checklist</a>
+<a href="../01-workflows/operator-run-next-job.html">Operator Run The Next Job Walkthrough</a>
+<a href="../01-workflows/planner-cold-start.html">Planner Cold Start Walkthrough</a>
+<a href="../01-workflows/supervisor-triage.html">Supervisor Delayed Production Triage</a></section>
+<section class="nav-section"><h2>English - Roles</h2><a href="operator.html">Operator Manual</a>
+<a class="active" href="planner.html">Planner Manual</a>
+<a href="production-engineer.html">Production Engineer Manual</a>
+<a href="production-supervisor.html">Production Supervisor Manual</a>
+<a href="quality-engineer.html">Quality Engineer Manual</a>
+<a href="README.html">Role-Based User Manuals</a></section>
+<section class="nav-section"><h2>English - Production</h2><a href="../10-production/dashboards.html">Production Dashboards</a>
+<a href="../10-production/manual-tasks.html">Manual Tasks</a>
+<a href="../10-production/planning.html">Planning</a>
+<a href="../10-production/production-orders.html">Production Orders</a>
+<a href="../10-production/queue-system.html">Queue System</a></section>
+<section class="nav-section"><h2>English - Engineering</h2><a href="../20-engineering/bom.html">BOM</a>
+<a href="../20-engineering/machines.html">Machines</a>
+<a href="../20-engineering/nc-programs.html">NC Programs</a>
+<a href="../20-engineering/parts.html">Parts</a>
+<a href="../20-engineering/recipes.html">Recipes</a></section>
+<section class="nav-section"><h2>English - Quality</h2><a href="../30-quality/equipment-calibration.html">Equipment Calibration</a>
+<a href="../30-quality/inspection-planning.html">Inspection Planning</a>
+<a href="../30-quality/inspection-records.html">Inspection Records</a>
+<a href="../30-quality/ncr-non-conformance.html">NCR Non-Conformance</a></section>
+<section class="nav-section"><h2>English - SMARTQC</h2><a href="../35-smartqc/check-sheets.html">SMARTQC Check Sheets</a>
+<a href="../35-smartqc/inspection-data-entry.html">SMARTQC Inspection Data Entry</a>
+<a href="../35-smartqc/methods-and-groups.html">SMARTQC Methods and Groups</a></section>
+<section class="nav-section"><h2>English - Administration</h2><a href="../40-administration/users-and-roles.html">Users and Roles</a></section>
+<section class="nav-section"><h2>Chinese - Start</h2><a href="../../zh-CN/00-start-here.html">从这里开始：演示操作指南</a>
+<a href="../../zh-CN/00-glossary.html">操作术语表</a></section>
+<section class="nav-section"><h2>Chinese - Workflows</h2><a href="../../zh-CN/01-workflows/admin-setup-checklist.html">管理员设置检查清单</a>
+<a href="../../zh-CN/01-workflows/operator-run-next-job.html">操作员运行下一个作业流程</a>
+<a href="../../zh-CN/01-workflows/planner-cold-start.html">计划员冷启动流程</a>
+<a href="../../zh-CN/01-workflows/supervisor-triage.html">生产主管延误作业排查</a></section>
+<section class="nav-section"><h2>Chinese - Roles</h2><a href="../../zh-CN/03-by-role/operator.html">操作员手册</a>
+<a href="../../zh-CN/03-by-role/planner.html">计划员手册</a>
+<a href="../../zh-CN/03-by-role/production-engineer.html">生产工程师手册</a>
+<a href="../../zh-CN/03-by-role/production-supervisor.html">生产主管手册</a>
+<a href="../../zh-CN/03-by-role/quality-engineer.html">质量工程师手册</a>
+<a href="../../zh-CN/03-by-role/README.html">按角色阅读的用户手册</a></section>
+<section class="nav-section"><h2>Chinese - Production</h2><a href="../../zh-CN/10-production/dashboards.html">生产看板</a>
+<a href="../../zh-CN/10-production/manual-tasks.html">手动任务</a>
+<a href="../../zh-CN/10-production/planning.html">计划</a>
+<a href="../../zh-CN/10-production/production-orders.html">工单</a>
+<a href="../../zh-CN/10-production/queue-system.html">队列系统</a></section>
+<section class="nav-section"><h2>Chinese - Engineering</h2><a href="../../zh-CN/20-engineering/bom.html">BOM</a>
+<a href="../../zh-CN/20-engineering/machines.html">机台</a>
+<a href="../../zh-CN/20-engineering/nc-programs.html">NC 程序</a>
+<a href="../../zh-CN/20-engineering/parts.html">零件</a>
+<a href="../../zh-CN/20-engineering/recipes.html">配方</a></section>
+<section class="nav-section"><h2>Chinese - Quality</h2><a href="../../zh-CN/30-quality/equipment-calibration.html">设备校准</a>
+<a href="../../zh-CN/30-quality/inspection-planning.html">检验计划</a>
+<a href="../../zh-CN/30-quality/inspection-records.html">检验记录</a>
+<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格</a></section>
+<section class="nav-section"><h2>Chinese - SMARTQC</h2><a href="../../zh-CN/35-smartqc/check-sheets.html">SMARTQC 检验表</a>
+<a href="../../zh-CN/35-smartqc/inspection-data-entry.html">SMARTQC 检验录入</a>
+<a href="../../zh-CN/35-smartqc/methods-and-groups.html">SMARTQC 方法与方法组</a></section>
+<section class="nav-section"><h2>Chinese - Administration</h2><a href="../../zh-CN/40-administration/users-and-roles.html">用户和角色</a></section>
+      </nav>
+    </aside>
+    <main class="content">
+      <article class="article">
+        <div class="page-path">en/03-by-role/planner.md</div>
+<h1>Planner Manual</h1>
+<blockquote><p>English | <a href="../../zh-CN/03-by-role/planner.html">zh-CN</a></p></blockquote>
+<p>You are the <strong>production planner</strong>. You turn demand into scheduled, released, and monitorable work orders. You depend on production engineering for valid recipes and routings, and quality engineering for inspection readiness.</p>
+<h2>Planning Flow</h2>
+<pre><code>Demand arrives
+      |
+      v
+Check part, BOM, recipe, machine readiness
+      |
+      v
+Create or generate WOs
+      |
+      v
+Schedule WOs on Planning page
+      |
+      v
+Release to shop floor
+      |
+      v
+Monitor queue, dashboards, and exceptions</code></pre>
+<h2>Screens You Use Most</h2>
+<table><thead><tr><th>Screen</th><th>What you do here</th></tr></thead><tbody><tr><td><a href="../20-engineering/parts.html">Parts</a> and <a href="../20-engineering/bom.html">BOM Master</a></td><td>Confirm the item being planned exists and has the expected structure.</td></tr>
+<tr><td><a href="../20-engineering/recipes.html">Recipes</a></td><td>Confirm the selected recipe/routing is valid before generating WOs.</td></tr>
+<tr><td><a href="../10-production/production-orders.html">Production Orders</a></td><td>Create WOs, inspect generated child orders, set quantities and dates, and use allowed status actions.</td></tr>
+<tr><td><a href="../10-production/planning.html">Planning</a></td><td>Schedule WOs across dates, machine groups, and planning views.</td></tr>
+<tr><td><a href="../10-production/queue-system.html">Queue System</a></td><td>Confirm released work appears in the execution queue.</td></tr>
+<tr><td><a href="../10-production/dashboards.html">Dashboards</a></td><td>Open OEE, KPI Production, and Main Layout as entry points; treat metric definitions as pending owner confirmation.</td></tr>
+<tr><td><a href="../10-production/production-orders.html">Status actions</a></td><td>Review visible status/action icons only when they are labeled or confirmed by the demo owner.</td></tr></tbody></table>
+<h2>Before Creating A Work Order</h2>
+<ol><li>Confirm the <a href="../20-engineering/parts.html">Part</a> and revision are correct.</li><li>Confirm the <a href="../20-engineering/bom.html">BOM</a> is ready for the planned</li></ol>
+<p>quantity.</p>
+<ol><li>Confirm a <a href="../20-engineering/recipes.html">Recipe</a> exists for the</li></ol>
+<p>planned production route.</p>
+<ol><li>Confirm the required machine groups and shifts are available.</li><li>Confirm QA is ready if the work requires inspection.</li></ol>
+<h2>Daily Planning Routine</h2>
+<table><thead><tr><th>Time</th><th>Action</th></tr></thead><tbody><tr><td>Start of day</td><td>Review open demand, WOs due today, and blocked WOs.</td></tr>
+<tr><td>Before release</td><td>Check part, BOM, recipe, quantity, due date, and machine group.</td></tr>
+<tr><td>During shift</td><td>Watch <a href="../10-production/queue-system.html">Queue System</a> and respond to supervisor escalations.</td></tr>
+<tr><td>After changes</td><td>Recheck <a href="../10-production/planning.html">Planning</a> so the schedule matches the floor.</td></tr>
+<tr><td>End of day</td><td>Review <a href="../10-production/dashboards.html">Dashboards</a> and WOs that need reschedule, cancel, or force-close review.</td></tr></tbody></table>
+<h2>Escalation Rules</h2>
+<ul><li>Escalate recipe, route, machine capability, cycle-time, or NC program issues</li></ul>
+<p>to the <a href="production-engineer.html">production engineer</a>.</p>
+<ul><li>Escalate failed or missing inspection setup to the</li></ul>
+<p><a href="quality-engineer.html">quality engineer</a>.</p>
+<ul><li>Escalate user access or missing permissions to the</li></ul>
+<p>administrator.</p>
+<h2>Common Questions</h2>
+<table><thead><tr><th>Question</th><th>Likely cause</th><th>Next step</th></tr></thead><tbody><tr><td>Generated WOs are missing expected child orders</td><td>Recipe or process definition is incomplete</td><td>Ask production engineering to review recipe/process setup</td></tr>
+<tr><td>Planning board is empty</td><td>Date range, machine group, or planning page filter excludes the work</td><td>Widen filters and check the WO status</td></tr>
+<tr><td>WO appears in planning but not queue</td><td>WO may not be released or queue page filter differs</td><td>Check status and queue filters</td></tr>
+<tr><td>WO is stuck in progress</td><td>Child work may still be open or quantity is incomplete</td><td>Check the visible status and escalate to the supervisor before using any unclear action icon</td></tr></tbody></table>
+<h2>Screenshots</h2>
+<p>Recommended screenshots for this role:</p>
+<table><thead><tr><th>Capture</th><th>Suggested page</th></tr></thead><tbody><tr><td>Work order list and action toolbar</td><td><a href="../10-production/production-orders.html">Production Orders</a></td></tr>
+<tr><td>Planning board</td><td><a href="../10-production/planning.html">Planning</a></td></tr>
+<tr><td>Machine queue</td><td><a href="../10-production/queue-system.html">Queue System</a></td></tr>
+<tr><td>OEE/KPI review</td><td><a href="../10-production/dashboards.html">Dashboards</a> screenshot request</td></tr>
+<tr><td>Part readiness</td><td><a href="../20-engineering/parts.html">Parts</a></td></tr>
+<tr><td>BOM structure</td><td><a href="../20-engineering/bom.html">BOM</a></td></tr></tbody></table>
+<p><img src="../../assets/screenshots/role-planner-production-orders.png" alt="DS_ERP production orders screen"></p>
+<p>The production orders screenshot shows the authenticated work-order list, filters, action toolbar, and row status indicators.</p>
+<p><img src="../../assets/screenshots/role-planner-planning.png" alt="DS_ERP planning board screen"></p>
+<p>The planning screenshot shows the authenticated planning workspace used to review scheduled load and planning views.</p>
+<p><img src="../../assets/screenshots/parts-list.png" alt="DS_ERP parts list screen"></p>
+<p>The parts screenshot shows the authenticated list used to confirm that the item being planned exists and is ready for production review.</p>
+<p><img src="../../assets/screenshots/bom-master-structure.png" alt="DS_ERP BOM structure screen"></p>
+<p>The BOM screenshot shows the authenticated structure page used to confirm parent and child material relationships.</p>
+<p>The <a href="../10-production/dashboards.html">Dashboards</a> pages still need separate OEE, KPI Production, and Main Layout screenshots before this role page can describe those metrics in detail.</p>
+<h2>Read Next</h2>
+<ul><li><a href="production-engineer.html">Production engineer manual</a></li><li><a href="production-supervisor.html">Production supervisor manual</a></li><li><a href="../01-workflows/planner-cold-start.html">Planner cold-start walkthrough</a></li><li><a href="../10-production/production-orders.html">Production Orders</a></li><li><a href="../00-glossary.html">Operating Glossary</a></li></ul>
+        <div class="footer">Generated from the manual source. Use &lt;APP_BASE_URL&gt; as the actual factory deployment address.</div>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

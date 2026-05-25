@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>手动任务 - DS_ERP User Guide</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="../../index.html">DS_ERP User Guide</a>
+      <div class="subtitle">Generated from docs-codex/manual Markdown</div>
+      <nav aria-label="Manual pages">
+<section class="nav-section"><h2>Start</h2><a href="../../index.html">DSERP User Guide</a></section>
+<section class="nav-section"><h2>English - Start</h2><a href="../../en/00-start-here.html">Start Here: Demo Operating Guide</a>
+<a href="../../en/00-glossary.html">Operating Glossary</a></section>
+<section class="nav-section"><h2>English - Workflows</h2><a href="../../en/01-workflows/admin-setup-checklist.html">Admin Setup Checklist</a>
+<a href="../../en/01-workflows/operator-run-next-job.html">Operator Run The Next Job Walkthrough</a>
+<a href="../../en/01-workflows/planner-cold-start.html">Planner Cold Start Walkthrough</a>
+<a href="../../en/01-workflows/supervisor-triage.html">Supervisor Delayed Production Triage</a></section>
+<section class="nav-section"><h2>English - Roles</h2><a href="../../en/03-by-role/operator.html">Operator Manual</a>
+<a href="../../en/03-by-role/planner.html">Planner Manual</a>
+<a href="../../en/03-by-role/production-engineer.html">Production Engineer Manual</a>
+<a href="../../en/03-by-role/production-supervisor.html">Production Supervisor Manual</a>
+<a href="../../en/03-by-role/quality-engineer.html">Quality Engineer Manual</a>
+<a href="../../en/03-by-role/README.html">Role-Based User Manuals</a></section>
+<section class="nav-section"><h2>English - Production</h2><a href="../../en/10-production/dashboards.html">Production Dashboards</a>
+<a href="../../en/10-production/manual-tasks.html">Manual Tasks</a>
+<a href="../../en/10-production/planning.html">Planning</a>
+<a href="../../en/10-production/production-orders.html">Production Orders</a>
+<a href="../../en/10-production/queue-system.html">Queue System</a></section>
+<section class="nav-section"><h2>English - Engineering</h2><a href="../../en/20-engineering/bom.html">BOM</a>
+<a href="../../en/20-engineering/machines.html">Machines</a>
+<a href="../../en/20-engineering/nc-programs.html">NC Programs</a>
+<a href="../../en/20-engineering/parts.html">Parts</a>
+<a href="../../en/20-engineering/recipes.html">Recipes</a></section>
+<section class="nav-section"><h2>English - Quality</h2><a href="../../en/30-quality/equipment-calibration.html">Equipment Calibration</a>
+<a href="../../en/30-quality/inspection-planning.html">Inspection Planning</a>
+<a href="../../en/30-quality/inspection-records.html">Inspection Records</a>
+<a href="../../en/30-quality/ncr-non-conformance.html">NCR Non-Conformance</a></section>
+<section class="nav-section"><h2>English - SMARTQC</h2><a href="../../en/35-smartqc/check-sheets.html">SMARTQC Check Sheets</a>
+<a href="../../en/35-smartqc/inspection-data-entry.html">SMARTQC Inspection Data Entry</a>
+<a href="../../en/35-smartqc/methods-and-groups.html">SMARTQC Methods and Groups</a></section>
+<section class="nav-section"><h2>English - Administration</h2><a href="../../en/40-administration/users-and-roles.html">Users and Roles</a></section>
+<section class="nav-section"><h2>Chinese - Start</h2><a href="../00-start-here.html">从这里开始：演示操作指南</a>
+<a href="../00-glossary.html">操作术语表</a></section>
+<section class="nav-section"><h2>Chinese - Workflows</h2><a href="../01-workflows/admin-setup-checklist.html">管理员设置检查清单</a>
+<a href="../01-workflows/operator-run-next-job.html">操作员运行下一个作业流程</a>
+<a href="../01-workflows/planner-cold-start.html">计划员冷启动流程</a>
+<a href="../01-workflows/supervisor-triage.html">生产主管延误作业排查</a></section>
+<section class="nav-section"><h2>Chinese - Roles</h2><a href="../03-by-role/operator.html">操作员手册</a>
+<a href="../03-by-role/planner.html">计划员手册</a>
+<a href="../03-by-role/production-engineer.html">生产工程师手册</a>
+<a href="../03-by-role/production-supervisor.html">生产主管手册</a>
+<a href="../03-by-role/quality-engineer.html">质量工程师手册</a>
+<a href="../03-by-role/README.html">按角色阅读的用户手册</a></section>
+<section class="nav-section"><h2>Chinese - Production</h2><a href="dashboards.html">生产看板</a>
+<a class="active" href="manual-tasks.html">手动任务</a>
+<a href="planning.html">计划</a>
+<a href="production-orders.html">工单</a>
+<a href="queue-system.html">队列系统</a></section>
+<section class="nav-section"><h2>Chinese - Engineering</h2><a href="../20-engineering/bom.html">BOM</a>
+<a href="../20-engineering/machines.html">机台</a>
+<a href="../20-engineering/nc-programs.html">NC 程序</a>
+<a href="../20-engineering/parts.html">零件</a>
+<a href="../20-engineering/recipes.html">配方</a></section>
+<section class="nav-section"><h2>Chinese - Quality</h2><a href="../30-quality/equipment-calibration.html">设备校准</a>
+<a href="../30-quality/inspection-planning.html">检验计划</a>
+<a href="../30-quality/inspection-records.html">检验记录</a>
+<a href="../30-quality/ncr-non-conformance.html">NCR 不合格</a></section>
+<section class="nav-section"><h2>Chinese - SMARTQC</h2><a href="../35-smartqc/check-sheets.html">SMARTQC 检验表</a>
+<a href="../35-smartqc/inspection-data-entry.html">SMARTQC 检验录入</a>
+<a href="../35-smartqc/methods-and-groups.html">SMARTQC 方法与方法组</a></section>
+<section class="nav-section"><h2>Chinese - Administration</h2><a href="../40-administration/users-and-roles.html">用户和角色</a></section>
+      </nav>
+    </aside>
+    <main class="content">
+      <article class="article">
+        <div class="page-path">zh-CN/10-production/manual-tasks.md</div>
+<h1>手动任务</h1>
+<blockquote><p><a href="../../en/10-production/manual-tasks.html">English</a> | 中文</p></blockquote>
+<p>Path: Master / Production / Worker / Manual Tasks URL: <code>&lt;APP_BASE_URL&gt;/Production/ProductionManualTasks</code></p>
+<h2>页面用途</h2>
+<p>Manual Tasks 用于复查生产执行过程中可能出现的工人任务定义。本页是任务定义的设置/参考页面；仅凭本页不能证明操作员已经被分派了实时手动工作。</p>
+<h2>你会看到什么</h2>
+<ul><li>手动任务列表，包含名称、状态和相关生产信息。</li><li>用于快速找到任务的搜索和筛选条件。</li><li>在账号允许时显示的新建、编辑、删除、导出、刷新和列设置控制。</li><li>显示所选任务值的详细表单。</li></ul>
+<h2>你会做什么</h2>
+<ol><li>搜索演示中使用的任务。</li><li>打开行并确认屏幕上的任务名称和状态。</li><li>在期望它出现在操作员流程前，确认任务处于可用状态。</li><li>回到 Queue System、Production Orders 或指定报工页面，确认该任务是否作为实时工作出现在正确场景中。</li></ol>
+<h2>要检查什么</h2>
+<ul><li>任务标签对操作员足够清楚。</li><li>任务处于可用状态，并适用于预期场景。</li><li>任务没有与另一个可见选择重复。</li><li>演示负责人已经确认已分派的手动工作实际在哪里执行。</li></ul>
+<h2>常见问题</h2>
+<table><thead><tr><th>问题</th><th>含义</th></tr></thead><tbody><tr><td>任务缺失</td><td>筛选可能隐藏了它，或任务未处于可用状态。</td></tr>
+<tr><td>任务名称不清楚</td><td>操作员使用前可能需要主管说明。</td></tr>
+<tr><td>任务出现在错误流程中</td><td>演示前复查生产设置。</td></tr>
+<tr><td>此处有任务但实时工作中没有</td><td>本页可能只定义任务；请检查 Queue System 或指定报工页面。</td></tr></tbody></table>
+<h2>相关页面</h2>
+<ul><li><a href="../03-by-role/operator.html">操作员手册</a></li><li><a href="../03-by-role/production-supervisor.html">生产主管手册</a></li><li><a href="queue-system.html">队列系统</a></li></ul>
+<h2>截图</h2>
+<p><img src="../../assets/screenshots/production-manual-tasks.png" alt="DS_ERP 手动任务界面"></p>
+        <div class="footer">Generated from the manual source. Use &lt;APP_BASE_URL&gt; as the actual factory deployment address.</div>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Production Engineer Manual - DS_ERP User Guide</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="../../index.html">DS_ERP User Guide</a>
+      <div class="subtitle">Generated from docs-codex/manual Markdown</div>
+      <nav aria-label="Manual pages">
+<section class="nav-section"><h2>Start</h2><a href="../../index.html">DSERP User Guide</a></section>
+<section class="nav-section"><h2>English - Start</h2><a href="../00-start-here.html">Start Here: Demo Operating Guide</a>
+<a href="../00-glossary.html">Operating Glossary</a></section>
+<section class="nav-section"><h2>English - Workflows</h2><a href="../01-workflows/admin-setup-checklist.html">Admin Setup Checklist</a>
+<a href="../01-workflows/operator-run-next-job.html">Operator Run The Next Job Walkthrough</a>
+<a href="../01-workflows/planner-cold-start.html">Planner Cold Start Walkthrough</a>
+<a href="../01-workflows/supervisor-triage.html">Supervisor Delayed Production Triage</a></section>
+<section class="nav-section"><h2>English - Roles</h2><a href="operator.html">Operator Manual</a>
+<a href="planner.html">Planner Manual</a>
+<a class="active" href="production-engineer.html">Production Engineer Manual</a>
+<a href="production-supervisor.html">Production Supervisor Manual</a>
+<a href="quality-engineer.html">Quality Engineer Manual</a>
+<a href="README.html">Role-Based User Manuals</a></section>
+<section class="nav-section"><h2>English - Production</h2><a href="../10-production/dashboards.html">Production Dashboards</a>
+<a href="../10-production/manual-tasks.html">Manual Tasks</a>
+<a href="../10-production/planning.html">Planning</a>
+<a href="../10-production/production-orders.html">Production Orders</a>
+<a href="../10-production/queue-system.html">Queue System</a></section>
+<section class="nav-section"><h2>English - Engineering</h2><a href="../20-engineering/bom.html">BOM</a>
+<a href="../20-engineering/machines.html">Machines</a>
+<a href="../20-engineering/nc-programs.html">NC Programs</a>
+<a href="../20-engineering/parts.html">Parts</a>
+<a href="../20-engineering/recipes.html">Recipes</a></section>
+<section class="nav-section"><h2>English - Quality</h2><a href="../30-quality/equipment-calibration.html">Equipment Calibration</a>
+<a href="../30-quality/inspection-planning.html">Inspection Planning</a>
+<a href="../30-quality/inspection-records.html">Inspection Records</a>
+<a href="../30-quality/ncr-non-conformance.html">NCR Non-Conformance</a></section>
+<section class="nav-section"><h2>English - SMARTQC</h2><a href="../35-smartqc/check-sheets.html">SMARTQC Check Sheets</a>
+<a href="../35-smartqc/inspection-data-entry.html">SMARTQC Inspection Data Entry</a>
+<a href="../35-smartqc/methods-and-groups.html">SMARTQC Methods and Groups</a></section>
+<section class="nav-section"><h2>English - Administration</h2><a href="../40-administration/users-and-roles.html">Users and Roles</a></section>
+<section class="nav-section"><h2>Chinese - Start</h2><a href="../../zh-CN/00-start-here.html">从这里开始：演示操作指南</a>
+<a href="../../zh-CN/00-glossary.html">操作术语表</a></section>
+<section class="nav-section"><h2>Chinese - Workflows</h2><a href="../../zh-CN/01-workflows/admin-setup-checklist.html">管理员设置检查清单</a>
+<a href="../../zh-CN/01-workflows/operator-run-next-job.html">操作员运行下一个作业流程</a>
+<a href="../../zh-CN/01-workflows/planner-cold-start.html">计划员冷启动流程</a>
+<a href="../../zh-CN/01-workflows/supervisor-triage.html">生产主管延误作业排查</a></section>
+<section class="nav-section"><h2>Chinese - Roles</h2><a href="../../zh-CN/03-by-role/operator.html">操作员手册</a>
+<a href="../../zh-CN/03-by-role/planner.html">计划员手册</a>
+<a href="../../zh-CN/03-by-role/production-engineer.html">生产工程师手册</a>
+<a href="../../zh-CN/03-by-role/production-supervisor.html">生产主管手册</a>
+<a href="../../zh-CN/03-by-role/quality-engineer.html">质量工程师手册</a>
+<a href="../../zh-CN/03-by-role/README.html">按角色阅读的用户手册</a></section>
+<section class="nav-section"><h2>Chinese - Production</h2><a href="../../zh-CN/10-production/dashboards.html">生产看板</a>
+<a href="../../zh-CN/10-production/manual-tasks.html">手动任务</a>
+<a href="../../zh-CN/10-production/planning.html">计划</a>
+<a href="../../zh-CN/10-production/production-orders.html">工单</a>
+<a href="../../zh-CN/10-production/queue-system.html">队列系统</a></section>
+<section class="nav-section"><h2>Chinese - Engineering</h2><a href="../../zh-CN/20-engineering/bom.html">BOM</a>
+<a href="../../zh-CN/20-engineering/machines.html">机台</a>
+<a href="../../zh-CN/20-engineering/nc-programs.html">NC 程序</a>
+<a href="../../zh-CN/20-engineering/parts.html">零件</a>
+<a href="../../zh-CN/20-engineering/recipes.html">配方</a></section>
+<section class="nav-section"><h2>Chinese - Quality</h2><a href="../../zh-CN/30-quality/equipment-calibration.html">设备校准</a>
+<a href="../../zh-CN/30-quality/inspection-planning.html">检验计划</a>
+<a href="../../zh-CN/30-quality/inspection-records.html">检验记录</a>
+<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格</a></section>
+<section class="nav-section"><h2>Chinese - SMARTQC</h2><a href="../../zh-CN/35-smartqc/check-sheets.html">SMARTQC 检验表</a>
+<a href="../../zh-CN/35-smartqc/inspection-data-entry.html">SMARTQC 检验录入</a>
+<a href="../../zh-CN/35-smartqc/methods-and-groups.html">SMARTQC 方法与方法组</a></section>
+<section class="nav-section"><h2>Chinese - Administration</h2><a href="../../zh-CN/40-administration/users-and-roles.html">用户和角色</a></section>
+      </nav>
+    </aside>
+    <main class="content">
+      <article class="article">
+        <div class="page-path">en/03-by-role/production-engineer.md</div>
+<h1>Production Engineer Manual</h1>
+<blockquote><p>English | <a href="../../zh-CN/03-by-role/production-engineer.html">zh-CN</a></p></blockquote>
+<p>You are the <strong>production engineer</strong>. You keep the manufacturing definition usable: parts, BOM, recipes, process steps, machine capability, NC programs, cycle-time assumptions, and the handoff rules between planning, production, and quality.</p>
+<h2>Your Operating Flow</h2>
+<pre><code>New part or revision
+      |
+      v
+Check part + BOM --&gt; Build recipe/processes --&gt; Confirm machines
+      |                       |                          |
+      v                       v                          v
+Prepare NC program      Validate cycle time        Hand off to planner
+      |                                                   |
+      v                                                   v
+Support first run  --&gt;  Review issues  --&gt;  update recipe/setup data</code></pre>
+<h2>Screens You Use Most</h2>
+<table><thead><tr><th>Screen</th><th>What you do here</th></tr></thead><tbody><tr><td><a href="../20-engineering/parts.html">Parts</a></td><td>Confirm the production part, revision, drawing, material, and quality links are ready.</td></tr>
+<tr><td><a href="../20-engineering/bom.html">BOM Master and BOM Structure</a></td><td>Check parent/child material structure before planning generates work.</td></tr>
+<tr><td><a href="../20-engineering/recipes.html">Recipes</a></td><td>Maintain the routing shell for a part or product family.</td></tr>
+<tr><td><a href="../20-engineering/recipes.html">Recipe Processes</a></td><td>Define the ordered manufacturing process steps, expected cycle time, and process relationships.</td></tr>
+<tr><td><a href="../20-engineering/machines.html">Machines and Machine groups/lines</a></td><td>Confirm the target machines and groups exist and match the process capability.</td></tr>
+<tr><td><a href="../20-engineering/nc-programs.html">NC Programs</a></td><td>Maintain CNC program references and make sure the correct revision is ready for production.</td></tr>
+<tr><td><a href="../10-production/production-orders.html">Production Orders</a></td><td>Inspect generated work orders and diagnose routing, quantity, or status issues.</td></tr>
+<tr><td><a href="../30-quality/inspection-planning.html">Inspection Planning</a></td><td>Coordinate with QA so the correct inspection stage is attached to the process.</td></tr></tbody></table>
+<h2>First Article / New Revision Checklist</h2>
+<ol><li>Confirm the <a href="../20-engineering/parts.html">Part</a> has the correct revision,</li></ol>
+<p>description, drawing reference, and active status.</p>
+<ol><li>Check <a href="../20-engineering/bom.html">BOM Master</a> for missing materials or</li></ol>
+<p>unexpected child parts.</p>
+<ol><li>Create or update the <a href="../20-engineering/recipes.html">Recipe</a>.</li><li>Add each <a href="../20-engineering/recipes.html">Recipe Process</a> in</li></ol>
+<p>the real shop-floor order.</p>
+<ol><li>Assign capable <a href="../20-engineering/machines.html">Machines</a> or machine groups.</li><li>Confirm the <a href="../20-engineering/nc-programs.html">NC Programs</a> record and</li></ol>
+<p>revision are available before the planner releases work.</p>
+<ol><li>Ask QA to confirm <a href="../30-quality/inspection-planning.html">Inspection Planning</a></li></ol>
+<p>and SMARTQC setup.</p>
+<ol><li>Support the first production run and update cycle-time or setup assumptions</li></ol>
+<p>if actual performance differs from the recipe.</p>
+<h2>During Production</h2>
+<table><thead><tr><th>Situation</th><th>What to check</th></tr></thead><tbody><tr><td>Planner cannot generate expected orders</td><td><a href="../20-engineering/recipes.html">Recipe</a> process list, <a href="../20-engineering/bom.html">BOM</a> link, and <a href="../20-engineering/parts.html">part</a> revision setup</td></tr>
+<tr><td>Work order reaches the wrong machine group</td><td><a href="../20-engineering/recipes.html">Recipe</a> process machine assignment and <a href="../20-engineering/machines.html">machine</a> group mapping</td></tr>
+<tr><td>NC program mismatch on the floor</td><td><a href="../20-engineering/nc-programs.html">NC Programs</a> record, part revision, and machine compatibility</td></tr>
+<tr><td>Cycle time is unrealistic</td><td><a href="../20-engineering/recipes.html">Recipe</a> process cycle-time fields and recent production records</td></tr>
+<tr><td>Quality check appears at the wrong stage</td><td><a href="../30-quality/inspection-planning.html">Inspection Planning</a> and check-sheet link to part/process</td></tr></tbody></table>
+<h2>Handoff Rules</h2>
+<ul><li>Hand off to the <strong>planner</strong> only after the part, BOM, recipe, machine</li></ul>
+<p>capability, and NC program are ready.</p>
+<ul><li>Hand off to the <a href="quality-engineer.html">quality engineer</a> when inspection stages, CMM programs,</li></ul>
+<p>or SMARTQC check sheets need definition or revision.</p>
+<ul><li>Hand off to the <strong>administrator</strong> if a required page is hidden by permissions</li></ul>
+<p>or master-data setup is blocked by access.</p>
+<h2>Screenshots</h2>
+<p>Recommended screenshots for this role:</p>
+<table><thead><tr><th>Capture</th><th>Suggested page</th></tr></thead><tbody><tr><td>Part setup for production readiness</td><td><a href="../20-engineering/parts.html">Parts</a></td></tr>
+<tr><td>Recipe process route</td><td><a href="../20-engineering/recipes.html">Recipe Processes</a></td></tr>
+<tr><td>Machine capability list</td><td><a href="../20-engineering/machines.html">Machines</a></td></tr>
+<tr><td>NC program list</td><td><a href="../20-engineering/nc-programs.html">NC Programs</a></td></tr>
+<tr><td>BOM structure review</td><td><a href="../20-engineering/bom.html">BOM</a></td></tr></tbody></table>
+<p><img src="../../assets/screenshots/role-production-engineer-recipes.png" alt="DS_ERP recipes screen"></p>
+<p>The recipes screenshot shows the authenticated recipe maintenance page used to review production routings and process definitions.</p>
+<p><img src="../../assets/screenshots/role-production-engineer-machines.png" alt="DS_ERP machines screen"></p>
+<p>The machines screenshot shows the master-data list used to confirm machine capability and grouping.</p>
+<p><img src="../../assets/screenshots/role-production-engineer-nc-programs.png" alt="DS_ERP NC programs screen"></p>
+<p>The NC programs screenshot shows the program catalog used to confirm CNC program readiness before release to production.</p>
+<p><img src="../../assets/screenshots/parts-list.png" alt="DS_ERP parts list screen"></p>
+<p>The parts screenshot shows the authenticated list used to confirm production part readiness before route and BOM review.</p>
+<p><img src="../../assets/screenshots/bom-master-structure.png" alt="DS_ERP BOM structure screen"></p>
+<p>The BOM screenshot shows the authenticated structure page used to review parent and child material relationships.</p>
+<h2>Read Next</h2>
+<ul><li><a href="planner.html">Planner manual</a></li><li><a href="quality-engineer.html">Quality engineer manual</a></li></ul>
+        <div class="footer">Generated from the manual source. Use &lt;APP_BASE_URL&gt; as the actual factory deployment address.</div>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

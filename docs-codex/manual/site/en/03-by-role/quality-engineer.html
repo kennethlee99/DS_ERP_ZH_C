@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quality Engineer Manual - DS_ERP User Guide</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="../../index.html">DS_ERP User Guide</a>
+      <div class="subtitle">Generated from docs-codex/manual Markdown</div>
+      <nav aria-label="Manual pages">
+<section class="nav-section"><h2>Start</h2><a href="../../index.html">DSERP User Guide</a></section>
+<section class="nav-section"><h2>English - Start</h2><a href="../00-start-here.html">Start Here: Demo Operating Guide</a>
+<a href="../00-glossary.html">Operating Glossary</a></section>
+<section class="nav-section"><h2>English - Workflows</h2><a href="../01-workflows/admin-setup-checklist.html">Admin Setup Checklist</a>
+<a href="../01-workflows/operator-run-next-job.html">Operator Run The Next Job Walkthrough</a>
+<a href="../01-workflows/planner-cold-start.html">Planner Cold Start Walkthrough</a>
+<a href="../01-workflows/supervisor-triage.html">Supervisor Delayed Production Triage</a></section>
+<section class="nav-section"><h2>English - Roles</h2><a href="operator.html">Operator Manual</a>
+<a href="planner.html">Planner Manual</a>
+<a href="production-engineer.html">Production Engineer Manual</a>
+<a href="production-supervisor.html">Production Supervisor Manual</a>
+<a class="active" href="quality-engineer.html">Quality Engineer Manual</a>
+<a href="README.html">Role-Based User Manuals</a></section>
+<section class="nav-section"><h2>English - Production</h2><a href="../10-production/dashboards.html">Production Dashboards</a>
+<a href="../10-production/manual-tasks.html">Manual Tasks</a>
+<a href="../10-production/planning.html">Planning</a>
+<a href="../10-production/production-orders.html">Production Orders</a>
+<a href="../10-production/queue-system.html">Queue System</a></section>
+<section class="nav-section"><h2>English - Engineering</h2><a href="../20-engineering/bom.html">BOM</a>
+<a href="../20-engineering/machines.html">Machines</a>
+<a href="../20-engineering/nc-programs.html">NC Programs</a>
+<a href="../20-engineering/parts.html">Parts</a>
+<a href="../20-engineering/recipes.html">Recipes</a></section>
+<section class="nav-section"><h2>English - Quality</h2><a href="../30-quality/equipment-calibration.html">Equipment Calibration</a>
+<a href="../30-quality/inspection-planning.html">Inspection Planning</a>
+<a href="../30-quality/inspection-records.html">Inspection Records</a>
+<a href="../30-quality/ncr-non-conformance.html">NCR Non-Conformance</a></section>
+<section class="nav-section"><h2>English - SMARTQC</h2><a href="../35-smartqc/check-sheets.html">SMARTQC Check Sheets</a>
+<a href="../35-smartqc/inspection-data-entry.html">SMARTQC Inspection Data Entry</a>
+<a href="../35-smartqc/methods-and-groups.html">SMARTQC Methods and Groups</a></section>
+<section class="nav-section"><h2>English - Administration</h2><a href="../40-administration/users-and-roles.html">Users and Roles</a></section>
+<section class="nav-section"><h2>Chinese - Start</h2><a href="../../zh-CN/00-start-here.html">从这里开始：演示操作指南</a>
+<a href="../../zh-CN/00-glossary.html">操作术语表</a></section>
+<section class="nav-section"><h2>Chinese - Workflows</h2><a href="../../zh-CN/01-workflows/admin-setup-checklist.html">管理员设置检查清单</a>
+<a href="../../zh-CN/01-workflows/operator-run-next-job.html">操作员运行下一个作业流程</a>
+<a href="../../zh-CN/01-workflows/planner-cold-start.html">计划员冷启动流程</a>
+<a href="../../zh-CN/01-workflows/supervisor-triage.html">生产主管延误作业排查</a></section>
+<section class="nav-section"><h2>Chinese - Roles</h2><a href="../../zh-CN/03-by-role/operator.html">操作员手册</a>
+<a href="../../zh-CN/03-by-role/planner.html">计划员手册</a>
+<a href="../../zh-CN/03-by-role/production-engineer.html">生产工程师手册</a>
+<a href="../../zh-CN/03-by-role/production-supervisor.html">生产主管手册</a>
+<a href="../../zh-CN/03-by-role/quality-engineer.html">质量工程师手册</a>
+<a href="../../zh-CN/03-by-role/README.html">按角色阅读的用户手册</a></section>
+<section class="nav-section"><h2>Chinese - Production</h2><a href="../../zh-CN/10-production/dashboards.html">生产看板</a>
+<a href="../../zh-CN/10-production/manual-tasks.html">手动任务</a>
+<a href="../../zh-CN/10-production/planning.html">计划</a>
+<a href="../../zh-CN/10-production/production-orders.html">工单</a>
+<a href="../../zh-CN/10-production/queue-system.html">队列系统</a></section>
+<section class="nav-section"><h2>Chinese - Engineering</h2><a href="../../zh-CN/20-engineering/bom.html">BOM</a>
+<a href="../../zh-CN/20-engineering/machines.html">机台</a>
+<a href="../../zh-CN/20-engineering/nc-programs.html">NC 程序</a>
+<a href="../../zh-CN/20-engineering/parts.html">零件</a>
+<a href="../../zh-CN/20-engineering/recipes.html">配方</a></section>
+<section class="nav-section"><h2>Chinese - Quality</h2><a href="../../zh-CN/30-quality/equipment-calibration.html">设备校准</a>
+<a href="../../zh-CN/30-quality/inspection-planning.html">检验计划</a>
+<a href="../../zh-CN/30-quality/inspection-records.html">检验记录</a>
+<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格</a></section>
+<section class="nav-section"><h2>Chinese - SMARTQC</h2><a href="../../zh-CN/35-smartqc/check-sheets.html">SMARTQC 检验表</a>
+<a href="../../zh-CN/35-smartqc/inspection-data-entry.html">SMARTQC 检验录入</a>
+<a href="../../zh-CN/35-smartqc/methods-and-groups.html">SMARTQC 方法与方法组</a></section>
+<section class="nav-section"><h2>Chinese - Administration</h2><a href="../../zh-CN/40-administration/users-and-roles.html">用户和角色</a></section>
+      </nav>
+    </aside>
+    <main class="content">
+      <article class="article">
+        <div class="page-path">en/03-by-role/quality-engineer.md</div>
+<h1>Quality Engineer Manual</h1>
+<blockquote><p><a href="quality-engineer.html">English</a> | <a href="../../zh-CN/03-by-role/quality-engineer.html">中文</a></p></blockquote>
+<p>Use this role guide when reviewing the quality screens during the internal demo. Quality/QC and Inspection Planning are still pending superior confirmation, so this manual keeps them visible and includes captured screens for review instead of hiding the area.</p>
+<h2>Daily Flow</h2>
+<ol><li>Confirm which production stages require inspection.</li><li>Check that the SMARTQC check sheet is ready before the job reaches the shop floor.</li><li>Review inspection entries and follow up on failed or incomplete results.</li><li>Open an NCR when a defect needs formal review.</li><li>Check calibration readiness before a measuring device is used for inspection.</li></ol>
+<h2>Screens You Use Most</h2>
+<table><thead><tr><th>Screen</th><th>What you do here</th><th>Visual status</th></tr></thead><tbody><tr><td><a href="../30-quality/inspection-planning.html">Inspection Planning</a></td><td>Attach inspection requirements to production stages.</td><td>Captured</td></tr>
+<tr><td><a href="../35-smartqc/check-sheets.html">SMARTQC Check Sheets</a></td><td>Review check-sheet versions and inspection items.</td><td>Captured</td></tr>
+<tr><td><a href="../35-smartqc/inspection-data-entry.html">SMARTQC Inspection Data Entry</a></td><td>Review or enter inspection results.</td><td>Captured</td></tr>
+<tr><td><a href="../35-smartqc/methods-and-groups.html">SMARTQC Methods and Groups</a></td><td>Maintain visible method names and groups used by check sheets.</td><td>Captured</td></tr>
+<tr><td><a href="../30-quality/ncr-non-conformance.html">NCR</a></td><td>Record and review non-conformance details.</td><td>Captured</td></tr>
+<tr><td><a href="../30-quality/equipment-calibration.html">Equipment Calibration</a></td><td>Check whether measuring equipment is ready for use.</td><td>Captured</td></tr></tbody></table>
+<h2>What To Check During Review</h2>
+<ul><li>The sidebar names in this guide match the local app after login.</li><li>Each screen opens to the expected list or form.</li><li>Required fields are visible before the user saves.</li><li>Failed or blocked work is explained as an on-screen condition, not as hidden system behavior.</li></ul>
+<h2>Common Questions</h2>
+<table><thead><tr><th>Question</th><th>Likely cause</th><th>Next step</th></tr></thead><tbody><tr><td>An inspection is missing</td><td>The job may not have reached the planned inspection stage, or the check sheet may not be selected.</td><td>Review Inspection Planning and the relevant SMARTQC check sheet.</td></tr>
+<tr><td>A user can open the page but cannot save</td><td>A required field may be empty, or the role may not allow edits.</td><td>Check visible required fields, then ask Administration to review the role.</td></tr>
+<tr><td>A measurement cannot be edited</td><td>Some measurement rows may be controlled by machine or CMM collection.</td><td>Confirm whether manual entry is expected for that row.</td></tr>
+<tr><td>Calibration status looks wrong</td><td>The calibration record or equipment master data may be out of date.</td><td>Review Equipment Calibration before using the device.</td></tr></tbody></table>
+<h2>Screenshots</h2>
+<p><img src="../../assets/screenshots/quality-inspection-planning.png" alt="DS_ERP inspection planning screen"></p>
+<p><img src="../../assets/screenshots/smartqc-check-sheets.png" alt="DS_ERP SMARTQC check sheets screen"></p>
+<p><img src="../../assets/screenshots/smartqc-inspection-data-entry.png" alt="DS_ERP SMARTQC inspection screen"></p>
+<p><img src="../../assets/screenshots/smartqc-methods-and-groups.png" alt="DS_ERP SMARTQC methods screen"></p>
+<p><img src="../../assets/screenshots/quality-ncr.png" alt="DS_ERP NCR screen"></p>
+<p><img src="../../assets/screenshots/quality-equipment-calibration.png" alt="DS_ERP equipment calibration screen"></p>
+<p><img src="../../assets/screenshots/administration-users-roles.png" alt="DS_ERP administration roles screen"></p>
+<p>The Administration screenshot is included only to show where role access is reviewed when a user can open a page but cannot perform the expected action.</p>
+<h2>Related Pages</h2>
+<ul><li><a href="../30-quality/inspection-planning.html">Inspection Planning</a></li><li><a href="../30-quality/ncr-non-conformance.html">NCR Non-Conformance</a></li><li><a href="../30-quality/equipment-calibration.html">Equipment Calibration</a></li><li><a href="../35-smartqc/check-sheets.html">SMARTQC Check Sheets</a></li><li><a href="../35-smartqc/inspection-data-entry.html">SMARTQC Inspection Data Entry</a></li><li><a href="../35-smartqc/methods-and-groups.html">SMARTQC Methods and Groups</a></li></ul>
+        <div class="footer">Generated from the manual source. Use &lt;APP_BASE_URL&gt; as the actual factory deployment address.</div>
+      </article>
+    </main>
+  </div>
+</body>
+</html>
