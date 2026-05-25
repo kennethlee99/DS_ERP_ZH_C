@@ -21,16 +21,16 @@
 <details class="nav-group">
         <summary>Start</summary>
         <div class="nav-links">
-<a href="../../en/00-start-here.html">Start Here: Demo Operating Guide</a>
+<a href="../../en/00-start-here.html">Start Here: Factory Operating Guide</a>
 <a href="../../en/00-glossary.html">Operating Glossary</a>
-<a href="../../en/00-open-decisions.html">Evidence And Decisions Register</a>
+<a href="../../en/00-open-decisions.html">Evidence and Decisions Register</a>
         </div>
       </details>
 <details class="nav-group">
         <summary>Workflows</summary>
         <div class="nav-links">
 <a href="../../en/01-workflows/admin-setup-checklist.html">Admin Setup Checklist</a>
-<a href="../../en/01-workflows/operator-run-next-job.html">Operator Run The Next Job Walkthrough</a>
+<a href="../../en/01-workflows/operator-run-next-job.html">Operator: Run the Next Job Walkthrough</a>
 <a href="../../en/01-workflows/planner-cold-start.html">Planner Cold Start Walkthrough</a>
 <a href="../../en/01-workflows/supervisor-triage.html">Supervisor Delayed Production Triage</a>
         </div>
@@ -96,7 +96,7 @@
 <details class="nav-group">
         <summary>开始</summary>
         <div class="nav-links">
-<a href="../00-start-here.html">从这里开始：演示操作指南</a>
+<a href="../00-start-here.html">从这里开始：工厂操作指南</a>
 <a href="../00-glossary.html">操作术语表</a>
 <a href="../00-open-decisions.html">证据与待决事项登记</a>
         </div>
@@ -147,7 +147,7 @@
 <a href="../30-quality/equipment-calibration.html">设备校准</a>
 <a href="../30-quality/inspection-planning.html">检验计划</a>
 <a href="../30-quality/inspection-records.html">检验记录</a>
-<a href="../30-quality/ncr-non-conformance.html">NCR 不合格</a>
+<a href="../30-quality/ncr-non-conformance.html">NCR 不合格报告</a>
         </div>
       </details>
 <details class="nav-group">
@@ -169,25 +169,25 @@
     </aside>
     <main class="content">
       <article class="article">
-<h1>手动任务</h1>
+<h1 id="手动任务">手动任务</h1>
 <blockquote><p><a href="../../en/10-production/manual-tasks.html">English</a> | 中文</p></blockquote>
 <p>Path: Master / Production / Worker / Manual Tasks URL: <code>&lt;APP_BASE_URL&gt;/Production/ProductionManualTasks</code></p>
-<h2>页面用途</h2>
+<h2 id="页面用途">页面用途</h2>
 <p>Manual Tasks 用于复查生产执行过程中可能出现的工人任务定义。本页是任务定义的设置/参考页面；仅凭本页不能证明操作员已经被分派了实时手动工作。</p>
-<h2>你会看到什么</h2>
+<h2 id="页面显示内容">页面显示内容</h2>
 <ul><li>手动任务列表，包含名称、状态和相关生产信息。</li><li>用于快速找到任务的搜索和筛选条件。</li><li>在账号允许时显示的新建、编辑、删除、导出、刷新和列设置控制。</li><li>显示所选任务值的详细表单。</li></ul>
-<h2>你会做什么</h2>
-<ol><li>搜索演示中使用的任务。</li><li>打开行并确认屏幕上的任务名称和状态。</li><li>在期望它出现在操作员流程前，确认任务处于可用状态。</li><li>回到 Queue System、Production Orders 或指定报工页面，确认该任务是否作为实时工作出现在正确场景中。</li></ol>
-<h2>要检查什么</h2>
-<ul><li>任务标签对操作员足够清楚。</li><li>任务处于可用状态，并适用于预期场景。</li><li>任务没有与另一个可见选择重复。</li><li>演示负责人已经确认已分派的手动工作实际在哪里执行。</li></ul>
-<h2>常见问题</h2>
+<h2 id="常用操作">常用操作</h2>
+<ol><li>搜索现场流程中使用的任务。</li><li>打开行并确认屏幕上的任务名称和状态。</li><li>在期望它出现在操作员流程前，确认任务处于可用状态。</li><li>回到 Queue System、Production Orders 或指定报工页面，确认该任务是否作为实时工作出现在正确场景中。</li></ol>
+<h2 id="要检查什么">要检查什么</h2>
+<ul><li>任务标签对操作员足够清楚。</li><li>任务处于可用状态，并适用于预期场景。</li><li>任务没有与另一个可见选择重复。</li><li>负责人已经确认已分派的手动工作实际在哪里执行。</li></ul>
+<h2 id="常见问题">常见问题</h2>
 <table><thead><tr><th>问题</th><th>含义</th></tr></thead><tbody><tr><td>任务缺失</td><td>筛选可能隐藏了它，或任务未处于可用状态。</td></tr>
-<tr><td>任务名称不清楚</td><td>操作员使用前可能需要主管说明。</td></tr>
-<tr><td>任务出现在错误流程中</td><td>演示前复查生产设置。</td></tr>
+<tr><td>任务名称不明确</td><td>操作员使用前可能需要主管说明。</td></tr>
+<tr><td>任务出现在错误流程中</td><td>使用前确认生产设置。</td></tr>
 <tr><td>此处有任务但实时工作中没有</td><td>本页可能只定义任务；请检查 Queue System 或指定报工页面。</td></tr></tbody></table>
-<h2>相关页面</h2>
+<h2 id="相关页面">相关页面</h2>
 <ul><li><a href="../03-by-role/operator.html">操作员手册</a></li><li><a href="../03-by-role/production-supervisor.html">生产主管手册</a></li><li><a href="queue-system.html">队列系统</a></li></ul>
-<h2>截图</h2>
+<h2 id="截图">截图</h2>
 <p><img src="../../assets/screenshots/production-manual-tasks.png" alt="DS_ERP 手动任务界面"></p>
       </article>
     </main>

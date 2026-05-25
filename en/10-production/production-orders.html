@@ -21,16 +21,16 @@
 <details class="nav-group">
         <summary>Start</summary>
         <div class="nav-links">
-<a href="../00-start-here.html">Start Here: Demo Operating Guide</a>
+<a href="../00-start-here.html">Start Here: Factory Operating Guide</a>
 <a href="../00-glossary.html">Operating Glossary</a>
-<a href="../00-open-decisions.html">Evidence And Decisions Register</a>
+<a href="../00-open-decisions.html">Evidence and Decisions Register</a>
         </div>
       </details>
 <details class="nav-group">
         <summary>Workflows</summary>
         <div class="nav-links">
 <a href="../01-workflows/admin-setup-checklist.html">Admin Setup Checklist</a>
-<a href="../01-workflows/operator-run-next-job.html">Operator Run The Next Job Walkthrough</a>
+<a href="../01-workflows/operator-run-next-job.html">Operator: Run the Next Job Walkthrough</a>
 <a href="../01-workflows/planner-cold-start.html">Planner Cold Start Walkthrough</a>
 <a href="../01-workflows/supervisor-triage.html">Supervisor Delayed Production Triage</a>
         </div>
@@ -96,7 +96,7 @@
 <details class="nav-group">
         <summary>开始</summary>
         <div class="nav-links">
-<a href="../../zh-CN/00-start-here.html">从这里开始：演示操作指南</a>
+<a href="../../zh-CN/00-start-here.html">从这里开始：工厂操作指南</a>
 <a href="../../zh-CN/00-glossary.html">操作术语表</a>
 <a href="../../zh-CN/00-open-decisions.html">证据与待决事项登记</a>
         </div>
@@ -147,7 +147,7 @@
 <a href="../../zh-CN/30-quality/equipment-calibration.html">设备校准</a>
 <a href="../../zh-CN/30-quality/inspection-planning.html">检验计划</a>
 <a href="../../zh-CN/30-quality/inspection-records.html">检验记录</a>
-<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格</a>
+<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格报告</a>
         </div>
       </details>
 <details class="nav-group">
@@ -169,26 +169,26 @@
     </aside>
     <main class="content">
       <article class="article">
-<h1>Production Orders</h1>
+<h1 id="production-orders">Production Orders</h1>
 <blockquote><p><a href="production-orders.html">English</a> | <a href="../../zh-CN/10-production/production-orders.html">中文</a></p></blockquote>
 <p>Path: Planner / Production Orders URL: <code>&lt;APP_BASE_URL&gt;/Production/ProductionOrders</code></p>
-<h2>What This Page Is For</h2>
-<p>Use Production Orders to review, create, release, hold, cancel, reset, or close production work. This is the planner and supervisor starting point for checking whether work is ready for the floor.</p>
-<p>Release, hold, cancel, reset, close, and other status actions remain tracked in the <a href="../00-open-decisions.html">Evidence And Decisions Register</a> until their visible labels and results are confirmed.</p>
-<h2>What You See</h2>
-<ul><li>A searchable work-order grid with status, quantity, item, date, and owner fields.</li><li>The visible <code>New Production Orders</code> button for creating a work order when the demo script calls for one.</li><li>Toolbar actions for editing, exporting, refreshing, and changing status when allowed.</li><li>Filters that narrow the list by work order, date, part, status, or related production details.</li><li>Row actions that open the selected work order for review.</li></ul>
-<h2>What You Do</h2>
+<h2 id="what-this-page-is-for">What This Page Is For</h2>
+<p>Use Production Orders to find and check production work. Use status actions only when the visible action label and result have been confirmed. This is the planner and supervisor starting point for checking whether work is ready for the floor.</p>
+<p>Release, hold, cancel, reset, close, and other status actions remain tracked in the <a href="../00-open-decisions.html">Evidence and Decisions Register</a> until their visible labels and results are confirmed.</p>
+<h2 id="what-you-see">What You See</h2>
+<ul><li>A searchable work-order grid with status, quantity, item, date, and owner fields.</li><li>The visible <code>New Production Orders</code> button for creating a work order when the site procedure calls for one.</li><li>Toolbar actions for editing, exporting, refreshing, and changing status when allowed.</li><li>Filters that narrow the list by work order, date, part, status, or related production details.</li><li>Row actions that open the selected work order for review.</li></ul>
+<h2 id="what-you-do">What You Do</h2>
 <ol><li>Filter to the order or date range under review.</li><li>Open the row and confirm the item, quantity, due date, and status.</li><li>Use the visible status actions only after checking planning, queue, and quality readiness. If an action is an unlabeled icon, treat it as needing screenshot verification before documenting the exact click.</li><li>Reopen the grid after changes and confirm the row shows the expected state.</li></ol>
-<h2>What To Check</h2>
-<ul><li>The order belongs to the correct part and revision.</li><li>The planned quantity and dates match the demo scenario.</li><li>The status supports the next step before users look for it in Planning or Queue System.</li><li>Child work, inspection, or engineering readiness is not blocking release.</li></ul>
-<h2>Common Issues</h2>
+<h2 id="what-to-check">What To Check</h2>
+<ul><li>The order belongs to the correct part and revision.</li><li>The planned quantity and dates match the site scenario.</li><li>The status supports the next step before users look for it in Planning or Queue System.</li><li>Child work, inspection, or engineering readiness is not blocking release.</li></ul>
+<h2 id="common-issues">Common Issues</h2>
 <table><thead><tr><th>Issue</th><th>What it means</th></tr></thead><tbody><tr><td>Order does not appear</td><td>Filters may be too narrow, or the order may not be created for this scenario.</td></tr>
 <tr><td>Status action is unavailable</td><td>The order may not be in a state where that action is allowed.</td></tr>
 <tr><td>Released order is not in the queue</td><td>Recheck order status, queue filters, and the planned work area.</td></tr>
 <tr><td>Action icon meaning is unclear</td><td>Request a labeled toolbar screenshot before using it as a documented release or status step.</td></tr></tbody></table>
-<h2>Related Pages</h2>
+<h2 id="related-pages">Related Pages</h2>
 <ul><li><a href="../03-by-role/planner.html">Planner Manual</a></li><li><a href="planning.html">Planning</a></li><li><a href="queue-system.html">Queue System</a></li><li><a href="../20-engineering/parts.html">Parts</a></li></ul>
-<h2>Screenshot</h2>
+<h2 id="screenshot">Screenshot</h2>
 <p><img src="../../assets/screenshots/role-planner-production-orders.png" alt="DS_ERP production orders screen"></p>
       </article>
     </main>

@@ -21,16 +21,16 @@
 <details class="nav-group">
         <summary>Start</summary>
         <div class="nav-links">
-<a href="../../en/00-start-here.html">Start Here: Demo Operating Guide</a>
+<a href="../../en/00-start-here.html">Start Here: Factory Operating Guide</a>
 <a href="../../en/00-glossary.html">Operating Glossary</a>
-<a href="../../en/00-open-decisions.html">Evidence And Decisions Register</a>
+<a href="../../en/00-open-decisions.html">Evidence and Decisions Register</a>
         </div>
       </details>
 <details class="nav-group">
         <summary>Workflows</summary>
         <div class="nav-links">
 <a href="../../en/01-workflows/admin-setup-checklist.html">Admin Setup Checklist</a>
-<a href="../../en/01-workflows/operator-run-next-job.html">Operator Run The Next Job Walkthrough</a>
+<a href="../../en/01-workflows/operator-run-next-job.html">Operator: Run the Next Job Walkthrough</a>
 <a href="../../en/01-workflows/planner-cold-start.html">Planner Cold Start Walkthrough</a>
 <a href="../../en/01-workflows/supervisor-triage.html">Supervisor Delayed Production Triage</a>
         </div>
@@ -96,7 +96,7 @@
 <details class="nav-group">
         <summary>开始</summary>
         <div class="nav-links">
-<a href="../00-start-here.html">从这里开始：演示操作指南</a>
+<a href="../00-start-here.html">从这里开始：工厂操作指南</a>
 <a href="../00-glossary.html">操作术语表</a>
 <a href="../00-open-decisions.html">证据与待决事项登记</a>
         </div>
@@ -147,7 +147,7 @@
 <a href="../30-quality/equipment-calibration.html">设备校准</a>
 <a href="../30-quality/inspection-planning.html">检验计划</a>
 <a href="../30-quality/inspection-records.html">检验记录</a>
-<a href="../30-quality/ncr-non-conformance.html">NCR 不合格</a>
+<a href="../30-quality/ncr-non-conformance.html">NCR 不合格报告</a>
         </div>
       </details>
 <details class="nav-group">
@@ -169,10 +169,10 @@
     </aside>
     <main class="content">
       <article class="article">
-<h1>计划员手册</h1>
+<h1 id="计划员手册">计划员手册</h1>
 <blockquote><p><a href="../../en/03-by-role/planner.html">English</a> | 中文</p></blockquote>
-<p>您是<strong>生产计划员</strong>。您把需求转成已排程、已发布、可监控的工单。您依赖生产工程提供有效配方与路线， 并依赖质量工程确认检验准备。</p>
-<h2>计划流程</h2>
+<p>您是<strong>生产计划员</strong>。您把需求转成已排程、已释放、可跟踪的工单。您依赖生产工程提供有效配方与路线， 并依赖质量工程确认检验准备。</p>
+<h2 id="计划流程">计划流程</h2>
 <pre><code>需求到达
       |
       v
@@ -185,34 +185,34 @@
 在计划页面排程
       |
       v
-发布到车间
+释放到车间
       |
       v
 监控队列、看板与异常</code></pre>
-<h2>最常用的屏幕</h2>
+<h2 id="最常用的屏幕">最常用的屏幕</h2>
 <table><thead><tr><th>屏幕</th><th>您在这里做什么</th></tr></thead><tbody><tr><td><a href="../20-engineering/parts.html">零件</a> 与 <a href="../20-engineering/bom.html">BOM 主档</a></td><td>确认拟计划的物料存在且结构正确。</td></tr>
 <tr><td><a href="../20-engineering/recipes.html">配方</a></td><td>在生成工单前确认所选配方/路线有效。</td></tr>
 <tr><td><a href="../10-production/production-orders.html">工单</a></td><td>新建工单、检查生成的子单、设定数量与日期，并执行允许的状态动作。</td></tr>
 <tr><td><a href="../10-production/planning.html">计划</a></td><td>按日期、机台组与计划视图排程工单。</td></tr>
-<tr><td><a href="../10-production/queue-system.html">队列系统</a></td><td>确认已发布工单进入执行队列。</td></tr>
+<tr><td><a href="../10-production/queue-system.html">队列系统</a></td><td>确认已释放工单进入执行队列。</td></tr>
 <tr><td><a href="../10-production/dashboards.html">看板</a></td><td>打开 OEE、KPI Production 和 Main Layout 入口；指标定义仍以业务负责人确认为准。</td></tr>
-<tr><td><a href="../10-production/production-orders.html">状态动作</a></td><td>只在图标有标签或演示负责人确认后，才解释可见状态/动作图标。</td></tr></tbody></table>
-<h2>新建工单前</h2>
+<tr><td><a href="../10-production/production-orders.html">状态动作</a></td><td>只在图标有标签或负责人确认后，才解释可见状态/动作图标。</td></tr></tbody></table>
+<h2 id="新建工单前">新建工单前</h2>
 <ol><li>确认零件与修订正确。</li><li>确认 BOM已准备好支持计划数量。</li><li>确认计划路线有对应配方。</li><li>确认所需机台组与班次可用。</li><li>如果工作需要检验，确认 QA 准备情况。</li></ol>
-<h2>每日计划例行事项</h2>
+<h2 id="每日计划例行事项">每日计划例行事项</h2>
 <table><thead><tr><th>时间</th><th>动作</th></tr></thead><tbody><tr><td>上班开始</td><td>查看未结需求、今日到期工单与被阻塞工单。</td></tr>
-<tr><td>发布前</td><td>检查零件、BOM、配方、数量、交期与机台组。</td></tr>
+<tr><td>释放前</td><td>检查零件、BOM、配方、数量、交期与机台组。</td></tr>
 <tr><td>班中</td><td>关注<a href="../10-production/queue-system.html">队列系统</a>，响应生产主管升级。</td></tr>
 <tr><td>变更后</td><td>重新检查<a href="../10-production/planning.html">计划</a>，确保排程与现场一致。</td></tr>
 <tr><td>下班前</td><td>查看<a href="../10-production/dashboards.html">看板</a>，并复查需要重排、取消或强制结束的工单。</td></tr></tbody></table>
-<h2>升级规则</h2>
+<h2 id="升级规则">升级规则</h2>
 <ul><li>配方、路线、机台能力、节拍或 NC 程序问题，升级给<a href="production-engineer.html">生产工程师</a>。</li><li>检验设置失败或缺失，升级给<a href="quality-engineer.html">质量工程师</a>。</li><li>用户访问或权限缺失，升级给管理员。</li></ul>
-<h2>常见问题</h2>
+<h2 id="常见问题">常见问题</h2>
 <table><thead><tr><th>问题</th><th>可能原因</th><th>下一步</th></tr></thead><tbody><tr><td>生成工单缺少预期子单</td><td>配方或工序定义不完整</td><td>请生产工程检查配方/工序设置</td></tr>
 <tr><td>计划板为空</td><td>日期范围、机台组或计划页面过滤排除了工单</td><td>放宽过滤并检查工单状态</td></tr>
 <tr><td>工单在计划中但不在队列中</td><td>工单可能未发布，或队列页面过滤不同</td><td>检查状态与队列过滤</td></tr>
-<tr><td>工单卡在生产中</td><td>子作业可能未关闭，或数量未完成</td><td>先检查可见状态；在使用不清楚的动作图标前升级给主管</td></tr></tbody></table>
-<h2>截图</h2>
+<tr><td>工单卡在生产中</td><td>子作业可能未关闭，或数量未完成</td><td>先检查可见状态；在使用不明确的动作图标前联系主管处理</td></tr></tbody></table>
+<h2 id="截图">截图</h2>
 <p>建议为本角色补充以下截图：</p>
 <table><thead><tr><th>截图</th><th>建议页面</th></tr></thead><tbody><tr><td>工单列表与动作工具栏</td><td><a href="../10-production/production-orders.html">工单</a></td></tr>
 <tr><td>计划板</td><td><a href="../10-production/planning.html">计划</a></td></tr>
@@ -229,7 +229,7 @@
 <p><img src="../../assets/screenshots/bom-master-structure.png" alt="DS_ERP BOM 结构界面"></p>
 <p>BOM 截图展示已登录后的结构页面，用于确认父件与子件关系。</p>
 <p><a href="../10-production/dashboards.html">看板</a>页面仍需要单独的 OEE、KPI Production 和 Main Layout 截图，然后本角色页才能详细说明这些指标。</p>
-<h2>接下来读</h2>
+<h2 id="接下来读">接下来读</h2>
 <ul><li><a href="production-engineer.html">生产工程师手册</a></li><li><a href="production-supervisor.html">生产主管手册</a></li><li><a href="../01-workflows/planner-cold-start.html">计划员冷启动流程</a></li><li><a href="../10-production/production-orders.html">工单</a></li><li><a href="../00-glossary.html">操作词汇表</a></li></ul>
       </article>
     </main>

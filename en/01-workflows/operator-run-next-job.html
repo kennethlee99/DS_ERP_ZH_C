@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Operator Run The Next Job Walkthrough - DS_ERP User Manual</title>
+  <title>Operator: Run the Next Job Walkthrough - DS_ERP User Manual</title>
   <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body>
@@ -21,16 +21,16 @@
 <details class="nav-group">
         <summary>Start</summary>
         <div class="nav-links">
-<a href="../00-start-here.html">Start Here: Demo Operating Guide</a>
+<a href="../00-start-here.html">Start Here: Factory Operating Guide</a>
 <a href="../00-glossary.html">Operating Glossary</a>
-<a href="../00-open-decisions.html">Evidence And Decisions Register</a>
+<a href="../00-open-decisions.html">Evidence and Decisions Register</a>
         </div>
       </details>
 <details class="nav-group" open>
         <summary>Workflows</summary>
         <div class="nav-links">
 <a href="admin-setup-checklist.html">Admin Setup Checklist</a>
-<a class="active" href="operator-run-next-job.html">Operator Run The Next Job Walkthrough</a>
+<a class="active" href="operator-run-next-job.html">Operator: Run the Next Job Walkthrough</a>
 <a href="planner-cold-start.html">Planner Cold Start Walkthrough</a>
 <a href="supervisor-triage.html">Supervisor Delayed Production Triage</a>
         </div>
@@ -96,7 +96,7 @@
 <details class="nav-group">
         <summary>开始</summary>
         <div class="nav-links">
-<a href="../../zh-CN/00-start-here.html">从这里开始：演示操作指南</a>
+<a href="../../zh-CN/00-start-here.html">从这里开始：工厂操作指南</a>
 <a href="../../zh-CN/00-glossary.html">操作术语表</a>
 <a href="../../zh-CN/00-open-decisions.html">证据与待决事项登记</a>
         </div>
@@ -147,7 +147,7 @@
 <a href="../../zh-CN/30-quality/equipment-calibration.html">设备校准</a>
 <a href="../../zh-CN/30-quality/inspection-planning.html">检验计划</a>
 <a href="../../zh-CN/30-quality/inspection-records.html">检验记录</a>
-<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格</a>
+<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格报告</a>
         </div>
       </details>
 <details class="nav-group">
@@ -169,53 +169,53 @@
     </aside>
     <main class="content">
       <article class="article">
-<h1>Operator Run The Next Job Walkthrough</h1>
+<h1 id="operator-run-the-next-job-walkthrough">Operator: Run the Next Job Walkthrough</h1>
 <blockquote><p>English | <a href="../../zh-CN/01-workflows/operator-run-next-job.html">中文</a></p></blockquote>
 <p>Use this walkthrough when an operator needs to understand what to run next and how to confirm the work is complete enough to hand over.</p>
-<p>Open items for dispatch rule, row start action, production reporting, inspection confirmation, and handover signal are tracked in the <a href="../00-open-decisions.html">Evidence And Decisions Register</a>.</p>
-<h2>Goal</h2>
+<p>Open items for dispatch rule, row start action, production reporting, inspection confirmation, and handover signal are tracked in the <a href="../00-open-decisions.html">Evidence and Decisions Register</a>.</p>
+<h2 id="goal">Goal</h2>
 <p>Find the next job, confirm it is ready, start through the visible local workflow, report progress through the assigned reporting screen, complete required inspection, and verify the result was saved.</p>
-<h2>Walkthrough</h2>
-<table><thead><tr><th>Step</th><th>Open</th><th>Do this</th><th>Check before moving on</th></tr></thead><tbody><tr><td>1</td><td><a href="../10-production/queue-system.html">Queue System</a></td><td>Select the machine, line, work area, date, or status filter used by the demo.</td><td>The row belongs to your machine/work area and matches the part/process you were assigned.</td></tr>
-<tr><td>2</td><td><a href="../10-production/queue-system.html">Queue System</a></td><td>Choose the first row only when the demo owner or supervisor has confirmed the dispatch rule.</td><td>Do not assume priority from row order unless the rule is stated.</td></tr>
+<h2 id="walkthrough">Walkthrough</h2>
+<table><thead><tr><th>Step</th><th>Open</th><th>Do this</th><th>Check before moving on</th></tr></thead><tbody><tr><td>1</td><td><a href="../10-production/queue-system.html">Queue System</a></td><td>Select the machine, line, work area, date, or status filter used by the site workflow.</td><td>The row belongs to your machine/work area and matches the part/process you were assigned.</td></tr>
+<tr><td>2</td><td><a href="../10-production/queue-system.html">Queue System</a></td><td>Choose the first row only when the owner or supervisor has confirmed the dispatch rule.</td><td>Do not assume priority from row order unless the rule is stated.</td></tr>
 <tr><td>3</td><td><a href="../10-production/production-orders.html">Production Orders</a></td><td>If the row is unclear, look up the WO and compare part, quantity, due date, and process.</td><td>The WO status supports shop-floor execution.</td></tr>
 <tr><td>4</td><td><a href="../10-production/queue-system.html">Queue System</a></td><td>Use the visible row action that opens the job or next work step.</td><td>If the start action is unlabeled, request a screenshot with the action name.</td></tr>
 <tr><td>5</td><td>Assigned production reporting screen</td><td>Record output, downtime, or issue notes only in the screen assigned for this deployment.</td><td>The save or confirmation signal is visible before leaving the page.</td></tr>
 <tr><td>6</td><td><a href="../35-smartqc/inspection-data-entry.html">SMARTQC Inspection</a></td><td>If inspection is required, search using the job, stage, lot, or date shown in the work row.</td><td>Required measurements are saved and the result is visible.</td></tr>
 <tr><td>7</td><td><a href="../30-quality/inspection-records.html">Inspection Records</a></td><td>Confirm the saved inspection record if quality status affects release or handover.</td><td>The record belongs to the same WO/job and shows the expected result.</td></tr></tbody></table>
-<h2>Operator Golden Path</h2>
-<p>Use this table before treating a job as started, reported, inspected, or complete. Unknown local controls remain explicit blockers until the demo owner provides labeled screenshots.</p>
-<table><thead><tr><th>Step</th><th>Exact screen / path</th><th>What to select</th><th>Exact action / control</th><th>Save signal</th><th>Completion / handover signal</th></tr></thead><tbody><tr><td>Filter queue</td><td><a href="../10-production/queue-system.html">Queue System</a> (<code>Planner / Queue System</code>, <code>&lt;APP_BASE_URL&gt;/Production/QueuePage</code>)</td><td>Assigned machine, line, work area, date, and status filter from the demo script or supervisor.</td><td>Use visible filters only; do not choose by row order alone.</td><td>Filtered row list remains visible after refresh.</td><td>A row matching the assigned WO/job, part, process, and work area maps to the <code>Ready</code> working term in the <a href="../10-production/queue-system.html#queue-status-map">Queue Status Map</a>.</td></tr>
-<tr><td>Apply dispatch rule</td><td><a href="../10-production/queue-system.html">Queue System</a></td><td>The row named by supervisor/demo script, or the row matching the confirmed dispatch rule.</td><td>Screenshot-blocked if the rule depends on row order, priority, or an unlabeled status.</td><td>Supervisor or demo script confirms the selected WO/job.</td><td>Selected row is documented with WO/job, part/process, work area, and visible status.</td></tr>
-<tr><td>Open or start job</td><td><a href="../10-production/queue-system.html">Queue System</a></td><td>The confirmed queue row.</td><td>Screenshot-blocked: exact row open/start action label still needs capture.</td><td>Start confirmation or status change is visible after action.</td><td>Queue row or job page shows <code>Active</code> working state, or the supervisor confirms the current visible state.</td></tr>
-<tr><td>Report progress/output/downtime</td><td>Assigned production reporting screen</td><td>Same WO/job, operation, machine/work area, output quantity, downtime reason, and issue notes if used.</td><td>Screenshot-blocked: reporting screen path/URL, fields, and save action still need capture.</td><td>Save/confirmation message, updated row, or timestamp is visible.</td><td>Output, downtime, or note evidence is captured for supervisor handover.</td></tr>
+<h2 id="operator-golden-path">Operator Golden Path</h2>
+<p>Use this table before treating a job as started, reported, inspected, or complete. Unknown local controls remain explicit blockers until the owner provides labeled screenshots.</p>
+<table><thead><tr><th>Step</th><th>Exact screen / path</th><th>What to select</th><th>Exact action / control</th><th>Save signal</th><th>Completion / handover signal</th></tr></thead><tbody><tr><td>Filter queue</td><td><a href="../10-production/queue-system.html">Queue System</a> (<code>Planner / Queue System</code>, <code>&lt;APP_BASE_URL&gt;/Production/QueuePage</code>)</td><td>Assigned machine, line, work area, date, and status filter from the site procedure or supervisor.</td><td>Use visible filters only; do not choose by row order alone.</td><td>Filtered row list remains visible after refresh.</td><td>A row matching the assigned WO/job, part, process, and work area maps to the <code>Ready</code> working term in the <a href="../10-production/queue-system.html#queue-status-map">Queue Status Map</a>.</td></tr>
+<tr><td>Apply dispatch rule</td><td><a href="../10-production/queue-system.html">Queue System</a></td><td>The row named by supervisor/site procedure, or the row matching the confirmed dispatch rule.</td><td>Needs screenshot confirmation if the rule depends on row order, priority, or an unlabeled status.</td><td>Supervisor or site procedure confirms the selected WO/job.</td><td>Selected row is documented with WO/job, part/process, work area, and visible status.</td></tr>
+<tr><td>Open or start job</td><td><a href="../10-production/queue-system.html">Queue System</a></td><td>The confirmed queue row.</td><td>Needs screenshot confirmation: exact row open/start action label still needs capture.</td><td>Start confirmation or status change is visible after action.</td><td>Queue row or job page shows <code>Active</code> working state, or the supervisor confirms the current visible state.</td></tr>
+<tr><td>Report progress/output/downtime</td><td>Assigned production reporting screen</td><td>Same WO/job, operation, machine/work area, output quantity, downtime reason, and issue notes if used.</td><td>Needs screenshot confirmation: reporting screen path/URL, fields, and save action still need capture.</td><td>Save/confirmation message, updated row, or timestamp is visible.</td><td>Output, downtime, or note evidence is captured for supervisor handover.</td></tr>
 <tr><td>Complete inspection</td><td><a href="../35-smartqc/inspection-data-entry.html">SMARTQC Inspection</a></td><td>Job, stage, lot, or date from the queue/work row.</td><td>Enter required measurements and use the visible save action.</td><td>Result or update time is visible after save.</td><td><a href="../30-quality/inspection-records.html">Inspection Records</a> shows the same WO/job/stage with expected result.</td></tr>
 <tr><td>Complete or hand over</td><td><a href="../10-production/queue-system.html">Queue System</a>, <a href="../10-production/production-orders.html">Production Orders</a>, or assigned reporting screen</td><td>Same WO/job and process after refresh.</td><td>Use only confirmed completion/handover action; otherwise escalate.</td><td>Status change, saved record, or supervisor confirmation is visible.</td><td>Queue/WO status maps to <code>Complete</code>, <code>Active</code>, or <code>Paused / blocked</code>; record unfinished work before handover.</td></tr></tbody></table>
-<h2>How To Choose The Next Job</h2>
-<p>Do not choose work from row order alone unless the supervisor or demo owner says row order is the dispatch rule.</p>
+<h2 id="how-to-choose-the-next-job">How To Choose The Next Job</h2>
+<p>Do not choose work from row order alone unless the supervisor or owner says row order is the dispatch rule.</p>
 <table><thead><tr><th>Selection rule</th><th>Use when</th><th>What to check</th></tr></thead><tbody><tr><td>Assigned machine or work area</td><td>The operator is responsible for one machine, line, or cell.</td><td>Queue row machine/work area matches the assignment.</td></tr>
 <tr><td>Planned date or shift</td><td>The shift plan is the dispatch rule.</td><td>Row date or planning period matches the current shift.</td></tr>
 <tr><td>Supervisor instruction</td><td>Multiple ready jobs are visible.</td><td>Supervisor names the WO, part, process, or machine to run.</td></tr>
 <tr><td>Quality hold cleared</td><td>Work was blocked by inspection or NCR.</td><td><a href="../30-quality/inspection-records.html">Inspection Records</a> or <a href="../30-quality/ncr-non-conformance.html">NCR</a> shows the issue is no longer blocking the job.</td></tr>
-<tr><td>Demo script order</td><td>The internal demo has a fixed scenario.</td><td>Use the WO or part number from the demo script, not row position alone.</td></tr></tbody></table>
-<h2>Action Record</h2>
+<tr><td>Site procedure order</td><td>The site workflow has a fixed scenario.</td><td>Use the WO or part number from the site procedure, not row position alone.</td></tr></tbody></table>
+<h2 id="action-record">Action Record</h2>
 <p>Fill this before treating work as started, reported, or complete.</p>
 <table><thead><tr><th>Stage</th><th>Visible action used</th><th>Save/confirmation signal</th><th>Evidence to keep</th></tr></thead><tbody><tr><td>Start</td><td></td><td></td><td>Queue row screenshot with action label</td></tr>
 <tr><td>Progress / output</td><td></td><td></td><td>Reporting page, quantity, downtime, or note screenshot</td></tr>
 <tr><td>Inspection</td><td></td><td></td><td><a href="../35-smartqc/inspection-data-entry.html">SMARTQC Inspection</a> result or <a href="../30-quality/inspection-records.html">Inspection Records</a> screenshot</td></tr>
 <tr><td>Complete / handover</td><td></td><td></td><td>Queue or WO status after refresh</td></tr></tbody></table>
-<h2>Completion Signals</h2>
+<h2 id="completion-signals">Completion Signals</h2>
 <table><thead><tr><th>Signal</th><th>What it means</th></tr></thead><tbody><tr><td>Queue row no longer appears in the ready list</td><td>The job may have moved to another state or filter. Confirm with supervisor before assuming completion.</td></tr>
 <tr><td>WO or queue status shows a finished state</td><td>The work may be complete for the current step. Match it to the WO and process.</td></tr>
 <tr><td>Inspection result is saved</td><td>Quality entry is recorded, but production completion still depends on the WO or queue status.</td></tr>
 <tr><td>Save is disabled</td><td>A required field may be empty, or the role may not allow the action. Check visible required fields first, then escalate.</td></tr></tbody></table>
-<h2>Stop And Escalate</h2>
+<h2 id="stop-and-escalate">Stop And Escalate</h2>
 <table><thead><tr><th>If you see...</th><th>Escalate to</th><th>What to provide</th></tr></thead><tbody><tr><td>Multiple ready jobs and no dispatch rule</td><td>Supervisor</td><td>Work area, visible rows, and current filters</td></tr>
 <tr><td>No start action is clear</td><td>Supervisor</td><td>Screenshot of the queue row and toolbar</td></tr>
 <tr><td>Progress/output screen is not identified</td><td>Supervisor or planner</td><td>WO, machine/work area, and current page</td></tr>
 <tr><td>Inspection is required but not found</td><td>Quality engineer</td><td>WO, job/stage, lot/date, and screenshot</td></tr></tbody></table>
-<h2>Screenshot Requests</h2>
-<p>This walkthrough still needs screenshots for the exact queue row action, start confirmation, progress/output reporting, and completion confirmation used in the review environment. Each screenshot should show the signed-in role, <a href="../10-production/queue-system.html">Queue System</a> filters, WO/job row, visible action label, and the save or status signal after the action. Track the missing evidence in the <a href="../00-open-decisions.html">Evidence And Decisions Register</a>.</p>
+<h2 id="screenshot-requests">Screenshot Requests</h2>
+<p>This walkthrough still needs screenshots for the exact queue row action, start confirmation, progress/output reporting, and completion confirmation used in the site environment. Each screenshot should show the signed-in role, <a href="../10-production/queue-system.html">Queue System</a> filters, WO/job row, visible action label, and the save or status signal after the action. Track the missing evidence in the <a href="../00-open-decisions.html">Evidence and Decisions Register</a>.</p>
       </article>
     </main>
   </div>

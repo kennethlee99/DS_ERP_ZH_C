@@ -21,16 +21,16 @@
 <details class="nav-group">
         <summary>Start</summary>
         <div class="nav-links">
-<a href="../../en/00-start-here.html">Start Here: Demo Operating Guide</a>
+<a href="../../en/00-start-here.html">Start Here: Factory Operating Guide</a>
 <a href="../../en/00-glossary.html">Operating Glossary</a>
-<a href="../../en/00-open-decisions.html">Evidence And Decisions Register</a>
+<a href="../../en/00-open-decisions.html">Evidence and Decisions Register</a>
         </div>
       </details>
 <details class="nav-group">
         <summary>Workflows</summary>
         <div class="nav-links">
 <a href="../../en/01-workflows/admin-setup-checklist.html">Admin Setup Checklist</a>
-<a href="../../en/01-workflows/operator-run-next-job.html">Operator Run The Next Job Walkthrough</a>
+<a href="../../en/01-workflows/operator-run-next-job.html">Operator: Run the Next Job Walkthrough</a>
 <a href="../../en/01-workflows/planner-cold-start.html">Planner Cold Start Walkthrough</a>
 <a href="../../en/01-workflows/supervisor-triage.html">Supervisor Delayed Production Triage</a>
         </div>
@@ -96,7 +96,7 @@
 <details class="nav-group">
         <summary>开始</summary>
         <div class="nav-links">
-<a href="../00-start-here.html">从这里开始：演示操作指南</a>
+<a href="../00-start-here.html">从这里开始：工厂操作指南</a>
 <a href="../00-glossary.html">操作术语表</a>
 <a href="../00-open-decisions.html">证据与待决事项登记</a>
         </div>
@@ -147,7 +147,7 @@
 <a href="../30-quality/equipment-calibration.html">设备校准</a>
 <a href="../30-quality/inspection-planning.html">检验计划</a>
 <a href="../30-quality/inspection-records.html">检验记录</a>
-<a href="../30-quality/ncr-non-conformance.html">NCR 不合格</a>
+<a href="../30-quality/ncr-non-conformance.html">NCR 不合格报告</a>
         </div>
       </details>
 <details class="nav-group">
@@ -169,10 +169,10 @@
     </aside>
     <main class="content">
       <article class="article">
-<h1>生产工程师手册</h1>
+<h1 id="生产工程师手册">生产工程师手册</h1>
 <blockquote><p><a href="../../en/03-by-role/production-engineer.html">English</a> | 中文</p></blockquote>
-<p>您是<strong>生产工程师</strong>。您负责让制造定义可执行：零件、BOM、配方、工序、机台能力、 NC 程序、节拍假设，以及计划、生产、质量之间的交接规则。</p>
-<h2>工作流程</h2>
+<p>您是<strong>生产工程师</strong>。您负责确保制造基础数据可用于生产执行：零件、BOM、配方、工序、机台能力、 NC 程序、节拍假设，以及计划、生产、质量之间的交接规则。</p>
+<h2 id="工作流程">工作流程</h2>
 <pre><code>新零件 / 新修订
       |
       v
@@ -183,7 +183,7 @@
       |                                      |
       v                                      v
 支持首件生产  ──►  复盘问题  ──►  更新配方/设置数据</code></pre>
-<h2>最常用的屏幕</h2>
+<h2 id="最常用的屏幕">最常用的屏幕</h2>
 <table><thead><tr><th>屏幕</th><th>您在这里做什么</th></tr></thead><tbody><tr><td><a href="../20-engineering/parts.html">零件</a></td><td>确认生产零件、修订、图纸、材料与质量链接已准备好。</td></tr>
 <tr><td><a href="../20-engineering/bom.html">BOM 主档 与 BOM 结构</a></td><td>在计划生成工单前检查父子物料结构。</td></tr>
 <tr><td><a href="../20-engineering/recipes.html">配方</a></td><td>维护零件或产品族的路线框架。</td></tr>
@@ -192,17 +192,17 @@
 <tr><td><a href="../20-engineering/nc-programs.html">NC 程序</a></td><td>维护 CNC 程序引用，确认正确修订已可用于生产。</td></tr>
 <tr><td><a href="../10-production/production-orders.html">工单</a></td><td>检查已生成工单，诊断路线、数量或状态问题。</td></tr>
 <tr><td><a href="../30-quality/inspection-planning.html">检验计划</a></td><td>与 QA 协调，确认正确检验阶段已挂到工序。</td></tr></tbody></table>
-<h2>首件 / 新修订检查清单</h2>
-<ol><li>确认零件的修订、描述、图纸引用与启用状态正确。</li><li>检查 BOM 主档是否缺料或有异常子件。</li><li>新建或更新配方。</li><li>按真实车间顺序加入每道配方工序。</li><li>分配有能力执行的机台或机台组。</li><li>在计划员发布工单前，确认 NC 程序记录与修订可用。</li><li>请 QA 确认<a href="../30-quality/inspection-planning.html">检验计划</a>与 SMARTQC 设置。</li><li>支持首件生产；如果实际表现与配方假设不同，更新节拍或设置数据。</li></ol>
-<h2>生产中要检查什么</h2>
+<h2 id="首件-新修订检查清单">首件 / 新修订检查清单</h2>
+<ol><li>确认零件的修订、描述、图纸引用与启用状态正确。</li><li>检查 BOM 主档是否缺料或有异常子件。</li><li>新建或更新配方。</li><li>按真实车间顺序加入每道配方工序。</li><li>分配有能力执行的机台或机台组。</li><li>在计划员释放工单前，确认 NC 程序记录与修订可用。</li><li>请 QA 确认<a href="../30-quality/inspection-planning.html">检验计划</a>与 SMARTQC 设置。</li><li>支持首件生产；如果实际表现与配方假设不同，更新节拍或设置数据。</li></ol>
+<h2 id="生产中要检查什么">生产中要检查什么</h2>
 <table><thead><tr><th>情况</th><th>检查内容</th></tr></thead><tbody><tr><td>计划员无法生成预期工单</td><td><a href="../20-engineering/recipes.html">配方</a>工序列表、<a href="../20-engineering/bom.html">BOM</a> 链接、<a href="../20-engineering/parts.html">零件</a>修订设置</td></tr>
 <tr><td>工单到了错误机台组</td><td><a href="../20-engineering/recipes.html">配方</a>工序的<a href="../20-engineering/machines.html">机台</a>分配与机台组映射</td></tr>
 <tr><td>现场 NC 程序不匹配</td><td><a href="../20-engineering/nc-programs.html">NC 程序</a>记录、零件修订、机台兼容性</td></tr>
 <tr><td>节拍不现实</td><td><a href="../20-engineering/recipes.html">配方</a>工序节拍字段与近期生产记录</td></tr>
-<tr><td>质量检查出现在错误阶段</td><td><a href="../30-quality/inspection-planning.html">检验计划</a>与检验表到零件/工序的链接</td></tr></tbody></table>
-<h2>交接规则</h2>
+<tr><td>质量检验出现在错误阶段</td><td><a href="../30-quality/inspection-planning.html">检验计划</a>与检验表到零件/工序的链接</td></tr></tbody></table>
+<h2 id="交接规则">交接规则</h2>
 <ul><li>只有当零件、BOM、配方、机台能力与 NC 程序准备好后，才移交给<strong>计划员</strong>。</li><li>当检验阶段、CMM 程序或 SMARTQC 检验表需要定义或修订时，移交给<a href="quality-engineer.html">质量工程师</a>。</li><li>如果所需页面因权限隐藏，或主数据设置被权限阻塞，移交给<strong>管理员</strong>。</li></ul>
-<h2>截图</h2>
+<h2 id="截图">截图</h2>
 <p>建议为本角色补充以下截图：</p>
 <table><thead><tr><th>截图</th><th>建议页面</th></tr></thead><tbody><tr><td>生产准备状态下的零件设置</td><td><a href="../20-engineering/parts.html">零件</a></td></tr>
 <tr><td>配方工序路线</td><td><a href="../20-engineering/recipes.html">配方工序</a></td></tr>
@@ -219,7 +219,7 @@
 <p>零件截图展示已登录后的零件列表，用于在路线和 BOM 复查前确认生产零件准备状态。</p>
 <p><img src="../../assets/screenshots/bom-master-structure.png" alt="DS_ERP BOM 结构界面"></p>
 <p>BOM 截图展示已登录后的结构页面，用于复查父件与子件关系。</p>
-<h2>接下来读</h2>
+<h2 id="接下来读">接下来读</h2>
 <ul><li><a href="planner.html">计划员手册</a></li><li><a href="quality-engineer.html">质量工程师手册</a></li></ul>
       </article>
     </main>

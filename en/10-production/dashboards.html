@@ -21,16 +21,16 @@
 <details class="nav-group">
         <summary>Start</summary>
         <div class="nav-links">
-<a href="../00-start-here.html">Start Here: Demo Operating Guide</a>
+<a href="../00-start-here.html">Start Here: Factory Operating Guide</a>
 <a href="../00-glossary.html">Operating Glossary</a>
-<a href="../00-open-decisions.html">Evidence And Decisions Register</a>
+<a href="../00-open-decisions.html">Evidence and Decisions Register</a>
         </div>
       </details>
 <details class="nav-group">
         <summary>Workflows</summary>
         <div class="nav-links">
 <a href="../01-workflows/admin-setup-checklist.html">Admin Setup Checklist</a>
-<a href="../01-workflows/operator-run-next-job.html">Operator Run The Next Job Walkthrough</a>
+<a href="../01-workflows/operator-run-next-job.html">Operator: Run the Next Job Walkthrough</a>
 <a href="../01-workflows/planner-cold-start.html">Planner Cold Start Walkthrough</a>
 <a href="../01-workflows/supervisor-triage.html">Supervisor Delayed Production Triage</a>
         </div>
@@ -96,7 +96,7 @@
 <details class="nav-group">
         <summary>开始</summary>
         <div class="nav-links">
-<a href="../../zh-CN/00-start-here.html">从这里开始：演示操作指南</a>
+<a href="../../zh-CN/00-start-here.html">从这里开始：工厂操作指南</a>
 <a href="../../zh-CN/00-glossary.html">操作术语表</a>
 <a href="../../zh-CN/00-open-decisions.html">证据与待决事项登记</a>
         </div>
@@ -147,7 +147,7 @@
 <a href="../../zh-CN/30-quality/equipment-calibration.html">设备校准</a>
 <a href="../../zh-CN/30-quality/inspection-planning.html">检验计划</a>
 <a href="../../zh-CN/30-quality/inspection-records.html">检验记录</a>
-<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格</a>
+<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格报告</a>
         </div>
       </details>
 <details class="nav-group">
@@ -169,31 +169,31 @@
     </aside>
     <main class="content">
       <article class="article">
-<h1>Production Dashboards</h1>
+<h1 id="production-dashboards">Production Dashboards</h1>
 <blockquote><p><a href="dashboards.html">English</a> | <a href="../../zh-CN/10-production/dashboards.html">中文</a></p></blockquote>
 <p>Path: Production / OEE, KPI Production, and Main Layout URL: <code>&lt;APP_BASE_URL&gt;/Production/OEE</code>, <code>&lt;APP_BASE_URL&gt;/Production/KpiProduction</code>, <code>&lt;APP_BASE_URL&gt;/Production/Mainlayout</code></p>
-<h2>What This Page Is For</h2>
+<h2 id="what-this-page-is-for">What This Page Is For</h2>
 <p>Use the production dashboard entries to open high-level production review views. Until dashboard screenshots and metric definitions are confirmed, treat OEE, KPI Production, and Main Layout as trend signals only, not as the sole basis for a production decision.</p>
-<p>Dashboard interpretation remains tracked in the <a href="../00-open-decisions.html">Evidence And Decisions Register</a> until the business owner confirms screenshots, filters, and metric definitions.</p>
-<h2>Dashboard Scope For This Manual Version</h2>
-<p>Dashboard pages are <strong>open-and-observe only</strong> in this manual version. A planner or supervisor may open OEE, KPI Production, or Main Layout to confirm the entry exists and record a visible trend signal, but the manual does not yet define the metrics well enough for release, delay, quality, staffing, or handover decisions.</p>
-<p>Before a dashboard becomes decision-ready, the demo owner must confirm:</p>
-<table><thead><tr><th>Dashboard entry</th><th>Current manual status</th><th>Needed before decision use</th></tr></thead><tbody><tr><td>OEE</td><td>Open-and-observe only</td><td>Screenshot of the real OEE page, metric definitions, filter meanings, and how to compare with WO/queue evidence.</td></tr>
-<tr><td>KPI Production</td><td>Open-and-observe only</td><td>Screenshot of the real KPI Production page, metric definitions, filter meanings, and owner-approved interpretation.</td></tr>
-<tr><td>Main Layout</td><td>Open-and-observe only</td><td>Screenshot of the real Main Layout page, visible panel definitions, and owner-approved use during shift review.</td></tr></tbody></table>
-<h2>What You See</h2>
+<p>Dashboard interpretation remains tracked in the <a href="../00-open-decisions.html">Evidence and Decisions Register</a> until the business owner confirms screenshots, filters, and metric definitions.</p>
+<h2 id="dashboard-scope-for-this-manual-version">Dashboard Scope For This Manual Version</h2>
+<p>Dashboard pages are <strong>view-only in this manual version</strong> in this manual version. A planner or supervisor may open OEE, KPI Production, or Main Layout to confirm the entry exists and record a visible trend signal, but the manual does not yet define the metrics well enough for release, delay, quality, staffing, or handover decisions.</p>
+<p>Before a dashboard becomes decision-ready, the owner must confirm:</p>
+<table><thead><tr><th>Dashboard entry</th><th>Current manual status</th><th>Needed before decision use</th></tr></thead><tbody><tr><td>OEE</td><td>View-only</td><td>Screenshot of the real OEE page, metric definitions, filter meanings, and how to compare with WO/queue evidence.</td></tr>
+<tr><td>KPI Production</td><td>View-only</td><td>Screenshot of the real KPI Production page, metric definitions, filter meanings, and owner-approved interpretation.</td></tr>
+<tr><td>Main Layout</td><td>View-only</td><td>Screenshot of the real Main Layout page, visible panel definitions, and owner-approved use during shift review.</td></tr></tbody></table>
+<h2 id="what-you-see">What You See</h2>
 <ul><li>Sidebar entries for OEE, KPI Production, and Main Layout.</li><li>A separate review page for each selected dashboard entry.</li><li>Any filters, date controls, cards, charts, or status panels that are visible after the page opens.</li><li>Production signals that supervisors may use for follow-up once the business owner confirms the metric definitions.</li></ul>
-<h2>What You Do</h2>
+<h2 id="what-you-do">What You Do</h2>
 <ol><li>Open OEE, KPI Production, or Main Layout from the sidebar.</li><li>Confirm the page title or visible content matches the review question.</li><li>Set date, shift, machine, or line filters only when they are visible.</li><li>Compare any displayed trend signal with Production Orders, Planning, or Queue System before making a decision.</li><li>Treat unclear metric definitions as a follow-up item for the business owner.</li></ol>
-<h2>What To Check</h2>
-<ul><li>The selected entry is the one intended for the demo.</li><li>The filter period matches the shift or job being discussed.</li><li>Any visible dashboard signal agrees with the underlying work-order view.</li><li>Any unclear metric name is recorded for clarification.</li></ul>
-<h2>Common Issues</h2>
-<table><thead><tr><th>Issue</th><th>What it means</th></tr></thead><tbody><tr><td>Dashboard page is blank</td><td>The selected filters may have no data for the period, or the page may need demo-owner review.</td></tr>
+<h2 id="what-to-check">What To Check</h2>
+<ul><li>The selected entry is the one intended for the site workflow.</li><li>The filter period matches the shift or job being discussed.</li><li>Any visible dashboard signal agrees with the underlying work-order view.</li><li>Any unclear metric name is recorded for clarification.</li></ul>
+<h2 id="common-issues">Common Issues</h2>
+<table><thead><tr><th>Issue</th><th>What it means</th></tr></thead><tbody><tr><td>Dashboard page is blank</td><td>The selected filters may have no data for the period, or the page may need owner review.</td></tr>
 <tr><td>Metric meaning is unclear</td><td>Treat it as a trend signal only and confirm the metric definition before using it in review notes.</td></tr>
 <tr><td>Dashboard disagrees with a work order</td><td>Recheck filters and the latest order status.</td></tr></tbody></table>
-<h2>Related Pages</h2>
+<h2 id="related-pages">Related Pages</h2>
 <ul><li><a href="../03-by-role/planner.html">Planner Manual</a></li><li><a href="../03-by-role/production-supervisor.html">Production Supervisor Manual</a></li><li><a href="production-orders.html">Production Orders</a></li><li><a href="planning.html">Planning</a></li></ul>
-<h2>Screenshot</h2>
+<h2 id="screenshot">Screenshot</h2>
 <p>Screenshot request:</p>
 <table><thead><tr><th>Page name</th><th>Sidebar path</th><th>URL</th><th>Suggested filename</th><th>Reason</th></tr></thead><tbody><tr><td><a href="dashboards.html">OEE dashboard</a></td><td>Production / OEE</td><td><code>&lt;APP_BASE_URL&gt;/Production/OEE</code></td><td><code>production-oee-dashboard.png</code></td><td>Current retained image shows Production Orders, not this dashboard.</td></tr>
 <tr><td><a href="dashboards.html">KPI Production dashboard</a></td><td>Production / KPI Production</td><td><code>&lt;APP_BASE_URL&gt;/Production/KpiProduction</code></td><td><code>production-kpi-dashboard.png</code></td><td>Current retained image shows Production Orders, not this dashboard.</td></tr>

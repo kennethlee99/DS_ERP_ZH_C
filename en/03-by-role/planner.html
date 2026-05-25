@@ -21,16 +21,16 @@
 <details class="nav-group">
         <summary>Start</summary>
         <div class="nav-links">
-<a href="../00-start-here.html">Start Here: Demo Operating Guide</a>
+<a href="../00-start-here.html">Start Here: Factory Operating Guide</a>
 <a href="../00-glossary.html">Operating Glossary</a>
-<a href="../00-open-decisions.html">Evidence And Decisions Register</a>
+<a href="../00-open-decisions.html">Evidence and Decisions Register</a>
         </div>
       </details>
 <details class="nav-group">
         <summary>Workflows</summary>
         <div class="nav-links">
 <a href="../01-workflows/admin-setup-checklist.html">Admin Setup Checklist</a>
-<a href="../01-workflows/operator-run-next-job.html">Operator Run The Next Job Walkthrough</a>
+<a href="../01-workflows/operator-run-next-job.html">Operator: Run the Next Job Walkthrough</a>
 <a href="../01-workflows/planner-cold-start.html">Planner Cold Start Walkthrough</a>
 <a href="../01-workflows/supervisor-triage.html">Supervisor Delayed Production Triage</a>
         </div>
@@ -96,7 +96,7 @@
 <details class="nav-group">
         <summary>开始</summary>
         <div class="nav-links">
-<a href="../../zh-CN/00-start-here.html">从这里开始：演示操作指南</a>
+<a href="../../zh-CN/00-start-here.html">从这里开始：工厂操作指南</a>
 <a href="../../zh-CN/00-glossary.html">操作术语表</a>
 <a href="../../zh-CN/00-open-decisions.html">证据与待决事项登记</a>
         </div>
@@ -147,7 +147,7 @@
 <a href="../../zh-CN/30-quality/equipment-calibration.html">设备校准</a>
 <a href="../../zh-CN/30-quality/inspection-planning.html">检验计划</a>
 <a href="../../zh-CN/30-quality/inspection-records.html">检验记录</a>
-<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格</a>
+<a href="../../zh-CN/30-quality/ncr-non-conformance.html">NCR 不合格报告</a>
         </div>
       </details>
 <details class="nav-group">
@@ -169,10 +169,10 @@
     </aside>
     <main class="content">
       <article class="article">
-<h1>Planner Manual</h1>
+<h1 id="planner-manual">Planner Manual</h1>
 <blockquote><p>English | <a href="../../zh-CN/03-by-role/planner.html">zh-CN</a></p></blockquote>
 <p>You are the <strong>production planner</strong>. You turn demand into scheduled, released, and monitorable work orders. You depend on production engineering for valid recipes and routings, and quality engineering for inspection readiness.</p>
-<h2>Planning Flow</h2>
+<h2 id="planning-flow">Planning Flow</h2>
 <pre><code>Demand arrives
       |
       v
@@ -189,39 +189,39 @@ Release to shop floor
       |
       v
 Monitor queue, dashboards, and exceptions</code></pre>
-<h2>Screens You Use Most</h2>
+<h2 id="screens-you-use-most">Screens You Use Most</h2>
 <table><thead><tr><th>Screen</th><th>What you do here</th></tr></thead><tbody><tr><td><a href="../20-engineering/parts.html">Parts</a> and <a href="../20-engineering/bom.html">BOM Master</a></td><td>Confirm the item being planned exists and has the expected structure.</td></tr>
 <tr><td><a href="../20-engineering/recipes.html">Recipes</a></td><td>Confirm the selected recipe/routing is valid before generating WOs.</td></tr>
 <tr><td><a href="../10-production/production-orders.html">Production Orders</a></td><td>Create WOs, inspect generated child orders, set quantities and dates, and use allowed status actions.</td></tr>
 <tr><td><a href="../10-production/planning.html">Planning</a></td><td>Schedule WOs across dates, machine groups, and planning views.</td></tr>
 <tr><td><a href="../10-production/queue-system.html">Queue System</a></td><td>Confirm released work appears in the execution queue.</td></tr>
 <tr><td><a href="../10-production/dashboards.html">Dashboards</a></td><td>Open OEE, KPI Production, and Main Layout as entry points; treat metric definitions as pending owner confirmation.</td></tr>
-<tr><td><a href="../10-production/production-orders.html">Status actions</a></td><td>Review visible status/action icons only when they are labeled or confirmed by the demo owner.</td></tr></tbody></table>
-<h2>Before Creating A Work Order</h2>
+<tr><td><a href="../10-production/production-orders.html">Status actions</a></td><td>Review visible status/action icons only when they are labeled or confirmed by the owner.</td></tr></tbody></table>
+<h2 id="before-creating-a-work-order">Before Creating A Work Order</h2>
 <ol><li>Confirm the <a href="../20-engineering/parts.html">Part</a> and revision are correct.</li><li>Confirm the <a href="../20-engineering/bom.html">BOM</a> is ready for the planned</li></ol>
 <p>quantity.</p>
 <ol><li>Confirm a <a href="../20-engineering/recipes.html">Recipe</a> exists for the</li></ol>
 <p>planned production route.</p>
 <ol><li>Confirm the required machine groups and shifts are available.</li><li>Confirm QA is ready if the work requires inspection.</li></ol>
-<h2>Daily Planning Routine</h2>
+<h2 id="daily-planning-routine">Daily Planning Routine</h2>
 <table><thead><tr><th>Time</th><th>Action</th></tr></thead><tbody><tr><td>Start of day</td><td>Review open demand, WOs due today, and blocked WOs.</td></tr>
 <tr><td>Before release</td><td>Check part, BOM, recipe, quantity, due date, and machine group.</td></tr>
 <tr><td>During shift</td><td>Watch <a href="../10-production/queue-system.html">Queue System</a> and respond to supervisor escalations.</td></tr>
 <tr><td>After changes</td><td>Recheck <a href="../10-production/planning.html">Planning</a> so the schedule matches the floor.</td></tr>
-<tr><td>End of day</td><td>Review <a href="../10-production/dashboards.html">Dashboards</a> and WOs that need reschedule, cancel, or force-close review.</td></tr></tbody></table>
-<h2>Escalation Rules</h2>
+<tr><td>End of day</td><td>Review <a href="../10-production/dashboards.html">Dashboards</a> and WOs that need rescheduling, cancellation, or force-close review.</td></tr></tbody></table>
+<h2 id="escalation-rules">Escalation Rules</h2>
 <ul><li>Escalate recipe, route, machine capability, cycle-time, or NC program issues</li></ul>
 <p>to the <a href="production-engineer.html">production engineer</a>.</p>
 <ul><li>Escalate failed or missing inspection setup to the</li></ul>
 <p><a href="quality-engineer.html">quality engineer</a>.</p>
 <ul><li>Escalate user access or missing permissions to the</li></ul>
 <p>administrator.</p>
-<h2>Common Questions</h2>
+<h2 id="common-questions">Common Questions</h2>
 <table><thead><tr><th>Question</th><th>Likely cause</th><th>Next step</th></tr></thead><tbody><tr><td>Generated WOs are missing expected child orders</td><td>Recipe or process definition is incomplete</td><td>Ask production engineering to review recipe/process setup</td></tr>
 <tr><td>Planning board is empty</td><td>Date range, machine group, or planning page filter excludes the work</td><td>Widen filters and check the WO status</td></tr>
 <tr><td>WO appears in planning but not queue</td><td>WO may not be released or queue page filter differs</td><td>Check status and queue filters</td></tr>
 <tr><td>WO is stuck in progress</td><td>Child work may still be open or quantity is incomplete</td><td>Check the visible status and escalate to the supervisor before using any unclear action icon</td></tr></tbody></table>
-<h2>Screenshots</h2>
+<h2 id="screenshots">Screenshots</h2>
 <p>Recommended screenshots for this role:</p>
 <table><thead><tr><th>Capture</th><th>Suggested page</th></tr></thead><tbody><tr><td>Work order list and action toolbar</td><td><a href="../10-production/production-orders.html">Production Orders</a></td></tr>
 <tr><td>Planning board</td><td><a href="../10-production/planning.html">Planning</a></td></tr>
@@ -238,7 +238,7 @@ Monitor queue, dashboards, and exceptions</code></pre>
 <p><img src="../../assets/screenshots/bom-master-structure.png" alt="DS_ERP BOM structure screen"></p>
 <p>The BOM screenshot shows the authenticated structure page used to confirm parent and child material relationships.</p>
 <p>The <a href="../10-production/dashboards.html">Dashboards</a> pages still need separate OEE, KPI Production, and Main Layout screenshots before this role page can describe those metrics in detail.</p>
-<h2>Read Next</h2>
+<h2 id="read-next">Read Next</h2>
 <ul><li><a href="production-engineer.html">Production engineer manual</a></li><li><a href="production-supervisor.html">Production supervisor manual</a></li><li><a href="../01-workflows/planner-cold-start.html">Planner cold-start walkthrough</a></li><li><a href="../10-production/production-orders.html">Production Orders</a></li><li><a href="../00-glossary.html">Operating Glossary</a></li></ul>
       </article>
     </main>
