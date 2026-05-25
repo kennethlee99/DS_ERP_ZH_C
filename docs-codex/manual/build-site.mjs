@@ -6,24 +6,35 @@ const manualRoot = path.dirname(fileURLToPath(import.meta.url));
 const siteRoot = path.join(manualRoot, 'site');
 const sourceRoots = ['en', 'zh-CN'];
 
-const groupConfig = [
-  ['Start', ['index.md']],
-  ['English - Start', ['en/00-start-here.md', 'en/00-glossary.md']],
-  ['English - Workflows', 'en/01-workflows'],
-  ['English - Roles', 'en/03-by-role'],
-  ['English - Production', 'en/10-production'],
-  ['English - Engineering', 'en/20-engineering'],
-  ['English - Quality', 'en/30-quality'],
-  ['English - SMARTQC', 'en/35-smartqc'],
-  ['English - Administration', 'en/40-administration'],
-  ['Chinese - Start', ['zh-CN/00-start-here.md', 'zh-CN/00-glossary.md']],
-  ['Chinese - Workflows', 'zh-CN/01-workflows'],
-  ['Chinese - Roles', 'zh-CN/03-by-role'],
-  ['Chinese - Production', 'zh-CN/10-production'],
-  ['Chinese - Engineering', 'zh-CN/20-engineering'],
-  ['Chinese - Quality', 'zh-CN/30-quality'],
-  ['Chinese - SMARTQC', 'zh-CN/35-smartqc'],
-  ['Chinese - Administration', 'zh-CN/40-administration'],
+const navConfig = [
+  {
+    label: 'English',
+    home: 'en/00-start-here.md',
+    groups: [
+      ['Start', ['en/00-start-here.md', 'en/00-glossary.md']],
+      ['Workflows', 'en/01-workflows'],
+      ['Roles', 'en/03-by-role'],
+      ['Production', 'en/10-production'],
+      ['Engineering', 'en/20-engineering'],
+      ['Quality', 'en/30-quality'],
+      ['SMARTQC', 'en/35-smartqc'],
+      ['Administration', 'en/40-administration'],
+    ],
+  },
+  {
+    label: '中文',
+    home: 'zh-CN/00-start-here.md',
+    groups: [
+      ['开始', ['zh-CN/00-start-here.md', 'zh-CN/00-glossary.md']],
+      ['工作流程', 'zh-CN/01-workflows'],
+      ['角色', 'zh-CN/03-by-role'],
+      ['生产', 'zh-CN/10-production'],
+      ['工程', 'zh-CN/20-engineering'],
+      ['质量', 'zh-CN/30-quality'],
+      ['SMARTQC', 'zh-CN/35-smartqc'],
+      ['管理', 'zh-CN/40-administration'],
+    ],
+  },
 ];
 
 const css = `
@@ -79,27 +90,88 @@ a {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.3;
-  margin-bottom: 6px;
+  margin-bottom: 18px;
   text-decoration: none;
 }
 
-.subtitle {
-  color: var(--muted);
-  font-size: 13px;
+.language-jump {
+  display: grid;
+  gap: 8px;
   margin-bottom: 22px;
 }
 
-.nav-section {
-  margin: 0 0 18px;
+.language-jump a {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 10px;
+  text-decoration: none;
 }
 
-.nav-section h2 {
+.language-jump a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.nav-section {
+  border-top: 1px solid var(--line);
+  margin: 0;
+  padding: 14px 0;
+}
+
+.nav-section > summary,
+.nav-group > summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.nav-section > summary::-webkit-details-marker,
+.nav-group > summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-section > summary {
   color: var(--muted);
+  display: flex;
+  font-size: 13px;
+  font-weight: 700;
+  justify-content: space-between;
+  letter-spacing: 0;
+  padding: 2px 0;
+  text-transform: none;
+}
+
+.nav-section > summary::after,
+.nav-group > summary::after {
+  content: "+";
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.nav-section[open] > summary::after,
+.nav-group[open] > summary::after {
+  content: "-";
+}
+
+.nav-group {
+  margin: 9px 0 0;
+}
+
+.nav-group > summary {
+  color: var(--muted);
+  display: flex;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0;
-  margin: 0 0 8px;
+  justify-content: space-between;
+  padding: 6px 0;
   text-transform: uppercase;
+}
+
+.nav-links {
+  padding: 2px 0 8px;
 }
 
 .nav-section a {
@@ -129,13 +201,6 @@ a {
 
 .article {
   max-width: 1040px;
-}
-
-.page-path {
-  color: var(--muted);
-  font-family: Consolas, "Liberation Mono", monospace;
-  font-size: 13px;
-  margin-bottom: 20px;
 }
 
 h1,
@@ -240,12 +305,6 @@ hr {
   border: 0;
   border-top: 1px solid var(--line);
   margin: 28px 0;
-}
-
-.footer {
-  color: var(--muted);
-  font-size: 13px;
-  margin-top: 46px;
 }
 
 @media (max-width: 860px) {
@@ -548,24 +607,48 @@ function filesForGroup(allFiles, selector) {
   return allFiles.filter((file) => file.startsWith(`${selector}/`));
 }
 
+function hrefFromCurrent(currentHtmlRel, targetMarkdownRel) {
+  const targetHtml = htmlRelFromMarkdown(targetMarkdownRel);
+  return path.posix.relative(path.posix.dirname(currentHtmlRel), targetHtml) || path.posix.basename(targetHtml);
+}
+
+function navGroupContainsCurrent(files, currentHtmlRel) {
+  return files.some((markdownRel) => htmlRelFromMarkdown(markdownRel) === currentHtmlRel);
+}
+
 function renderNav(allFiles, titleByRel, currentHtmlRel) {
-  return groupConfig
-    .map(([label, selector]) => {
+  return navConfig.map((language) => {
+    const languageFiles = language.groups.flatMap(([, selector]) => filesForGroup(allFiles, selector));
+    const languageOpen = currentHtmlRel === 'index.html' || navGroupContainsCurrent(languageFiles, currentHtmlRel);
+    const homeHref = hrefFromCurrent(currentHtmlRel, language.home);
+    const groups = language.groups.map(([label, selector]) => {
       const links = filesForGroup(allFiles, selector);
       if (!links.length) {
         return '';
       }
 
+      const groupOpen = navGroupContainsCurrent(links, currentHtmlRel);
       const items = links.map((markdownRel) => {
         const htmlRel = htmlRelFromMarkdown(markdownRel);
-        const href = path.posix.relative(path.posix.dirname(currentHtmlRel), htmlRel) || path.posix.basename(htmlRel);
+        const href = hrefFromCurrent(currentHtmlRel, markdownRel);
         const active = htmlRel === currentHtmlRel ? ' class="active"' : '';
         return `<a${active} href="${escapeAttribute(href)}">${escapeHtml(titleByRel.get(markdownRel) ?? markdownRel)}</a>`;
       }).join('\n');
 
-      return `<section class="nav-section"><h2>${escapeHtml(label)}</h2>${items}</section>`;
-    })
-    .join('\n');
+      return `<details class="nav-group"${groupOpen ? ' open' : ''}>
+        <summary>${escapeHtml(label)}</summary>
+        <div class="nav-links">
+${items}
+        </div>
+      </details>`;
+    }).join('\n');
+
+    return `<details class="nav-section"${languageOpen ? ' open' : ''}>
+      <summary>${escapeHtml(language.label)}</summary>
+      <a href="${escapeAttribute(homeHref)}">${escapeHtml(language.label === '中文' ? '中文手册' : 'English Manual')}</a>
+${groups}
+    </details>`;
+  }).join('\n');
 }
 
 function renderPage({ markdownRel, markdown, title, nav }) {
@@ -580,23 +663,24 @@ function renderPage({ markdownRel, markdown, title, nav }) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${escapeHtml(title)} - DS_ERP User Guide</title>
+  <title>${escapeHtml(title)} - DS_ERP User Manual</title>
   <link rel="stylesheet" href="${cssHref}">
 </head>
 <body>
   <div class="layout">
     <aside class="sidebar">
-      <a class="brand" href="${'../'.repeat(depth)}index.html">DS_ERP User Guide</a>
-      <div class="subtitle">Generated from docs-codex/manual Markdown</div>
+      <a class="brand" href="${'../'.repeat(depth)}index.html">DS_ERP User Manual</a>
+      <div class="language-jump">
+        <a href="${escapeAttribute(hrefFromCurrent(htmlRel, 'en/00-start-here.md'))}">English Manual</a>
+        <a href="${escapeAttribute(hrefFromCurrent(htmlRel, 'zh-CN/00-start-here.md'))}">中文手册</a>
+      </div>
       <nav aria-label="Manual pages">
 ${nav}
       </nav>
     </aside>
     <main class="content">
       <article class="article">
-        <div class="page-path">${escapeHtml(markdownRel)}</div>
 ${body}
-        <div class="footer">Generated from the manual source. Use &lt;APP_BASE_URL&gt; as the actual factory deployment address.</div>
       </article>
     </main>
   </div>
